@@ -1,0 +1,45 @@
+.fn18-firework-upcoming{max-width:1440px;margin:0 auto;padding:48px 0;background-color:#fff}
+.fn18-firework-upcoming__headline{overflow:hidden;height:46px;padding:0 24px;font-family:'SamsungSharpSans',arial,sans-serif;font-size:38px;line-height:1.2;word-wrap:break-word}
+.fn18-firework-upcoming__list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:0 24px}
+.fn18-firework-upcoming__item{display:-webkit-box;display:-ms-flexbox;display:flex;width:50%;padding-top:24px}
+.fn18-firework-upcoming__image{overflow:hidden;-ms-flex-negative:0;flex-shrink:0;width:330px;height:587px;border-radius:20px}
+.fn18-firework-upcoming__content{padding:0 24px}
+.fn18-firework-upcoming__date{overflow:hidden;display:block;height:24px;margin-bottom:8px;font-size:18px;line-height:1.33;font-weight:700}
+.fn18-firework-upcoming__product-name{overflow:hidden;margin-bottom:24px;font-size:24px;line-height:1.33;word-wrap:break-word}
+.fn18-firework-upcoming__description{overflow:hidden;margin-bottom:36px;font-size:18px;line-height:1.33;word-wrap:break-word}
+.fn18-firework-upcoming__cta-view-more{margin-top:48px;text-align:center}
+.fn18-firework-upcoming__cta fw-add-to-calendar{--fw-add-to-calendar-font-family:'SamsungOne',arial,sans-serif;--fw-add-to-calendar-font-size:14px;--fw-add-to-calendar-font-weight:700;--fw-add-to-calendar-background:black;--fw-add-to-calendar-width:auto;--fw-add-to-calendar-height:40px;--fw-add-to-calendar-hover-background:rgba(0,0,0,0.6);--fw-add-to-calendar-hover-font-size:14px;--fw-add-to-calendar-hover-font-weight:700}
+.fn18-firework-upcoming.bg-dark-gray .fn18-firework-upcoming__cta .cta--contained,.fn18-firework-upcoming.bg-black .fn18-firework-upcoming__cta .cta--contained{color:#000 !important;background:#fff !important}
+.fn18-firework-upcoming.bg-dark-gray .fn18-firework-upcoming__cta .cta--contained:hover,.fn18-firework-upcoming.bg-black .fn18-firework-upcoming__cta .cta--contained:hover,.fn18-firework-upcoming.bg-dark-gray .fn18-firework-upcoming__cta .cta--contained:focus,.fn18-firework-upcoming.bg-black .fn18-firework-upcoming__cta .cta--contained:focus{color:#313131 !important;background-color:#ddd !important}
+.fn18-firework-upcoming.bg-dark-gray .fn18-firework-upcoming__cta-view-more .cta--outlined,.fn18-firework-upcoming.bg-black .fn18-firework-upcoming__cta-view-more .cta--outlined{color:#fff !important;background-color:transparent !important;border-color:#fff !important}
+.fn18-firework-upcoming.bg-dark-gray .fn18-firework-upcoming__cta-view-more .cta--outlined:hover,.fn18-firework-upcoming.bg-black .fn18-firework-upcoming__cta-view-more .cta--outlined:hover,.fn18-firework-upcoming.bg-dark-gray .fn18-firework-upcoming__cta-view-more .cta--outlined:focus,.fn18-firework-upcoming.bg-black .fn18-firework-upcoming__cta-view-more .cta--outlined:focus{color:#ddd !important;background-color:rgba(255,255,255,0.15) !important;border-color:#ddd !important}
+.fn18-firework-upcoming.bg-dark-gray .fn18-firework-upcoming__cta fw-add-to-calendar,.fn18-firework-upcoming.bg-black .fn18-firework-upcoming__cta fw-add-to-calendar{--fw-add-to-calendar-color:black;--fw-add-to-calendar-background:white;--fw-add-to-calendar-hover-background:rgba(255,255,255,0.95);--fw-add-to-calendar-hover-color:black}
+.fn18-firework-upcoming.bg-light-gray{background:#f7f7f7}
+.fn18-firework-upcoming.bg-dark-gray{background:#313131}
+.fn18-firework-upcoming.bg-black{background:#000}
+.fn18-firework-upcoming.bg-transparent{background:transparent}
+@media only screen and (min-width:768px) and (max-width:1440px){.fn18-firework-upcoming{max-width:100%;padding:3.33333333vw 0vw}
+.fn18-firework-upcoming__headline{height:3.19444444vw;padding:0vw 1.66666667vw;font-size:2.63888889vw}
+.fn18-firework-upcoming__list{padding:0vw 1.66666667vw}
+.fn18-firework-upcoming__item{padding-top:1.66666667vw}
+.fn18-firework-upcoming__image{width:22.91666667vw;height:40.76388889vw;border-radius:1.38888889vw}
+.fn18-firework-upcoming__content{padding:0vw 1.66666667vw}
+.fn18-firework-upcoming__date{height:1.66666667vw;margin-bottom:.55555556vw;font-size:1.25vw}
+.fn18-firework-upcoming__product-name{margin-bottom:1.66666667vw;font-size:1.66666667vw}
+.fn18-firework-upcoming__description{margin-bottom:2.5vw;font-size:1.25vw}
+.fn18-firework-upcoming__cta-view-more{margin-top:3.33333333vw}
+.fn18-firework-upcoming__cta fw-add-to-calendar{--fw-add-to-calendar-font-size:.97222222vw;--fw-add-to-calendar-height:2.77777778vw;--fw-add-to-calendar-hover-font-size:.97222222vw}
+}
+@media only screen and (max-width:767px){.fn18-firework-upcoming{overflow:hidden;max-width:none;padding:13.33333333vw 0vw 8.88888889vw 0vw}
+.fn18-firework-upcoming__headline{height:auto;max-height:19.44444444vw;padding:0vw 6.66666667vw;font-size:7.22222222vw;line-height:1.33}
+.fn18-firework-upcoming__list{display:block;padding:0}
+.fn18-firework-upcoming__item{display:block;width:100%;padding:8.88888889vw 6.66666667vw 4.44444444vw 6.66666667vw}
+.fn18-firework-upcoming__image{width:100%;height:auto;border-radius:5.55555556vw}
+.fn18-firework-upcoming__content{padding:6.66666667vw 4.44444444vw 0vw 4.44444444vw;text-align:center}
+.fn18-firework-upcoming__date{height:5.27777778vw;margin-bottom:1.11111111vw;font-size:3.88888889vw}
+.fn18-firework-upcoming__product-name{margin-bottom:4.44444444vw;font-size:5.55555556vw}
+.fn18-firework-upcoming__description{height:auto;margin-bottom:6.66666667vw;font-size:3.88888889vw}
+.fn18-firework-upcoming__cta-view-more{margin:8.88888889vw 0vw 4.44444444vw 0vw}
+.fn18-firework-upcoming__cta{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.fn18-firework-upcoming__cta fw-add-to-calendar{--fw-add-to-calendar-font-size:3.88888889vw;--fw-add-to-calendar-width:41.11111111vw;--fw-add-to-calendar-height:11.11111111vw;--fw-add-to-calendar-hover-font-size:3.88888889vw}
+}

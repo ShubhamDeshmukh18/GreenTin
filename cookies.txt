@@ -1,0 +1,22 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.samsung.com	TRUE	/	FALSE	1999999999	s_fpid	2c53145d-5e0f-4f85-98b5-e4ce0b28f81e
+www.samsung.com	TRUE	/	FALSE	1999999999	country_region	CA-ON
+samsung.com	TRUE	/	FALSE	1999999999	AKA_A2	A
+.samsung.com	TRUE	/	FALSE	1999999999	country_codes	in
+.samsung.com	TRUE	/	FALSE	1999999999	_abck	C6A72548FD3C69D874F173C7635AE913~-1~YAAQxAHVF/uCgqaOAQAAgYtyqAumM0vIvMK6QE6xtv4stmZlCJfMyNlbMRVUqERnd9vIy8E1OTRfqH2mm7SvFUhIqBtXXWzbpOYBVT8XsIuv4qMz5ArzhKqXnp4jHM9hFDSAH6eHzoNwuHStla5NExyChOLqmVzQLs/2V8KRy9ubu32ZmODsWLKWBjyCnkdWt6A9Y/rd6AV0gF9bi5yju6us1mVMbwjS64F7X6om1AOfeDnU+VR06RhmS1wOWw2tpaR49E/RYbJBfbHUfoPTZld9wr7uX5xHk+LPAfF2Qjq04i8qlTUPB3fzvOP0gN2EQ9f4sivBqsm+UD6EQb4l2uVIXkJrjsAGD3GQMHX534N3G4oh1iJAVxMR~-1~-1~-1
+.samsung.com	TRUE	/	FALSE	1999999999	__COM_SPEED	H
+www.samsung.com	TRUE	/	FALSE	1999999999	WMONID	DOHdRf1m-GA
+www.samsung.com	TRUE	/	FALSE	1999999999	JSESSIONID	m_egNA47iGgouRYQdD2ROcL-wWO1yrSWYq1R1a1Y.cyberManaged2_1
+www.samsung.com	TRUE	/	FALSE	1999999999	SCOUTER	z7679vh1of9nlb
+www.samsung.com	TRUE	/	FALSE	1999999999	pn-YSVCWEB-cookie_Persistence_Profile-CMP-e8Co4u.20166c11-df04-4449-a916-97c29ceb0034.96943d85-9ac1-4a0f-a05d-0da06378629a	1BKYz1zuLi9YS6sllcGFpNHOmMeeDYGn6K6YKjNovwOD/SFxAYLn8baDxcld9sWJ
+developers.google.com	TRUE	/	FALSE	1999999999	_ga_devsite	GA1.3.1273342387.1712224078
+.calendly.com	TRUE	/	FALSE	1999999999	__cf_bm	Ordk_Z.Qgnp5dl4YL8wAfYYOlRo3v1v0c3nMYk5m8kw-1712224452-1.0.1.1-H4.5h40r_u9.6i8bJGbvKnMtNfx7AnA9Sf2VnSWu2LUtZh4quHPb.hwMrnwLf9jybK6hTxsx4B.okIxDwmnFHg
+assets.calendly.com	TRUE	/	FALSE	1999999999	SameSite	None
+samsung.com.cn	TRUE	/	FALSE	1999999999	AKA_A2	A
+.samsung.com.cn	TRUE	/	FALSE	1999999999	country_codes	in
+.samsung.com.cn	TRUE	/	FALSE	1999999999	device_type	pc
+www.samsung.com	TRUE	/	FALSE	1999999999	originalrequestUrl	/in/in/multistore/corporate/finder.smartphones/all-/in/multistore/corporate/finder.smartphones/.html
+.samsung.com	TRUE	/	FALSE	1999999999	bm_sz	4D7821D15C3DDF97272E52F2531BA617~YAAQxAHVF/LJgqaOAQAAdBiQqBe9oT1E9ekgYvJS9TlB5XNl9viQ9T+qmXybug7MkHJb3F8kCIoGwBZoKk4HjZdeESi/Many1Hago/IBg4yQ3Y+ph9+VfIXmHhV55sFOzzPiRXFmgwZM3yzMjHg8wamBP7y4prlCoYgTxxhp4B1RZbNSXfpNVDc6nGeZDyB6EObSPZDrCeC1sbKtJBYFffdu4ZAbPleo3Im9n38H14hXTx5JZfkWwOgCOR5TCYHxij9qGwJZWrNxiRbvgmtX85Kdup3UboCIfXeGE8KlrevmKqkUcKFYEXnMht9ShaHJYiETHzaSxjtowIbHcRuItU6B/f+8hsB0OMedDxadjNy69V6MIqjhRoO7byzEDFs+nbeE6bPx~4276547~3421492
+.samsung.com	TRUE	/	FALSE	1999999999	device_type	pc
+

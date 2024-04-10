@@ -1,0 +1,1513 @@
+
+
+	<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/gnb_gro3.css" type="text/css"/> 
+		<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/footer_gro3.css" type="text/css"/> 
+		<link rel="stylesheet" href="http://cdn.samsung.com/etc/designs/smg/global/templates/page.css" type="text/css"/>
+		<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/ys_common.css" type="text/css"/> 
+	<!DOCTYPE html>
+<html dir="ltr" class="ltr" lang="en">
+
+<!-- Mirrored from www.samsung.com/in/support/your-service/main by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2024 10:07:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Request for mobile repair, Samsung</title>
+<meta name="title" content="Request for mobile repair, Samsung">
+<meta charset="UTF-8" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+		<link rel="canonical" href="https://www.samsung.com/in/support/your-service/main">
+
+<meta name="keywords" content="sign in, samsung service India">
+<meta name="description" content="We offer all your product needs from product registration to booking a repair at your own convenience. Sign in using Samsung Account or using guest account">
+<meta name="twitter:card" content="Summary">
+<meta name="twitter:site" content="@Samsung in">
+<meta name="twitter:creator" content="@Samsung in">
+<meta name="twitter:url" content="//https://www.samsung.com/in/support/your-service/main">
+<meta name="twitter:title" content="My Product">
+<meta name="twitter:description" content="We offer all your product needs from product registration to booking a repair at your own convenience. Sign in using Samsung Account or using guest account">
+<meta name="twitter:image" content="https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png">
+<meta property="og:url" content="//https://www.samsung.com/in/support/your-service/main">
+<meta property="og:image" content="https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Samsung in">
+<meta property="og:title" content="My Product">
+<meta property="og:description" content="We offer all your product needs from product registration to booking a repair at your own convenience. Sign in using Samsung Account or using guest account">
+<meta property="og:country-name" content="in">
+<meta itemprop="name" content="Samsung in">
+<meta itemprop="image" content="https://cdn.samsung.com/etc/designs/smg/global/imgs/logo-square-letter.png">
+<meta itemprop="url" content="//https://www.samsung.com/in/support/your-service/main">
+<meta itemprop="keywords" content="sign in, samsung service India">
+<meta itemprop="description" content="We offer all your product needs from product registration to booking a repair at your own convenience. Sign in using Samsung Account or using guest account">
+<!-- favicon -->
+
+		<link rel="shortcut icon" href="http://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/Favicon.png">
+
+<link rel="apple-touch-icon" href="http://cdn.samsung.com/etc/designs/smg/global/imgs/app_ico.png" sizes="144x144">
+
+<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/reset.css" type="text/css"/>
+<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/fonts/fonts.css" type="text/css"/>
+<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/developer.css" type="text/css">
+
+<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/gnb_gro3.css" type="text/css"/> 
+		<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/footer_gro3.css" type="text/css"/> 
+		<link rel="stylesheet" href="http://cdn.samsung.com/etc/designs/smg/global/templates/page.css" type="text/css"/>
+		<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/ys_common.css" type="text/css"/> 
+	<div id="selectLocationDiv" class="dim-msg-layer" style="display:none;">
+	<div class="dimBg"></div>
+	<div class="pop-msg-warp">
+		<div class="pop-container">
+		    <div class="pop-container-title">
+				<Label>Please select your location</Label>
+			</div>
+			<br/>
+	    	<div class="pop-container-main">
+				<dl class="dropdown">
+					<dt><a><span id="locationView" class="selected">Select Location</span></a></dt>
+					<dd>
+						<ul id="ulLocationList" style="max-height: 300px; overflow-y: auto;">
+							</ul>
+					</dd>
+				</dl>
+	    	</div>
+		    <div class="pop-container-bottom">
+		        <button class="ys-line-black-btn" id="btnSetLocation" title="Confirm"  disabled>Confirm</button>
+		    </div>
+		    <input type="hidden" name="selectedLocation" id="selectedLocation" autocomplete="off">
+		</div>
+	</div>
+</div>
+
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/jquery-3.6.2.min.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/jquery-ui-1.13.2.min.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/jquery.form.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/index.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/cybCommon.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/moment.min.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/underscore.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/datepicker/jquery.ui.datepicker-en.js" type="text/javascript"></script>
+<script>
+var gaSiteCd = "in";
+var loginYn = "N";
+var contextPath = "";
+var serviceMode = "P";
+//  
+var DP_SCD_PATH = "/in/support/your-service/direct-payment";
+var COUNTRY_CODE_UC = "IN";
+</script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/ga/gaData.js" type="text/javascript"></script>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/ga/VisitorAPI.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+	<script src="/sg/support/your-service/integresources/cybersvc/js/js/html5shiv.js"></script>
+	<script src="/sg/support/your-service/integresources/cybersvc/js/js/respond.min.js"></script>
+<![endif]-->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', gaData[0].gaId, 'auto');
+ga('set', 'title', 'in:support:your-service:main');
+ga('set', 'contentGroup1', 'in');
+ga('set', 'contentGroup2', 'in:support');
+ga('set', 'contentGroup3', 'in:support:your-service');
+ga('set', 'contentGroup4', 'in:support:your-service:main');
+
+ga('set', 'dimension1', 'in');
+ga('set', 'dimension2', 'in:support');
+ga('set', 'dimension3', 'support your service');
+ga('set', 'dimension6', document.URL);
+ga('set', 'dimension7', document.referrer);
+ga(function(tracker) { ga('set', 'dimension8', tracker.get('clientId')); });
+ga('send', 'pageview'); 
+
+</script>
+
+<!-- 폴란드 Google Tag Manager -->
+<!-- End Google Tag Manager -->
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-18dc4f75-4dc2-46c5-be03-b0442aaa4402","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+<script>!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProperty(r)&&(void 0===n[r]?n[r]=i[r]:n[r].constructor===Object&&i[r].constructor===Object?o(n[r],i[r]):n[r]=i[r])}try{var n=decodeURIComponent("%7B%20%22request_client_hints%22%3A%20true%20%7D");if(n.length>0&&window.JSON&&"function"==typeof window.JSON.parse){var i=JSON.parse(n);void 0!==window.BOOMR_config?o(window.BOOMR_config,i):window.BOOMR_config=i}}catch(r){window.console&&"function"==typeof window.console.error&&console.error("mPulse: Could not parse configuration",r)}}();</script>
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="VRZKC-5BSTD-4EWS3-R2J59-B8GYB",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"VRZKC-5BSTD-4EWS3-R2J59-B8GYB",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e="false"=="true"?1:0,t="cookiepresent",n="m62t32axgdweczqoo4ia-f-ee08b4c94-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"37","ak.cp":"886666","ak.ai":parseInt("293013",10),"ak.ol":"0","ak.cr":21,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"bed5efd","ak.r":37483,"ak.a2":e,"ak.m":"x","ak.n":"essl","ak.bpcip":"103.181.61.0","ak.cport":64421,"ak.gh":"23.213.1.140","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1712224016","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Sf8vQlilCl4QTW4Podw2fuePGxfRpoeiVKz6LZwLkhs28KnSVu0+/4Q4bHksQThdcfz4Ylmv7IyBxVUedmNs3KhkQ0kybNRZyOS8V2wguXR1xup38OlAtj+Lk0V/+fDgDju+tZt8xDa+RCV66sVjDBsMgQWjx+BAuoh0FXx90/h/qAZ5oVH0uIq7iS2dctzSuyblSAWy+UhU6TvBzGjThXJAWOKkxJAH2WXDzlYlRWHwFbhS9i685PE5KYtJnrGmeLFfmN+SKs7tXXQHaz8rBeNIaQZJ4nrO3yOLRckc4MyUKMaUFnVXP5ez1MWjeEvwnZWp4+3EPkb4Fm6ovNxpNog64rVpxFhuxpYaFmWaRMbDqcH8tKl/YDLTKz3O9kWFgUzRY3VAYfSHp0GHVFZDpqJHoCK48nJGmUbyK8jq7cE=","ak.pv":"3397","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","https://www.samsung.com/in/support/your-service/ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","https://www.samsung.com/in/support/your-service/ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<script type="text/javascript">
+var siteDatePattern = "dd/MM/yyyy";
+if(siteDatePattern == ""){
+	siteDatePattern = "dd/MM/yyyy";
+}
+var datepickerRegional = "en";
+var datePickerDateFormat = siteDatePattern.replace(/yyyy/gi,"yy").toLowerCase();
+var designDirection = "ltr";
+var clientTodayShortDate = moment().format("YYYYMMDD");
+var clientNowHourMinSec = moment().format("HHmmss");
+var clientNowHour = moment().format("HH");
+var clientTomorrowShortDate = moment().add(1, 'day').format("YYYYMMDD");
+var clientAfterTomorrowShortDate = moment().add(2, 'day').format("YYYYMMDD");
+var clientThenextDayShortDate = moment().add(1, 'day').format("YYYYMMDD");
+
+var commonSearchErrMsg = "There is a problem during data search. \u003Cbr \/\u003E\u003CBR\u003EPlease try again.";
+var commonProcessErrMsg = "There was a problem processing your data. Please try again.";
+var imeiErrorMsg = "We\'re sorry, the Serial Number \/ IMEI Number is invalid. Please try again.";
+var serialModelMsg = "The serial number is valid. Please select your product model from the below options.";
+var purchaseDateMsg = "Please check the entered Date of Purchase (DD\/MM\/YYYY)";
+var popFileMsg = "Please upload a copy of your purchase receipt (tax invoice) in PDF or image format (only .jpg and .png are accepted). \u003Cbr\u003EMaximum file size allowed is 5MB.";
+var deleteProductMsg = "Would you like to delete this product ?";
+var trAlreadyTicketMsg = "You already have a pending ticket ";
+var enterFirstNameMsg = "Please enter your First Name";
+var enterLastNameMsg = "Please enter your Last Name";
+var enterMobileMsg = "Please enter your Mobile Phone Number";
+var enterEmailMsg = "Please enter your Email Address";
+var notValidEmailMsg = "Email format is email@domain.com.";
+var enterPreferDateMsg = "Please select your preferred date";
+var enterPreferTimeMsg = "Please select your preferred time";
+var enterQuestionMsg = "Please input your question";
+var inputTicketNoMsg = "Please enter your Service Request number."
+var inProgressMsg = "In Progress";
+var noSearchAddrTextMsg = "";
+var addressTextMsg = "";
+var phoneNoTextMsg = "";
+var postCodeTextMsg = "";
+var enterPrebookingDateMsg = "";
+var enterPrebookingTimeMsg = "";
+var alreadyTicketMsg = "You already have pending ticket";
+var confirmBtnMsg = "";
+var inputMailSubjectMsg = "Please enter your subject title";
+var successSendMailMsg = "Your email has been sent successfully";
+var inWarrantyMsg = "In Warranty";
+var outWarrantyMsg = "Out of Warranty";
+var warrantyMonthsMsg = "Months";
+var termsAgreementMsg = "Please indicate that you accept the Terms and Condition."
+var inputMinLengthSevenMsg = "Please input more than 2 characters"
+var msgErrDefault = "Internal server error.";
+var notMatchEmailMsg = "Please check the E-mail";
+var notMatchModellMsg = "Please check the Model Code";
+var notMatchSerialMsg = "Please check the Serial Number";
+var notMatchPostMsg = "Search Postal Code";
+var notMatchSerialEnterMsg = "Please check the Serial Number";
+var notMatchPurchaseDateMsg = "Please check the Date of Purchase";
+var notMatchWarrantyMsg = "Please check the Warranty";
+var inputCharCheckMsg = "*\" is not allowed as input characters.";
+var inputCheckFirstMsg = "Please check the First Name";
+var inputCheckLastMsg = "Please check the Last Name";
+var inputCheckMobileMsg = "Please check the Mobile Telephone No";
+var inputCheckStreetMsg = "Please check the Street";
+var inputCheckCityMsg = "Please check the City";
+var inputEmailDupliMsg = "Email duplicated.";
+var latinInWarrantyMsg = "In Warranty";
+var latinOutWarrantyMsg = "Out of warranty";
+var printGuideMsg = "For Printer inquiry, please visit HP website https:\/\/www.hp.com\/support\/samsung";
+var productIssueMsg = "Please check the Describe the issue with your product";
+var privacyPolicyMsg = "Please check the You must agree to Samsung\'s privacy policy.";
+var contactCenterMsg = "This product is not eligible for in-home service, please contact our contact center";
+var sapErrorCommonMsg = "An error has occurred. Please check the details you entered and try again.";
+
+$(document).ready(function() {
+
+    window.oncontextmenu = function(e){
+            return false;
+    }
+
+    window.onkeydown = function(e){
+            if(event.keyCode == 123){
+                    event.keyCode=0;
+                    event.cancelBubble = true;
+                    event.returnValue = false;
+                    return false;
+            }
+    }
+	
+ 	$('.ssoSignIn').click(function (event, param1) {
+		if(typeof param1 == "undefined"){
+			s_control_click("events,eVar31", "event31", "event31,login_try:samsung account", "o", "login_action");	
+		}		
+		setSignInUp('in');
+	});
+
+ 	$('.ssoSignUp').click(function(event, param1) {
+		if(typeof param1 == "undefined"){
+			s_control_click("events,eVar31", "event31", "event31,account:sign up", "o", "login_action");	
+		}
+		var currlanguageCode = "en";
+		if("IN" == "JP" && currlanguageCode != "ja"){
+			$("#customerInfoLangMsgDiv").show();
+		}else{
+			setSignInUp('up');
+		}
+	});
+	
+	$('.ssoLogOut').click(function() {
+		window.location.href = "https://www.samsung.com/in/support/your-service/null";
+	});
+	
+	var menuActiveCheck = false;
+
+	$( ".ys-navigation > ul > li > a" ).each(function( index ) {
+		 if($(this).hasClass("active")){
+			 menuActiveCheck = true;
+		 }
+	});
+
+
+});
+
+var dropdowns = $(".dropdown");
+
+dropdowns.find("dt").click(function(){
+	dropdowns.find("dd ul").hide();
+	$(this).next().children().toggle();
+});
+
+
+//Close all dropdown onclick on another element
+$(document).bind('click', function(e){
+	if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+});
+
+function setLocVal(obj){
+	
+	$('#ulLocationList').find('li > a').removeClass('active');
+	$(obj).addClass('active');
+	
+	var leSpan = $(obj).parents(".dropdown").find("dt a span");
+	$(obj).parents(".dropdown").find('dd a').each(function(){
+		$(obj).removeClass('selected');
+	});
+
+	leSpan.html($(obj).html());
+
+	if($(obj).hasClass('default')){
+		leSpan.removeClass('selected')
+	}else{
+		leSpan.addClass('selected');
+		$(obj).addClass('selected');
+	}
+	$('#ulLocationList').hide();
+	
+	
+	var coutryCode = $(obj).data("value");;
+	$('#selectedLocation').val(coutryCode);
+
+	$("#btnSetLocation").prop("disabled", false);
+	
+}
+
+$("#btnSetLocation").click( function() {
+	var selectedLocation = $('#selectedLocation').val();
+	
+	if(selectedLocation == ""){
+		errorMsgShow("Please select your location");
+		return;
+	}
+	
+    moveLocation(selectedLocation);
+}); 
+
+function moveLocation(selectedLocation){
+	
+	var param = {"selectedLocation": selectedLocation};
+	showBar();
+	$.ajax({
+		
+		url: contextPath+'/in/support/your-service/setMultiLoginCountry',
+		type: "POST",
+		data: param,
+		success: function(result) {
+			var resultCode = result.resultCode;
+			if(resultCode != undefined && resultCode == "S"){
+				setMultiLoginCountryYn = "Y";
+				if(btnNm == "login"){
+					setSignInUp(signInUpType);
+				}else if(btnNm == "install-request"){
+					hideBar();
+					drawJurisdictionList(selectedLocation); 
+					$("#selectLocationDiv").hide();
+				}else{
+					hideBar();
+					$("#selectLocationDiv").hide();
+				}
+			}else{
+				hideBar();
+				errorMsgShow(commonProcessErrMsg);
+			}
+	
+		},
+		error: function () {
+			errorMsgShow(commonProcessErrMsg);
+			hideBar();
+		}
+	});
+}
+
+function drawMultiLoginCountryList(moveLocationList, showHide){
+	$('#ulLocationList').html("");
+	var liHtml = "";
+	$.each(moveLocationList ,function(index,data){
+
+		liHtml += "<li>";
+		liHtml += "<a class='default' onClick='setLocVal(this);'  data-value='"+data.COUNTRY+"'>";
+		liHtml += data.COUNTRY_NAME;
+		liHtml += "</a>";
+		liHtml += "</li>";
+
+	});
+	$('#ulLocationList').append($(liHtml));
+	
+	if(showHide != "hide"){
+		$("#selectLocationDiv").show();	
+	}
+}
+
+var signInUpType = "";
+var btnNm = "";
+var setMultiLoginCountryYn = "N";
+
+function getMultiLoginCountryList(showHide){
+	var multiLoginYn = "";
+	
+	if(multiLoginYn != "in_N"){
+		showBar();
+	    $.ajax({
+	        url: contextPath+'/in/support/your-service/getMultiLoginContryList',
+	        type: 'POST',
+	        async: false,
+	        success: function (result) {
+	        	hideBar();
+	        	var multiLoginCountryYn = result.multiLoginCountryYn;
+				
+				if(multiLoginCountryYn == "Y"){
+					
+					hidePopup('mainGuestPopular');
+					
+					var moveLocationList = result.moveLocationList;
+
+					drawMultiLoginCountryList(moveLocationList, showHide);
+
+				}else{
+					setMultiLoginCountryYn = "Y";
+
+					if(showHide == "login"){
+						setSignInUp(signInUpType);
+					}
+					
+				}
+	        },
+			error: function () {
+				errorMsgShow(commonProcessErrMsg);
+				hideBar();
+			}     
+	    });
+	}else{
+		$("#selectLocationDiv").show();
+	}
+	
+}
+
+function setSignInUp(type){
+	
+	var multiLoginYn = "";
+	if((multiLoginYn != "in_N" && setMultiLoginCountryYn != "Y" && "" != "in_Y") ){
+		btnNm = "login";
+		if(multiLoginYn == "" || multiLoginYn != "in_N" || multiLoginYn != "in_Y" ){
+			getMultiLoginCountryList("login");
+		}else{
+			hidePopup('mainGuestPopular');
+			$("#selectLocationDiv").show();
+		}
+		return;
+	} 
+	
+	signInUpType = type;
+	showBar();
+	var params = {"redirect_menu":$("#redirect_menu").val()};		
+		$.ajax({
+			url: contextPath+'/in/support/your-service/ssoSignInUp',
+			type: 'POST',
+			data: params,
+			async : false,
+			success: function (result) {
+				$('form[name="frSsoNewForm"] input[name="response_type"]').val(result.responseTypeSso);
+				$('form[name="frSsoNewForm"] input[name="client_id"]').val(result.clientIdSso);
+				$('form[name="frSsoNewForm"] input[name="locale"]').val(result.localeSso);
+				$('form[name="frSsoNewForm"] input[name="countryCode"]').val(result.countryCodeSso);
+				$('form[name="frSsoNewForm"] input[name="redirect_uri"]').val(result.redirectUriSso);
+				$('form[name="frSsoNewForm"] input[name="state"]').val(result.stateSso);
+				$('form[name="frSsoNewForm"] input[name="goBackURL"]').val(result.goBackURLSso);
+				if(signInUpType=='up'){
+					$("#frSsoNewForm").attr("action", result.signUpGateUri);
+				}else{
+					$("#frSsoNewForm").attr("action", result.signInGateUri);
+				}
+				$('#frSsoNewForm').submit();
+			},
+			error: function () {
+				errorMsgShow(commonProcessErrMsg);
+				hideBar();
+			}
+	  });
+}
+
+</script>
+<body>
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/ga/s_code_microsite.js" type="text/javascript"></script>
+<script type="text/javascript">
+s.pageName="in:support:your-service:main";
+s.channel="in:support";
+s.prop1="in";
+s.prop2="in:support";
+s.prop3="in:support:your-service"; 
+s.prop4="in:support:your-service:main";
+s.prop6="support your service";
+s.hier1="in>support>your-service>main";
+var s_code = s.t(); if (s_code) document.write(s_code); 
+</script>
+
+<div class="top-go-holder" style="">
+        <a href="javascript:void(0);" class="gologin ssoSignIn" title="SIGN IN" aria-label="SIGN IN">SIGN IN</a>
+    </div>
+    <head>
+ 	
+ 	<link rel="stylesheet/less" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/nv00-gnb-ltr.less" type="text/css"/>
+	<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/cdn_less_js.js" type="text/javascript"></script>
+	<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/swiper-bundle.js" type="text/javascript"></script>
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-18dc4f75-4dc2-46c5-be03-b0442aaa4402","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+<script>!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProperty(r)&&(void 0===n[r]?n[r]=i[r]:n[r].constructor===Object&&i[r].constructor===Object?o(n[r],i[r]):n[r]=i[r])}try{var n=decodeURIComponent("%7B%20%22request_client_hints%22%3A%20true%20%7D");if(n.length>0&&window.JSON&&"function"==typeof window.JSON.parse){var i=JSON.parse(n);void 0!==window.BOOMR_config?o(window.BOOMR_config,i):window.BOOMR_config=i}}catch(r){window.console&&"function"==typeof window.console.error&&console.error("mPulse: Could not parse configuration",r)}}();</script>
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="VRZKC-5BSTD-4EWS3-R2J59-B8GYB",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"VRZKC-5BSTD-4EWS3-R2J59-B8GYB",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e="false"=="true"?1:0,t="cookiepresent",n="m62t32axgdweczqoo4ia-f-ee08b4c94-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"37","ak.cp":"886666","ak.ai":parseInt("293013",10),"ak.ol":"0","ak.cr":21,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"bed5efd","ak.r":37483,"ak.a2":e,"ak.m":"x","ak.n":"essl","ak.bpcip":"103.181.61.0","ak.cport":64421,"ak.gh":"23.213.1.140","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1712224016","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Sf8vQlilCl4QTW4Podw2fuePGxfRpoeiVKz6LZwLkhs28KnSVu0+/4Q4bHksQThdcfz4Ylmv7IyBxVUedmNs3KhkQ0kybNRZyOS8V2wguXR1xup38OlAtj+Lk0V/+fDgDju+tZt8xDa+RCV66sVjDBsMgQWjx+BAuoh0FXx90/h/qAZ5oVH0uIq7iS2dctzSuyblSAWy+UhU6TvBzGjThXJAWOKkxJAH2WXDzlYlRWHwFbhS9i685PE5KYtJnrGmeLFfmN+SKs7tXXQHaz8rBeNIaQZJ4nrO3yOLRckc4MyUKMaUFnVXP5ez1MWjeEvwnZWp4+3EPkb4Fm6ovNxpNog64rVpxFhuxpYaFmWaRMbDqcH8tKl/YDLTKz3O9kWFgUzRY3VAYfSHp0GHVFZDpqJHoCK48nJGmUbyK8jq7cE=","ak.pv":"3397","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","https://www.samsung.com/in/support/your-service/ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","https://www.samsung.com/in/support/your-service/ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>    
+    
+<body>
+	<div class="gnb">
+	    <div class="gnb__dimmed" aria-hidden="true">
+	        <!-- 20210428 aria-hidden 추가 -->
+	        <!-- dimmed -->
+	    </div>
+	                    <!--/* NV00 GNB Component */-->
+	                    <nav id="component-id" class="nv00-gnb" role="navigation">
+	                        <div class="nv00-gnb__inner-wrap">
+	                        	<div class="nv00-gnb__logo-wrap">
+	                                <a href="https://www.samsung.com/in/" class="nv00-gnb__logo logo-play" aria-label="Go to the main page">
+	                                    <span class="hidden">Samsung</span>
+	                                </a>
+	                            </div>
+	                            
+								<div class="nv00-gnb__search-wrap">
+	                                <button class="nv00-gnb__backward-btn">
+	                                    <svg class="icon" focusable="false" aria-hidden="true">
+	                                        <use xlink:href="#backward-bold" href="#backward-bold"></use>
+	                                    </svg>
+	                                </button>
+	                                <button class="nv00-gnb__close-btn">
+	                                    <svg class="icon" focusable="false" aria-hidden="true">
+	                                        <use xlink:href="#delete-bold" href="#delete-bold"></use>
+	                                    </svg>
+	                                </button>
+	                            </div>
+								
+		                            <div class="nv00-gnb__user-account-wrap">
+		                           		<div class="nv00-gnb__user-account before-login">
+		                                        <a class="nv00-gnb__user-account-link ssoSignIn" href="#">Sign In/Sign-Up</a>
+		                                    </div>
+		                                </div>
+								
+								
+								
+	                            <div class="nv00-gnb__l0-menu-wrap">
+	                                <!--/* Left L0 Menu List 의 경우, .left-menu 클래스 추가 */-->
+	                                <ul class="nv00-gnb__l0-menu-list left-menu" role="menubar">
+	                                    <li class="nv00-gnb__l0-menu"> <button class="nv00-gnb__l0-menu-btn" role="menuitem" aria-expanded="false" aria-haspopup="true">Shop 
+  <svg class="icon" focusable="false" aria-hidden="true"> 
+   <use xlink:href="#next-bold" href="#next-bold"></use> 
+  </svg> </button> 
+ <div class="nv00-gnb__l1-menu-container "> 
+  <!-- sideClass  --> 
+  <p class="nv00-gnb__l1-menu-container-title">Shop</p> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Offers 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Why buy from Samsung 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+ </div></li> 
+<!-- main End -->
+<li class="nv00-gnb__l0-menu"> <a class="nv00-gnb__l0-menu-link" href="https://www.samsung.com/in/ai/" aria-label="Open in a new window" an-tr="nv00_gnb-1depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="AI" role="menuitem" target="_blank"> AI </a> </li> 
+<li class="nv00-gnb__l0-menu"> <button class="nv00-gnb__l0-menu-btn" role="menuitem" aria-expanded="false" aria-haspopup="true">Mobile 
+  <svg class="icon" focusable="false" aria-hidden="true"> 
+   <use xlink:href="#next-bold" href="#next-bold"></use> 
+  </svg> </button> 
+ <div class="nv00-gnb__l1-menu-container "> 
+  <!-- sideClass  --> 
+  <p class="nv00-gnb__l1-menu-container-title">Mobile</p> 
+  <div class="nv00-gnb__l1-menu-wrap l1-only"> 
+   <ul class="nv00-gnb__l1-menu-list" role="menu"> 
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/mobile/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Discover Mobiles </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/ai/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Galaxy AI </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/smartphones/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Smartphones </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/tablets" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Tablets </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/galaxy-book/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Galaxy Book (Laptops) </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/watches/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Watches </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/audio-sound/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Galaxy Buds </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/mobile-accessories/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Accessories </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/one-ui/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> One UI </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/apps/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Apps &amp; Services </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/microsite/student-advantage/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Samsung Student Advantage </a> </li>
+    <li class="nv00-gnb__l1-menu"> <a class="nv00-gnb__l1-menu-link" href="https://www.samsung.com/in/mobile/why-galaxy/" data-engname="mobile:move; featured" an-tr="nv00_gnb-2depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="mobile:move; featured"> Why Galaxy </a> </li>
+   </ul>
+  </div>
+  <div class="nv00-gnb__l1-menu-wrap featured-products-thumbnail"> 
+   <p class="nv00-gnb__featured-products-thumbnail-title">New &amp; Featured</p> 
+   <div class="nv00-gnb__featured-products-thumbnail-item-container"> 
+    <button class="nv00-gnb__featured-products-thumbnail-item--previous"> 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+      <use xlink:href="#previous-regular" href="#previous-regular"></use> 
+     </svg> </button> 
+    <ul class="nv00-gnb__featured-products-thumbnail-item-wrap" role="menu">
+     <li class="nv00-gnb__featured-products-thumbnail-item" role="menuitem"><a href="https://www.samsung.com/in/smartphones/galaxy-s24-ultra/" an-tr="nv00_gnb-feature image-navigation2" an-ca="navigation" an-ac="gnb" an-la="feature image:mobile:Galaxy S24 Ultra" class="nv00-gnb__featured-products-thumbnail-item-link"> <span class="badge-icon badge-icon--label badge-icon--bg-color-blue">NEW</span> 
+       <div class="image image--main-loaded"> 
+        <img class="image__preview responsive-img image--loaded image--hide" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E3_168x136_mo.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E3_168x136_mo.png" alt="Galaxy Z Fold4" role="img" data-comp-name="image" src="http://images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E3_168x136_mo.png" aria-hidden="true"> 
+        <img class="image__main responsive-img image--loaded" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E3_168x136_mo.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E3_168x136_mo.png" alt="Galaxy S24 Ultra" role="img" data-comp-name="image" src="http://images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E3_168x136_mo.png" style=""> 
+       </div> <p class="nv00-gnb__featured-products-thumbnail-item-name">Galaxy S24 Ultra</p></a></li>
+     <li class="nv00-gnb__featured-products-thumbnail-item" role="menuitem"><a href="https://www.samsung.com/in/smartphones/galaxy-s24/" an-tr="nv00_gnb-feature image-navigation2" an-ca="navigation" an-ac="gnb" an-la="feature image:mobile:Galaxy S24 | S24+" class="nv00-gnb__featured-products-thumbnail-item-link"> <span class="badge-icon badge-icon--label badge-icon--bg-color-blue">NEW</span> 
+       <div class="image image--main-loaded"> 
+        <img class="image__preview responsive-img image--loaded image--hide" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E1E2_168x136_mo.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E1E2_168x136_mo.png" alt="Galaxy Z Fold4" role="img" data-comp-name="image" src="http://images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E1E2_168x136_mo.png" aria-hidden="true"> 
+        <img class="image__main responsive-img image--loaded" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E1E2_168x136_mo.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E1E2_168x136_mo.png" alt="Galaxy S24 | S24+" role="img" data-comp-name="image" src="http://images.samsung.com/is/image/samsung/assets/in/2401/gnb/GNB_E1E2_168x136_mo.png" style=""> 
+       </div> <p class="nv00-gnb__featured-products-thumbnail-item-name">Galaxy S24 | S24+</p></a></li>
+     <li class="nv00-gnb__featured-products-thumbnail-item" role="menuitem"><a href="https://www.samsung.com/in/smartphones/galaxy-a55/" an-tr="nv00_gnb-feature image-navigation2" an-ca="navigation" an-ac="gnb" an-la="feature image:mobile:Galaxy A55 5G" class="nv00-gnb__featured-products-thumbnail-item-link"> <span class="badge-icon badge-icon--label badge-icon--bg-color-blue">NEW</span> 
+       <div class="image image--main-loaded"> 
+        <img class="image__preview responsive-img image--loaded image--hide" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/gnb/A55_168x136.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/gnb/A55_168x136.png" alt="Galaxy Z Fold4" role="img" data-comp-name="image" src="http://images.samsung.com/is/image/samsung/assets/in/gnb/A55_168x136.png" aria-hidden="true"> 
+        <img class="image__main responsive-img image--loaded" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/gnb/A55_168x136.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/gnb/A55_168x136.png" alt="Galaxy A55 5G" role="img" data-comp-name="image" src="http://images.samsung.com/is/image/samsung/assets/in/gnb/A55_168x136.png" style=""> 
+       </div> <p class="nv00-gnb__featured-products-thumbnail-item-name">Galaxy A55 5G</p></a></li>
+    </ul>
+    <button class="nv00-gnb__featured-products-thumbnail-item--next">
+     <svg class="icon" focusable="false" aria-hidden="true">
+      <use xlink:href="#next-regular" href="#next-regular"></use>
+     </svg></button>
+   </div>
+  </div>
+ </div></li> 
+<!-- main End --> 
+<li class="nv00-gnb__l0-menu"> <button class="nv00-gnb__l0-menu-btn" role="menuitem" aria-expanded="false" aria-haspopup="true">TV &amp; AV 
+  <svg class="icon" focusable="false" aria-hidden="true"> 
+   <use xlink:href="#next-bold" href="#next-bold"></use> 
+  </svg> </button> 
+ <div class="nv00-gnb__l1-menu-container left-side"> 
+  <!-- sideClass left-side --> 
+  <p class="nv00-gnb__l1-menu-container-title">TV &amp; AV</p> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Recommended 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/tvs/gaming-tv/" aria-label="Go to the another page">Why Neo QLED for gaming </a> </li> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">TVs 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/tvs/all-tvs/?oled-tv" aria-label="Go to the another page">OLED </a> </li> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">TV by Size 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">TV by Resolution 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Projectors 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/projectors/all-projectors/" aria-label="Go to the another page">All Projectors </a> </li> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Sound Devices 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+ </div></li> 
+<!-- main End --> 
+<li class="nv00-gnb__l0-menu"> <button class="nv00-gnb__l0-menu-btn" role="menuitem" aria-expanded="false" aria-haspopup="true">Home Appliances 
+  <svg class="icon" focusable="false" aria-hidden="true"> 
+   <use xlink:href="#next-bold" href="#next-bold"></use> 
+  </svg> </button> 
+ <div class="nv00-gnb__l1-menu-container left-side"> 
+  <!-- sideClass left-side --> 
+  <p class="nv00-gnb__l1-menu-container-title">Home Appliances</p> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Recommended 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Refrigerators 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/refrigerators/all-refrigerators/?bespoke" aria-label="Go to the another page">BESPOKE Refrigerators </a> </li> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Air Conditioners 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Washing Machines &amp; Dryers 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Vacuum Cleaners 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/vacuum-cleaners/all-vacuum-cleaners/?bespoke" aria-label="Go to the another page">BESPOKE Vacuum Cleaners </a> </li> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/vacuum-cleaners/all-vacuum-cleaners/?jet-stick-vacuums" aria-label="Go to the another page">Jet Stick Vacuum Cleaners </a> </li> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/vacuum-cleaners/robot/vr8500t-white-vr30t85513w-tl/" aria-label="Go to the another page">Robot Vacuum Cleaners </a> </li> 
+   </ul> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Dishwashers 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <!-- Merge -->
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Cooking Appliances 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Air Purifiers 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <!-- Merge -->
+   </ul> 
+  </div> 
+ </div></li> 
+<!-- main End --> 
+<li class="nv00-gnb__l0-menu"> <button class="nv00-gnb__l0-menu-btn" role="menuitem" aria-expanded="false" aria-haspopup="true">Laptop &amp; Monitors 
+  <svg class="icon" focusable="false" aria-hidden="true"> 
+   <use xlink:href="#next-bold" href="#next-bold"></use> 
+  </svg> </button> 
+ <div class="nv00-gnb__l1-menu-container left-side"> 
+  <!-- sideClass left-side --> 
+  <p class="nv00-gnb__l1-menu-container-title">Laptop &amp; Monitors</p> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Galaxy Book (Laptops) 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/computers/all-computers/?galaxy-book-360+galaxy-book4" aria-label="Go to the another page">Galaxy Book4 Pro 360 </a> </li> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/computers/all-computers/?galaxy-book4" aria-label="Go to the another page">Galaxy Book4 Pro </a> </li> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/computers/all-computers/?galaxy-book-360+galaxy-book4" aria-label="Go to the another page">Galaxy Book4 360 </a> </li> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/computers/all-computers/?galaxy-book+galaxy-book3" aria-label="Go to the another page">Galaxy Book3 </a> </li> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Galaxy Book By Size 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Monitors 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Memory &amp; Storage 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+ </div></li> 
+<!-- main End --> 
+<li class="nv00-gnb__l0-menu"> <button class="nv00-gnb__l0-menu-btn" role="menuitem" aria-expanded="false" aria-haspopup="true">Displays 
+  <svg class="icon" focusable="false" aria-hidden="true"> 
+   <use xlink:href="#next-bold" href="#next-bold"></use> 
+  </svg> </button> 
+ <div class="nv00-gnb__l1-menu-container "> 
+  <!-- sideClass  --> 
+  <p class="nv00-gnb__l1-menu-container-title">Displays</p> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Monitors 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">For Business 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+ </div></li> 
+<!-- main End -->
+<li class="nv00-gnb__l0-menu"> <a class="nv00-gnb__l0-menu-link" href="https://www.samsung.com/in/accessories" aria-label="Open in a new window" an-tr="nv00_gnb-1depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="Accessories" role="menuitem" target="_blank"> Accessories </a> </li> 
+<li class="nv00-gnb__l0-menu"> <a class="nv00-gnb__l0-menu-link" href="https://www.samsung.com/in/smartthings" aria-label="Open in a new window" an-tr="nv00_gnb-1depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="SmartThings" role="menuitem" target="_blank"> SmartThings </a> </li></ul>
+	                                <ul class="nv00-gnb__l0-menu-list right-menu" role="menubar">
+	                                    <li class="nv00-gnb__l0-menu"> <button class="nv00-gnb__l0-menu-btn" role="menuitem" aria-expanded="false" aria-haspopup="true">Support 
+  <svg class="icon" focusable="false" aria-hidden="true"> 
+   <use xlink:href="#next-bold" href="#next-bold"></use> 
+  </svg> </button> 
+ <div class="nv00-gnb__l1-menu-container right-side"> 
+  <!-- sideClass right-side --> 
+  <p class="nv00-gnb__l1-menu-container-title">Support</p> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Product Help 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Repairs &amp; Warranty 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Contact 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+   </ul> 
+  </div> 
+  <div class="nv00-gnb__l1-menu-wrap l1-l2-spread"> 
+   <p class="nv00-gnb__l1-menu"> <button class="nv00-gnb__l1-menu-btn" aria-label="Go to the another page">Additional Info 
+     <svg class="icon" focusable="false" aria-hidden="true"> 
+     </svg></button> </p> 
+   <ul class="nv00-gnb__l2-menu-list"> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/support/useful-tips-for-galaxy-z-series/" aria-label="Go to the another page">Galaxy Z series FAQs </a> </li> 
+    <li class="nv00-gnb__l2-menu"> <a class="nv00-gnb__l2-menu-link" href="https://www.samsung.com/in/support/samsung-product-support-hindi/" aria-label="Go to the another page">हिंदी / Hindi सहायता </a> </li> 
+   </ul> 
+  </div> 
+ </div></li> 
+<!-- main End -->
+<li class="nv00-gnb__l0-menu"> <a class="nv00-gnb__l0-menu-link" href="https://www.samsung.com/in/business/" aria-label="Open in a new window" an-tr="nv00_gnb-1depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="For Business" role="menuitem" target="_blank"> For Business </a> </li></ul>
+	                            </div>
+								
+								
+								<div class="nv00-gnb__utility-wrap">
+	                            	<div class="nv00-gnb__utility before-login">
+		                                        <a class="nv00-gnb__utility-btn" aria-expanded="false" aria-haspopup="true" an-tr="nv00_gnb-1depth-navigation2" an-ca="navigation" an-ac="gnb" an-la="login">
+		                                            <span class="hidden">Sign In</span>
+		                                            <svg class="icon" focusable="false" aria-hidden="true">
+		                                                <use xlink:href="#user-bold" href="#user-bold"></use>
+		                                            </svg>
+		                                        </a>
+		
+		                                        <ul class="nv00-gnb__utility-user-menu-list" role="menu" style="">
+		                                            <li class="nv00-gnb__utility-user-menu desktop-only" role="menuitem"><a class="nv00-gnb__utility-user-menu-link ssoSignIn" href="#">Log-In/Sign-Up </a></li>
+<li class="nv00-gnb__utility-user-menu" role="menuitem"><a class="nv00-gnb__utility-user-menu-link " href="https://www.samsung.com/in/web/search-orders">Orders </a></li>
+<li class="nv00-gnb__utility-user-menu" role="menuitem"><a class="nv00-gnb__utility-user-menu-link " href="https://www.samsung.com/in/mypage/myproducts/">Product Registration </a></li>
+<li class="nv00-gnb__utility-user-menu" role="menuitem"><a class="nv00-gnb__utility-user-menu-link " href="https://www.samsungdigitalservicecenter.com/">Digital Service Center </a></li></ul>
+		                                    </div>
+		                                <div class="nv00-gnb__utility hamburger">
+	                                    <button class="nv00-gnb__utility-btn" aria-expanded="false" aria-haspopup="true">
+	                                        <span class="hidden">Hamburger</span>
+	                                        <svg class="icon" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+	                                            <use xlink:href="#menu-bold" href="#menu-bold"></use>
+	                                        </svg>
+	                                    </button>
+	                                </div>
+	                            </div>
+	                        </div>
+				
+	                        <div class="nv00-gnb__dim-wrap" aria-hidden="true"></div>
+	                        <!--/* Layer Popup 존재 시, 아래 마크업 추가 */-->
+	                        <div class="nv00-gnb__layer-popup-wrap">
+	                            <div class="nv00-gnb__layer-popup-looping--start" tabindex="0"></div>
+	                            <!--/* Layer Popup: Empty Cart */-->
+	                            <div class="nv00-gnb__layer-popup-looping--end" tabindex="0"></div>
+	                        </div>
+	
+	                    </nav>
+	                    <!--/* // NV00 GNB Component */-->
+	</div>
+</body>   
+
+<script>
+
+	$(document).ready(function(){
+	 	var jScript = document.createElement("script");
+		jScript.src = "https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/nv00-gnb.js";
+		document.body.appendChild(jScript);
+		
+		/* alert("First READY"); */ 
+	});
+		 
+</script><div id="plLoadingBar">
+	<div class="loading1"></div>
+	<div class="loading2"></div>
+</div>
+<form id="frSsoNewForm" name='frSsoNewForm' action="#" method="GET">
+	<input type='hidden' id='response_type' name='response_type' value=''>
+	<input type='hidden' id='client_id' name='client_id' value=''>
+    <input type='hidden' id='locale' name='locale' value=''>
+    <input type='hidden' id='countryCode' name='countryCode' value=''>
+    <input type='hidden' id='redirect_uri' name='redirect_uri' value=''>
+    <input type='hidden' id='state' name='state' value=''>
+    <input type='hidden' id='goBackURL' name='goBackURL' value=''>
+    <input type='hidden' id='scope' name='scope' value=''>
+
+    <input type='hidden' id='redirect_menu' name='redirect_menu' value='main'>
+</form>
+
+<div id="errorMsgDiv" class="alert-dim-layer" style="display:none;">
+	<div class="dimBg"></div>
+	<div class="alert-layer mo-alert-layer">
+		<div class="alert-container">
+			<div class="alert-container-main">
+				<img src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/images/svg/warring-black.svg" alt="warringicon">
+				<div class="mo-alert-container-comment">
+					<h6></h6> 
+				</div>
+			</div>
+			<div class="alert-container-bottom">
+				<button id="errorMsgOKBtn" class="ys-line-black-btn" onClick="javascript:errorMsgHide();">CONFIRM</button>
+						</div>
+		</div>
+	</div>
+</div>
+<head>
+	<meta name="csrf-token" content="84699db2-0817-4930-85eb-34423a897435">	
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-18dc4f75-4dc2-46c5-be03-b0442aaa4402","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+<script>!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProperty(r)&&(void 0===n[r]?n[r]=i[r]:n[r].constructor===Object&&i[r].constructor===Object?o(n[r],i[r]):n[r]=i[r])}try{var n=decodeURIComponent("%7B%20%22request_client_hints%22%3A%20true%20%7D");if(n.length>0&&window.JSON&&"function"==typeof window.JSON.parse){var i=JSON.parse(n);void 0!==window.BOOMR_config?o(window.BOOMR_config,i):window.BOOMR_config=i}}catch(r){window.console&&"function"==typeof window.console.error&&console.error("mPulse: Could not parse configuration",r)}}();</script>
+                              <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="VRZKC-5BSTD-4EWS3-R2J59-B8GYB",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"VRZKC-5BSTD-4EWS3-R2J59-B8GYB",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e="false"=="true"?1:0,t="cookiepresent",n="m62t32axgdweczqoo4ia-f-ee08b4c94-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"37","ak.cp":"886666","ak.ai":parseInt("293013",10),"ak.ol":"0","ak.cr":21,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"bed5efd","ak.r":37483,"ak.a2":e,"ak.m":"x","ak.n":"essl","ak.bpcip":"103.181.61.0","ak.cport":64421,"ak.gh":"23.213.1.140","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1712224016","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Sf8vQlilCl4QTW4Podw2fuePGxfRpoeiVKz6LZwLkhs28KnSVu0+/4Q4bHksQThdcfz4Ylmv7IyBxVUedmNs3KhkQ0kybNRZyOS8V2wguXR1xup38OlAtj+Lk0V/+fDgDju+tZt8xDa+RCV66sVjDBsMgQWjx+BAuoh0FXx90/h/qAZ5oVH0uIq7iS2dctzSuyblSAWy+UhU6TvBzGjThXJAWOKkxJAH2WXDzlYlRWHwFbhS9i685PE5KYtJnrGmeLFfmN+SKs7tXXQHaz8rBeNIaQZJ4nrO3yOLRckc4MyUKMaUFnVXP5ez1MWjeEvwnZWp4+3EPkb4Fm6ovNxpNog64rVpxFhuxpYaFmWaRMbDqcH8tKl/YDLTKz3O9kWFgUzRY3VAYfSHp0GHVFZDpqJHoCK48nJGmUbyK8jq7cE=","ak.pv":"3397","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","https://www.samsung.com/in/support/your-service/ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","https://www.samsung.com/in/support/your-service/ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<script>
+var csrf_token = $('meta[name="csrf-token"]').attr('content');
+
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS)$/.test(method));
+}
+
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+            xhr.setRequestHeader("X-CSRF-TOKEN", csrf_token);
+        }
+    }
+});
+
+$(document).ajaxComplete(function(evnet, xhr, settings){ 
+	if(xhr.status=="406"){
+		if(typeof errorMsgShowCallback == 'function'){
+			errorMsgShowCallback("The user session has expired.",function(){location.reload();})	
+		}
+	}
+});
+</script>
+
+
+	<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/gnb_gro3.css" type="text/css"/> 
+		<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/footer_gro3.css" type="text/css"/> 
+		<link rel="stylesheet" href="http://cdn.samsung.com/etc/designs/smg/global/templates/page.css" type="text/css"/>
+		<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/ys_common.css" type="text/css"/> 
+	<script>
+$(document).ready(function() {
+	sprinklrAppId = "";
+	if(sprinklrAppId != ""){
+		window.sprChatSettings = window.sprChatSettings || {};
+		window.sprChatSettings = {appId: sprinklrAppId};
+		(function(){var t=window,e=t.sprChat,a=e&&!!e.loaded,n=document,r=function(){r.m(arguments)};r.q=[],r.m=function(t){r.q.push(t)},t.sprChat=a?e:r;var o=function(){var e=n.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://prod-live-chat.sprinklr.com/api/livechat/handshake/widget/"+t.sprChatSettings.appId,e.onerror=function(){t.sprChat.loaded=!1},e.onload=function(){t.sprChat.loaded=!0};var a=n.getElementsByTagName("script")[0];a.parentNode.insertBefore(e,a)};"function"==typeof e?a?e("update",t.sprChatSettings):o():"loading"!==n.readyState?o():n.addEventListener("DOMContentLoaded",o)})()
+	}
+
+});
+</script><section class="ys-intro" style="">
+	<div class="ys-intro-wrap">
+		<div class="ys-intro-wrap-inner ys-container">
+			<h1>Your Service</h1>
+			<p class="sub-title">
+				Welcome to Your Service, where you can find a wide range of services for your Samsung products</p>
+			<div class="ys-row">
+				<div class="ys-intro-wrap-white col-6">
+							<p class="ys-intro-white-title">Sign in with your Samsung Account</p>
+							<p class="ys-intro-info">Please signin to get up to date information on your repairs,  Appointment status, technical support queries, Purchase or registraton extended warranty pack and do more</p>
+							<div class="flo-center">
+								<a href="#" class="ys-line-black-btn ssoSignIn" title="SIGN IN" aria-label="SIGN IN">SIGN IN</a>
+							</div>
+						</div>
+						<div class="ys-intro-wrap-dark col-6">
+							<p class="ys-intro-dark-title">Why Register?</p>
+							<p class="ys-intro-info">Registering for a Samsung account is simple and provides you with access to a variety of Samsung services.</p>
+							<div class="account-btn">
+								<a href="#" class="ys-line-white-btn ssoSignUp" title="CREATE AN ACCOUNT" aria-label="CREATE AN ACCOUNT">CREATE AN ACCOUNT</a>
+							</div>
+						</div>
+					</div>
+
+		</div>
+	</div>
+	<div class="ys-intro-img">
+		<img src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/images/intro-top.jpg" alt="yourservice">
+	</div>
+	
+</section>
+
+<section class="ys-benefits">
+ 	<h2 class="ys-header">Here are some popular services</h2>
+    <div class="ys-row">
+       <div class="ys-text-container">
+				
+				<a href="javascript:void(0);" onclick="javascript:showLoginMenuSelect('/in/support/your-service/support-request','support-request');">
+					<div class="text-img">
+						<img class="" src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/images/svg/ys-support-request.svg" alt="icon">
+							</div>
+					<h5 class="ys-text-header">
+						Request Support</h5>
+					
+					<p class="ys-text-area-p" title="">
+								Do you have any question or issue about your product? Once you ask a question, We will contact  you.</p>
+							</a>
+			</div>
+			<div class="ys-text-container">
+				
+				<a href="javascript:void(0);" onclick="javascript:showLoginMenuSelect('/in/support/your-service/repair-appointment','repair-appointment');">
+					<div class="text-img">
+						<img class="" src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/images/svg/ys-book-an-appointment.svg" alt="icon">
+							</div>
+					<h5 class="ys-text-header">
+						Online Appointment</h5>
+					
+					<p class="ys-text-area-p" title="">
+								Does your product require service? You can book an appointment conveniently your product. via online </p>
+							<p class="ys-text-area-msg">Mobile Phones & Tablets only</p>
+									</a>
+			</div>
+			<div class="ys-text-container">
+				
+				<a href="javascript:void(0);" onclick="javascript:showLoginMenuSelect('/in/support/your-service/track-repair','track-repair');">
+					<div class="text-img">
+						<img class="" src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/images/svg/ys-trackmyrepair.svg" alt="icon">
+							</div>
+					<h5 class="ys-text-header">
+						Track Repair Status</h5>
+					
+					<p class="ys-text-area-p" title="">
+								You can inquiry your repair status or question status using Track my repair</p>
+							</a>
+			</div>
+			<div class="ys-text-container">
+				
+				<a href="javascript:void(0);" onclick="javascript:showLoginMenuSelect('/in/support/your-service/extended-warranty','extended-warranty');">
+					<div class="text-img">
+						<img class="" src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/images/svg/ys-warranty.svg" alt="icon">
+							</div>
+					<h5 class="ys-text-header">
+						Warranty</h5>
+					
+					<p class="ys-text-area-p" title="">
+								Register Extended Warranty Pack</p>
+							</a>
+			</div>
+			</div>
+	<p class="ys-goto-support">For Printer inquiry, please visit HP website<a class="dark_blue" href="https://www.hp.com/support/samsung" target="_blank" title="https://www.hp.com/support/samsung" aria-label="https://www.hp.com/support/samsung">https://www.hp.com/support/samsung</a></p>
+	<p class="intro-notice">Users who have not  logged in since September 2016 have to recreate their log-in Id(s)</p>
+	</section>
+	<div class="dim-msg-layer" style="display:none" id="mainGuestPopular" >
+	<div class="dimBg"></div>
+	<div id="layer2" class="pop-msg-warp">
+		<button type="button" class="close-popup" onclick="javascript:hidePopup('mainGuestPopular');" title="close popup"><img src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/images/svg/ys-close.svg" alt="closepopup"/></button>
+		<div class="pop-container">
+			<div class="pop-container-title"></div>
+			<div class="pop-container-main">
+				<p class="txt-center">Kindly login or register for a Samsung Account with us to benefit from the full suite of services for your product. Click "Continue" if you would like proceed as Guest</p>
+			</div>
+			<div class="pop-container-bottom">
+				<button type="button" class="ys-filled-black-btn ssoSignIn" title="SIGN IN">SIGN IN</button>
+				<button type="button" class="ys-line-black-btn" onclick="javascript:moveGuestMenu(this);" id="guestMoveUrl" menuurl="" moveurl="" title="Continue">Continue</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="dim-msg-layer" style="display:none; z-index: 2000;" id="mainNotice" >
+	
+	<style type="text/css" scoped="scoped">
+				#htmlNotice p {
+					line-height: 1.4em;
+					padding: 8px 0;
+					font-size: 0.8em;
+				}
+				
+				#htmlNotice .title {
+					line-height: 2.0em;
+					padding: 0 0;
+					font-size: 1.0em;
+					/*text-align: left;*/
+				}
+				
+				#htmlNotice p a {
+					text-decoration: underline;
+					font-style: italic;
+					cursor: pointer;
+				}
+				
+				.text-img img {
+					-webkit-filter: opacity(.5) drop-shadow(0 0 0 white);
+		 			filter: opacity(.5) drop-shadow(0 0 0 white);
+				}
+				
+			</style>
+		<div class="dimBg"></div>
+	<div id="layer2" class="pop-layer" style="max-width: 600px;">
+		<button type="button" class="close-popup" onclick="javascript:hidePopup('mainNotice');" title="close popup"><img src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/images/svg/ys-close.svg" alt="closepopup"/></button>
+		<div class="pop-container" style="padding: 25px 20px;">
+			<div class="pop-container-title">
+				</div>
+			<div class="pop-container-main" id="htmlNotice">
+				</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function() {
+
+	if("in" == "in" && "" == "dsc") {
+		$(".gnb").addClass("not_header");
+		$(".footer").addClass("not_header");
+	}
+
+	noticeView();
+
+	if('DE' == COUNTRY_CODE_UC) {
+        gtag('event', 'conversion', {'send_to': 'AW-940645823/lcKGCImEv8cBEL-7xMAD'});
+    }
+	
+	if("Y" == ""){
+    	setSignInUp("in");
+    } 
+});
+
+
+function noticeView() {
+	if("Y" == "N") {
+		$("#mainNotice").show();
+	}
+}
+
+var tmpMenuLandingArr = new Array(); 
+	
+	tmpMenuLandingArr.push({ menuLink: "my-product", menuLoginYn: "Y" });
+		
+	tmpMenuLandingArr.push({ menuLink: "support-request", menuLoginYn: "Y" });
+		
+	tmpMenuLandingArr.push({ menuLink: "repair-appointment", menuLoginYn: "Y" });
+		
+	tmpMenuLandingArr.push({ menuLink: "track-repair", menuLoginYn: "Y" });
+		
+	tmpMenuLandingArr.push({ menuLink: "track-repair", menuLoginYn: "N" });
+		
+	tmpMenuLandingArr.push({ menuLink: "extended-warranty", menuLoginYn: "Y" });
+		
+	tmpMenuLandingArr.push({ menuLink: "ans", menuLoginYn: "Y" });
+	
+
+function showLoginMenuSelect(moveUrl, menuUrl){
+
+	var tmpCountMenuName =_.countBy(tmpMenuLandingArr, "menuLink");
+	
+	var selectCheckFlag = false;
+	var loginCheckFlag = false;
+
+	$.each(tmpCountMenuName, function(key, value){
+		if(key == menuUrl){
+			if(parseInt(value) > 1){
+				selectCheckFlag = true;
+			}
+		}	
+	});
+
+	$.each(tmpMenuLandingArr, function(index, item){
+		if(item.menuLink == menuUrl){
+			if(item.menuLoginYn == "Y"){
+				loginCheckFlag = true;
+			}
+		}
+	});
+	
+	$("#redirect_menu").val("");
+
+	if(selectCheckFlag){
+		$("#mainGuestPopular").hide();
+		$("#guestMoveUrl").attr("moveurl", moveUrl);
+		$("#redirect_menu").val(menuUrl);
+		$("#mainGuestPopular").show();	
+	} else {
+		if(loginCheckFlag){
+			$("#redirect_menu").val(menuUrl);
+			s_control_click("events,eVar34", "event34", "event34,at your service:"+menuUrl, "o", "support_content");
+			$(".ssoSignIn").first().trigger('click',['trigger']);
+		} else {
+			s_control_click("events,eVar34", "event34", "event34,at your service:"+menuUrl, "o", "support_content");
+			location.href = moveUrl;
+		}
+	}
+}
+
+function moveGuestMenu(obj){
+	var moveUrl = $(obj).attr("moveurl");
+	var menuUrl = $("#redirect_menu").val();
+	if(moveUrl != ""){
+		s_control_click("events,eVar34", "event34", "event34,at your service:"+menuUrl, "o", "support_content");
+		location.href=moveUrl;
+	}
+}
+function moveEulaWarranty(){
+	var submitUrl = contextPath+"/in/support/your-service/warranty-eula";
+	openPage(submitUrl);
+	
+}
+</script>
+
+<script>
+	var dropdowns = $(".dropdown");
+
+	dropdowns.find("dt").click(function(){
+		dropdowns.find("dd ul").hide();
+		$(this).next().children().toggle();
+	});
+
+	dropdowns.find("dd ul li a").click(function(){
+		var leSpan = $(this).parents(".dropdown").find("dt a span");
+
+		$(this).parents(".dropdown").find('dd a').each(function(){
+			$(this).removeClass('selected');
+		});
+
+		leSpan.html($(this).html());
+
+		if($(this).hasClass('default')){
+			leSpan.removeClass('selected')
+		}else{
+			leSpan.addClass('selected');
+			$(this).addClass('selected');
+		}
+
+		$(this).parents("ul").hide();
+	});
+
+	$(document).bind('click', function(e){
+		if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+	});
+
+</script>
+	<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/gnb_gro3.css" type="text/css"/> 
+		<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/footer_gro3.css" type="text/css"/> 
+		<link rel="stylesheet" href="http://cdn.samsung.com/etc/designs/smg/global/templates/page.css" type="text/css"/>
+		<link rel="stylesheet" href="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/css/ys_common.css" type="text/css"/> 
+	<footer id="footer">
+        <div class="footer"> 
+ <div class="footer-column"> 
+  <div class="footer-column__item footer-column__item--flex"> 
+   <div class="footer-category"> 
+    <strong class="footer-category__title">Product &amp; Service</strong> 
+    <a class="footer-category__anchor" href="javascript:void(0);" role="button"><span class="hidden">open</span> 
+     <svg class="icon" focusable="false">
+      <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#open-down-regular"></use>
+     </svg> </a> 
+    <div class="footer-category__list-wrap"> 
+     <ul class="footer-category__list"> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/smartphones/">Smartphones</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/tablets/">Tablets</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/audio-sound/">Audio Sound</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/watches/">Watches</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/apps/smart-switch/">Smart Switch</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/mobile-accessories/">Mobile Accessories</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/tvs/">TVs</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/audio-devices/">Sound Devices</a> </li> 
+     </ul> 
+     <ul class="footer-category__list"> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/refrigerators/">Refrigerators</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/washers-and-dryers/">Laundry</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/air-conditioners/">Air Solutions</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/cooking-appliances/">Cooking Appliances</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/monitors/">Monitors</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/memory-storage/">Memory Storage</a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="footer-column__item "> 
+   <div class="footer-category"> 
+    <strong class="footer-category__title">Shop</strong> 
+    <a class="footer-category__anchor" href="javascript:void(0);" role="button"><span class="hidden">open</span> 
+     <svg class="icon" focusable="false">
+      <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#open-down-regular"></use>
+     </svg> </a> 
+    <div class="footer-category__list-wrap"> 
+     <ul class="footer-category__list"> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/shop-faq/">FAQs</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="http://www.samsung.com/in/shop-faq/#contact-info">Contact Us</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/offer/online/welcome-voucher/">Welcome Voucher</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/microsite/shop-referral/">Samsung Referral Advantage</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/microsite/student-advantage/">Samsung Student Advantage</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/microsite/defence-purchase-program/">Defence Purchase Program</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/multistore/corporate/prelogin/">Corporate Employee Program</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/store/bulk/">Corporate Bulk Purchase</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/samsung-experience-store/">Samsung Experience Store</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/storelocator/">Store Locator</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/microsite/smart-club/">Smart Club</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/shop-terms-of-use/">Terms of Use</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/shop-faq/products-and-orders/how-can-i-report-grievance-concerning-orders-placed-on-samsung-dot-com-website-or-samsung-shop-app/">Order Grievance Redressal</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/explore/">Explore</a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="footer-column__item "> 
+   <div class="footer-category"> 
+    <strong class="footer-category__title">Support</strong> 
+    <a class="footer-category__anchor" href="javascript:void(0);" role="button"><span class="hidden">open</span> 
+     <svg class="icon" focusable="false">
+      <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#open-down-regular"></use>
+     </svg> </a> 
+    <div class="footer-category__list-wrap"> 
+     <ul class="footer-category__list"> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="https://wa.me/91180057267864" target="_blank" title="Open in a New Window">WhatsApp Us (हिंदी/ English) 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="https://wa.me/91180057267864?text=hi" target="_blank" title="Open in a New Window">Sign Language 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="https://samsungdigitalservicecenter.com/?action=email" target="_blank" title="Open in a New Window">Email Us 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/support/contact/">Call Us</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/support/email-the-ceo/">Email the CEO</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="http://r2.community.samsung.com/t5/India/ct-p/in/" target="_blank" title="Open in a New Window">Community 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/mypage/myproducts/">Product Registration</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/mypage/myrepair/track-repair/">Track Repair</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/support/service-center/">Service Centre</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="https://survey3.medallia.com/?web&amp;c=33&amp;lng=en" target="_blank" title="Open in a New Window">Share Your Opinion 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="footer-column__item "> 
+   <div class="footer-category"> 
+    <strong class="footer-category__title">Account &amp; Community</strong> 
+    <a class="footer-category__anchor" href="javascript:void(0);" role="button"><span class="hidden">open</span> 
+     <svg class="icon" focusable="false">
+      <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#open-down-regular"></use>
+     </svg> </a> 
+    <div class="footer-category__list-wrap"> 
+     <ul class="footer-category__list"> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/mypage/">My Page</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/mypage/myproducts/">My Products</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/web/mypage/orders/">Orders</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/web/mypage/wishlist/">Wishlist</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/web/mypage/vouchers/">Vouchers</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/web/my-referrals/">My Referrals</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/mypage/myproducts/">Service</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://r2.community.samsung.com/t5/India/ct-p/in?profile.language=en">Community</a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="footer-column__item "> 
+   <div class="footer-category"> 
+    <strong class="footer-category__title">Sustainability</strong> 
+    <a class="footer-category__anchor" href="javascript:void(0);" role="button"><span class="hidden">open</span> 
+     <svg class="icon" focusable="false">
+      <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#open-down-regular"></use>
+     </svg> </a> 
+    <div class="footer-category__list-wrap"> 
+     <ul class="footer-category__list"> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/sustainability/environment/">Environment</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/sustainability/security-and-privacy/">Security &amp; Privacy</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/sustainability/accessibility/overview/">Accessibility</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/sustainability/diversity-and-inclusion/">Diversity · Equity · Inclusion</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="http://csr.samsung.com/en/main.do" target="_blank" title="Open in a New Window">Corporate Citizenship 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="https://www.samsung.com/global/sustainability" target="_blank" title="Open in a New Window">Corporate Sustainability 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+   <div class="footer-category"> 
+    <strong class="footer-category__title">About Us</strong> 
+    <a class="footer-category__anchor" href="javascript:void(0);" role="button"><span class="hidden">open</span> 
+     <svg class="icon" focusable="false">
+      <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#open-down-regular"></use>
+     </svg> </a> 
+    <div class="footer-category__list-wrap"> 
+     <ul class="footer-category__list"> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/about-us/company-info/">Company Info</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/about-us/business-area/">Business Area</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/about-us/brand-identity/">Brand Identity</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/about-us/careers/">Careers</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="http://www.samsung.com/global/ir/" target="_blank" title="Open in a New Window">Investor Relations 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="http://news.samsung.com/in" target="_blank" title="Open in a New Window">Newsroom 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link" href="https://www.samsung.com/in/about-us/ethics/">Ethics</a> </li> 
+      <li class="footer-category__item"> <a class="footer-category__link new-window" href="http://design.samsung.com/global/index.html" target="_blank" title="Open in a New Window">Samsung Design&nbsp; 
+        <svg class="icon" focusable="false">
+         <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#outlink-bold"></use>
+        </svg> </a> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="footer-bottom"> 
+  <div class="footer-copyright-wrap"> 
+   <div class="footer-copyright-align"> 
+    <p class="footer-copyright">Copyright ⓒ 1995-2024 SAMSUNG All Rights reserved.</p> 
+    <div class="footer-legal"> 
+     <p><br>Please dispose of e-waste and plastic waste responsibly.<br>For more information or e-waste pick up, please call 1800 5 7267864 or <a href="https://www.samsung.com/in/microsite/care-for-clean-india/">click here</a> for more details.<br><br>Registered Office Address: 6th Floor, DLF Centre, Sansad Marg, New Delhi-110001<br>Corporate Identification Number (CIN): U31900DL1995PTC071387</p> 
+    </div> 
+   </div> 
+   <div class="footer-language"> 
+    <a class="footer-language__anchor" href="javascript:void(0);" role="button">India/English 
+     <svg class="icon" focusable="false">
+      <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#next-bold"></use>
+     </svg> </a> 
+    <div class="footer-language__panel"> 
+     <div class="footer-language__dimmed" aria-hidden="true"></div> 
+     <div class="footer-language__content"> 
+      <a class="footer-language__link" href="https://www.samsung.com/in/function/ipredirection/ipredirectionLocalList/">Choose your Location 
+       <svg class="icon" focusable="false">
+        <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#next-bold"></use>
+       </svg> </a> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="footer-language-wrap"> 
+   <div class="footer-language"> 
+    <a class="footer-language__anchor" href="javascript:void(0);" role="button">India/English 
+     <svg class="icon" focusable="false">
+      <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#next-bold"></use>
+     </svg> </a> 
+    <div class="footer-language__panel"> 
+     <div class="footer-language__dimmed" aria-hidden="true"></div> 
+     <div class="footer-language__content"> 
+      <a class="footer-language__link" href="https://www.samsung.com/in/function/ipredirection/ipredirectionLocalList/">Choose your Location 
+       <svg class="icon" focusable="false">
+        <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#next-bold"></use>
+       </svg> </a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="footer-terms"> 
+    <ul class="footer-terms__list"> 
+     <li class="footer-terms__item"> <a class="footer-terms__link" href="#">Accessibility Help</a> </li> 
+     <li class="footer-terms__item"> <a class="footer-terms__link" href="https://www.samsung.com/in/info/privacy/">Privacy</a> </li> 
+     <li class="footer-terms__item"> <a class="footer-terms__link" href="https://www.samsung.com/in/info/legal/">Legal</a> </li> 
+     <li class="footer-terms__item"> <a class="footer-terms__link" href="https://www.samsung.com/in/info/csr-policy/">CSR Policy</a> </li> 
+     <li class="footer-terms__item"> <a class="footer-terms__link" href="https://www.samsung.com/in/info/sitemap/">Sitemap</a> </li> 
+    </ul> 
+   </div> 
+   <div class="footer-sns"> 
+    <span class="footer-sns__title">Stay in the Loop?</span> 
+    <ul class="footer-sns__list"> 
+     <li class="footer-sns__item"> <a class="footer-sns__link" href="http://www.facebook.com/SamsungIndia" target="_blank" title="Open in a New Window"> 
+       <svg class="icon" focusable="false">
+        <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#facebook-bold"></use>
+       </svg> </a> </li> 
+     <li class="footer-sns__item"> <a class="footer-sns__link" href="http://twitter.com/samsungindia" target="_blank" title="Open in a New Window"> 
+       <svg class="icon" focusable="false">
+        <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#twitter-bold"></use>
+       </svg> </a> </li> 
+     <li class="footer-sns__item"> <a class="footer-sns__link" href="http://www.instagram.com/samsungindia/" target="_blank" title="Open in a New Window"> 
+       <svg class="icon" focusable="false">
+        <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#instagram-bold"></use>
+       </svg> </a> </li> 
+     <li class="footer-sns__item"> <a class="footer-sns__link" href="http://www.youtube.com/SamsungMobileIndia" target="_blank" title="Open in a New Window"> 
+       <svg class="icon" focusable="false">
+        <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#youtube-bold"></use>
+       </svg> </a> </li> 
+     <li class="footer-sns__item"> <a class="footer-sns__link" href="http://www.linkedin.com/company/samsung-india" target="_blank" title="Open in a New Window"> 
+       <svg class="icon" focusable="false">
+        <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#linked-in-bold"></use>
+       </svg> </a> </li> 
+     <li class="footer-sns__item"> <a class="footer-sns__link" href="http://bit.ly/31QN4lI" target="_blank" title="Open in a New Window"> 
+       <svg class="icon" focusable="false">
+        <use xlink:href="https://www.samsung.com/sg/support/your-service/integresources/resources/images/svg-sprite.svg#whatsapp-bold"></use>
+       </svg> </a> </li> 
+    </ul> 
+   </div> 
+  </div> 
+ </div> 
+</div></footer>
+
+<script>
+	function s_control_click(vLinkTrackVars, vLinkTrackEvents,
+			vLinkTrackValues, vType, vTypeName) {
+		s_control_click_org(vLinkTrackVars, vLinkTrackEvents, vLinkTrackValues,
+				vType, vTypeName);
+	}
+</script>
+
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/gnb_gro3.js"></script>     
+<script src="https://www.samsung.com/sg/support/your-service/integresources/cybersvc/js/footer_gro3.js"></script>
+	</div>
+</body>
+
+<!-- Mirrored from www.samsung.com/in/support/your-service/main by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Apr 2024 10:07:22 GMT -->
+</html>

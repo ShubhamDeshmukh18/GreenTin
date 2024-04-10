@@ -1,0 +1,20 @@
+.ot02-error-page{width:100%;max-width:1440px;margin:0 auto;position:relative;overflow:hidden;font-size:0;display:-webkit-box;display:-ms-flexbox;display:flex;padding:230px 208px;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.ot02-error-page__logo{display:block;width:360px;height:360px;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}
+.ot02-error-page__content{display:block;max-width:620px;margin-left:44px;word-wrap:break-word;-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}
+.ot02-error-page__headline{font-family:'SamsungSharpSans',arial,sans-serif;font-weight:bold;font-size:48px;line-height:1.2}
+.ot02-error-page__desc{font-size:18px;line-height:1.33;margin-top:16px}
+.ot02-error-page__cta{margin-top:48px}
+@media only screen and (min-width:768px) and (max-width:1440px){.ot02-error-page{max-width:100vw;padding:15.97222222vw 14.44444444vw}
+.ot02-error-page__logo{width:25vw;height:25vw}
+.ot02-error-page__content{max-width:43.05555556vw;margin-left:3.05555556vw}
+.ot02-error-page__headline{font-size:3.33333333vw}
+.ot02-error-page__desc{font-size:1.25vw;margin-top:1.11111111vw}
+.ot02-error-page__cta{margin-top:3.33333333vw}
+}
+@media only screen and (max-width:767px){.ot02-error-page{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:100vw;padding:22.22222222vw 6.66666667vw}
+.ot02-error-page__logo{margin:0 auto;width:50vw;height:50vw}
+.ot02-error-page__content{margin:0;max-width:86.66666667vw;margin-top:6.66666667vw;text-align:center}
+.ot02-error-page__headline{font-size:8.33333333vw;line-height:1.33}
+.ot02-error-page__desc{font-size:3.88888889vw;margin-top:4.44444444vw}
+.ot02-error-page__cta{margin-top:8.88888889vw}
+}

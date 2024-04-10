@@ -1,0 +1,68 @@
+.hd07-firework-live-commerce-kv{overflow:hidden;position:relative;width:100%;max-width:1440px;margin:0 auto;font-size:0}
+.hd07-firework-live-commerce-kv .active{display:block}
+.hd07-firework-live-commerce-kv .deactive{display:none}
+.hd07-firework-live-commerce-kv__slide{position:relative;width:100%;height:640px}
+.hd07-firework-live-commerce-kv__badge{margin-bottom:8px}
+.hd07-firework-live-commerce-kv__background-media-wrap{position:relative;height:100%;overflow:hidden;z-index:500}
+.hd07-firework-live-commerce-kv__background-media-wrap .image{position:absolute;top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:1440px}
+.hd07-firework-live-commerce-kv__headline{font-family:'SamsungSharpSans',arial,sans-serif;font-weight:bold;font-size:48px;line-height:1.2;color:currentColor;word-wrap:break-word}
+.hd07-firework-live-commerce-kv__desc{margin-top:24px;font-size:18px;line-height:1.33;color:currentColor;word-wrap:break-word}
+.hd07-firework-live-commerce-kv__cta-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:40px}
+.hd07-firework-live-commerce-kv__cta-wrap .cta{text-shadow:none}
+.hd07-firework-live-commerce-kv__cta-wrap fw-share{--fw-share-font-family:'SamsungOne',arial,sans-serif;--fw-share-font-size:14px;--fw-share-font-weight:700;--fw-share-background:black;--fw-share-height:40px;--fw-share-hover-background:rgba(0,0,0,0.6);--fw-share-hover-font-size:14px;--fw-share-hover-font-weight:700}
+.hd07-firework-live-commerce-kv .text-color--black.text-shadow{text-shadow:0 0 3px rgba(255,255,255,0.75)}
+.hd07-firework-live-commerce-kv .text-color--white.text-shadow{text-shadow:0 0 3px rgba(0,0,0,0.75)}
+.hd07-firework-live-commerce-kv__text-wrap{position:absolute;width:620px;z-index:600}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-top-left{top:80px;left:88px}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-top-center{width:720px;top:80px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-top-center .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-top-right{top:80px;right:88px}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-middle-left{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);left:88px}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-middle-center{width:720px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);text-align:center}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-middle-center .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-middle-right{top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);right:88px}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-bottom-left{bottom:112px;left:88px}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-bottom-center{width:720px;bottom:112px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);text-align:center}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-bottom-center .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-bottom-right{bottom:112px;right:88px}
+@media only screen and (min-width:768px) and (max-width:1440px){.hd07-firework-live-commerce-kv__slide{height:44.44444444vw}
+.hd07-firework-live-commerce-kv__badge{margin-bottom:.55555556vw}
+.hd07-firework-live-commerce-kv__background-media-wrap .image{width:100vw}
+.hd07-firework-live-commerce-kv__headline{font-size:3.33333333vw}
+.hd07-firework-live-commerce-kv__desc{margin-top:1.66666667vw;font-size:1.25vw}
+.hd07-firework-live-commerce-kv__cta-wrap{margin-top:2.77777778vw}
+.hd07-firework-live-commerce-kv__cta-wrap fw-share{--fw-share-font-size:.97222222vw;--fw-share-height:2.77777778vw;--fw-share-hover-font-size:.97222222vw}
+.hd07-firework-live-commerce-kv__text-wrap{width:43.05555556vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-top-left{top:5.55555556vw;left:6.11111111vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-top-center{width:50vw;top:5.55555556vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-top-right{top:5.55555556vw;right:6.11111111vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-middle-left{left:6.11111111vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-middle-center{width:50vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-middle-right{right:6.11111111vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-bottom-left{bottom:7.77777778vw;left:6.11111111vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-bottom-center{width:50vw;bottom:7.77777778vw}
+.hd07-firework-live-commerce-kv__text-wrap--desktop-bottom-right{bottom:7.77777778vw;right:6.11111111vw}
+}
+@media only screen and (max-width:767px){.hd07-firework-live-commerce-kv__slide{height:150vw}
+.hd07-firework-live-commerce-kv__background-media-wrap .image{width:100% !important}
+.hd07-firework-live-commerce-kv__headline{font-size:8.33333333vw;line-height:1.33}
+.hd07-firework-live-commerce-kv__desc{margin-top:4.44444444vw;font-size:3.88888889vw}
+.hd07-firework-live-commerce-kv__cta-wrap{margin-top:6.66666667vw;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+.hd07-firework-live-commerce-kv__cta-wrap fw-share{--fw-share-font-size:3.88888889vw;--fw-share-height:11.11111111vw;--fw-share-hover-font-size:3.88888889vw}
+.hd07-firework-live-commerce-kv__text-wrap{width:86.66666667vw;top:auto;bottom:auto;left:50%;right:auto;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-top-left{top:11.11111111vw;text-align:left}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-top-center{top:11.11111111vw;text-align:center}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-top-center .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-top-right{top:11.11111111vw;text-align:right}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-top-right .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-middle-left{top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);text-align:left}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-middle-center{top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);text-align:center}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-middle-center .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-middle-right{top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);text-align:right}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-middle-right .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-bottom-left{bottom:22.22222222vw;text-align:left}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-bottom-center{bottom:22.22222222vw;text-align:center}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-bottom-center .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-bottom-right{bottom:22.22222222vw;text-align:right}
+.hd07-firework-live-commerce-kv__text-wrap--mobile-bottom-right .hd07-firework-live-commerce-kv__cta-wrap{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+}

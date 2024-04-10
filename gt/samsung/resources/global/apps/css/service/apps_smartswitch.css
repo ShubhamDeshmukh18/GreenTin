@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/* LAYOUT */
+.apps_cr {max-width:1440px; margin:0 auto; box-sizing:border-box;}
+.apps_cr [class*="m_content-"] {overflow:hidden;}
+.apps_cr [class*="m_content-"].center .f_header {margin:0 auto; text-align:center;}
+.apps_cr [class*="m_content-"].gray {color:#fff; background-color:#666;}
+.apps_cr [class*="m_content-"].gray .tit,
+.apps_cr [class*="m_content-"].gray .desc {color:#fff;}
+.apps_cr [class*="m_content-"] .disclaimer {font-size:16px; line-height:32px; box-sizing:border-box;}
+
+/* COMMON - DEVICE CHECKE BUTTON */
+.apps_cr .use_desktop,
+.apps_cr .use_mobile_tablet {display:none !important;}
+.desktop .apps_cr .use_desktop {display:inline-block !important;}
+.desktop .apps_cr .use_mobile_tablet {display:none !important;}
+.samsung-device.mobile .apps_cr .use_mobile_tablet {display:inline-block !important;}
+.mobile.desktop .apps_cr .use_desktop,
+.mobile .apps_cr .use_desktop  {display:none !important;}
+
+/* BUTTON */
+.apps_cr [class*="btn-window"]:after {display:inline-block; width:11px; height:11px; margin-left:8px; background:url('http://images.samsung.com/is/content/samsung/assets/apps/global/smart-switch/common/ico-newwindow-black.svg') no-repeat; background-size:100%; transition:background ease-in-out 0.3s; content:"";}
+.apps_cr .btn-window-black:after {background:url('http://images.samsung.com/is/content/samsung/assets/apps/global/smart-switch/common/ico-newwindow-white.svg') no-repeat;}
+.apps_cr .btn-window-white:after {background:url('http://images.samsung.com/is/content/samsung/assets/apps/global/smart-switch/common/ico-newwindow-black.svg') no-repeat;}
+.apps_cr .btn-window-white:hover:after,
+.apps_cr .btn-window-white:focus:after {background:url('http://images.samsung.com/is/content/samsung/assets/apps/global/smart-switch/common/ico-newwindow-white.svg') no-repeat;}
+.apps_cr .mobile_samsung {display:none !important;} /* 삼성단말기 모바일에서만 노출 */
+.samsung-mobile-device .apps_cr .mobile_samsung {display:none !important;}
+.samsung-device.apps-device-tablet .apps_cr .mobile_samsung {display:inline-block !important;}
+
+/* RTL : BUTTON */
+.rtl .apps_cr [class*="btn-window"]:after {margin-left:0; margin-right:8px;}
+.rtl .apps_cr .disclaimer [class*="btn-window"]:after {margin-left:0; margin-right:0;}
+.rtl .static-content .m_content-support .cta[target="_blank"]:before {transform: translateY(-50%) rotate(-90deg) !important;}
+
+
+/* MOTION : more_ways_to_connect */
+#more_ways_to_connect .ma-g-c-items-feature {overflow: visible;}
+#more_ways_to_connect .ma-g-c-items-feature__figure {transform:translateY(0);}
+#more_ways_to_connect .cm-columns__item .ma-g-c-items-feature__figure.motion {animation-name:bounce; animation-duration:1.2s; animation-timing-function:ease-in-out; animation-iteration-count:1;}
+
+@keyframes bounce {
+	0% {transform:translateY(0);}
+	50% {transform:translateY(-20px);}
+	100% {transform:translateY(0);}
+}
+
+/* COMPONTENT */
+.pr-g-feature-benefit-bundle .feature-benefit-bundle__list {overflow:visible !important;}
+
+/* KV BTN */
+.apps_cr .f_header .btn_kv {margin-top:55px; font-size:0;}
+.apps_cr .f_header .btn_kv a {display:inline-block; width:135px; height:40px; vertical-align:middle;}
+.apps_cr .f_header .btn_kv a:first-child {margin-right:22px;}
+.apps_cr .f_header .btn_kv a img {width:100%;}
+
+/* SUPPORT */
+.apps_cr .m_content-support .btn_default {display:inline-block; padding:0 20px; font-size:16px;}
+.apps_cr .m_content-support .btn_default a {display:inline-block; padding:19px 50px 19px; background-color:transparent; -webkit-border-radius:45px; border-radius:50px; line-height:1.2; border:1px solid #fff; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; transition-duration:0.3s; -webkit-transition-property:background,color,border-color; -o-transition-property:background,color,border-color; transition-property:background,color,border-color; -webkit-transition-timing-function:ease-in-out; -o-transition-timing-function:ease-in-out; transition-timing-function:ease-in-out; text-transform:uppercase; color:#fff;}
+.apps_cr .m_content-support .btn_default a:hover,
+.apps_cr .m_content-support .btn_default a:focus {background-color:#f7f7f7; border:1px solid #f7f7f7; color:#000;}
+.firefox  .apps_cr .m_content-support .btn_default a:focus {outline:1px dotted #777;}
+.apps_cr .m_content-support.white .btn_default a {border-color:#adadad; color:#000;}
+.apps_cr .m_content-support.white .btn_default a:hover,
+.apps_cr .m_content-support.white .btn_default a:focus {background:#000; color:#fff; border-color:#000;}
+
+.apps_cr .m_content-support .inner_wrap + .inner_wrap {border-top:1px solid #ccc;}
+.apps_cr .m_content-support .inner {display:table; width:100%; padding:50px 0; table-layout:fixed;}
+.apps_cr .m_content-support .support_list {display:table-cell; position:relative; padding:40px 0 20px; box-sizing:border-box; text-align:center; word-wrap:break-word; word-break:break-word;}
+.apps_cr .m_content-support .support_list + .support_list {border-left:1px solid #363636;}
+.apps_cr .m_content-support .list_inner {padding:0 4%;}
+.apps_cr .m_content-support .tit,
+.apps_cr .m_content-support .f_header .tit {display:block; margin-bottom:9px; font-size:34px; font-weight:bold;}
+.apps_cr .m_content-support .desc {font-size:20px;}
+.apps_cr .m_content-support .btn_box {margin-top:44px; font-size:0;}
+
+/* SMART SWITCH */
+.apps_cr .m_content-support .btn_default a {width:218px; padding:23px 10px 19px;}
+.apps_cr .m_content-disclaimer {padding:43px 3% 44px; line-height:1.32;}
+.apps_cr .m_content-disclaimer a {color:#fff; font-weight:bold; text-decoration:underline;}
+.apps_cr .m_content-disclaimer [class*="btn-window"]:after {vertical-align:middle;}
+.mobile .apps_cr .txt_box .use_mobile_tablet {display:block !important}
+
+/* COMPONENT */
+.feature-benefit-bundle__list .feature-benefit-bundle__item .feature-benefit-bundle__image {background:#fff;}
+
+/* RTL : KV BTN */
+.rtl .apps_cr .f_header .btn_kv a:first-child {margin-left:22px; margin-left:0;}
+
+/* NATION : TH */
+html[lang^="th"] .apps_cr [class*="m_content-"] .disclaimer {font-size:21.6px; line-height:1.4;}
+html[lang^="th"] .apps_cr .m_content-support .btn_default {font-size:21.6px;}
+html[lang^="th"] .apps_cr .m_content-support .tit,
+html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:45.9px; line-height:1.4;}
+html[lang^="th"] .apps_cr .m_content-support .desc {font-size:27px;}
+
+/* NATION : AT, CH, DE */
+[id*="switch_connect"] .cl-textbox__title {word-break:break-all;}
+
+/* NATION : CN */
+html[lang^="zh-CN"] .apps_cr .f_header .btn_kv .btn_default {font-size:16px;}
+html[lang^="zh-CN"] .apps_cr .f_header .btn_kv .btn_default a {height:auto; padding:19px 50px 19px; background-color:transparent; -webkit-border-radius:45px; border-radius:50px; line-height:1.2; border:1px solid #adadad; -webkit-transition-duration:0.3s; -o-transition-duration:0.3s; transition-duration:0.3s; -webkit-transition-property:background,color,border-color; -o-transition-property:background,color,border-color; transition-property:background,color,border-color; -webkit-transition-timing-function:ease-in-out; -o-transition-timing-function:ease-in-out; transition-timing-function:ease-in-out; text-transform:uppercase; color:#000;}
+html[lang^="zh-CN"] .apps_cr .f_header .btn_kv .btn_default a:hover,
+html[lang^="zh-CN"] .apps_cr .f_header .btn_kv .btn_default a:focus {border-color:#000; background:#000; color:#fff;}
+
+
+@media screen and (max-width:1440px) {
+
+	/* LAYOUT */
+	.apps_cr [class*="m_content-"] .disclaimer {font-size:1.1111vw; line-height:2.2222vw;}
+
+	/* BUTTON */
+	.apps_cr [class*="btn-window"]:after {width:0.7638vw; height:0.7638vw; margin-left:0.5555vw;}
+
+	/* RTL : BUTTON */
+	.rtl .apps_cr [class*="btn-window"]:after {margin-right:0.5555vw;}
+
+	/* KV BTN */
+	.apps_cr .f_header .btn_kv {margin-top:3.8194vw;}
+    .apps_cr .f_header .btn_kv a:first-child {margin-right:1.5277vw;}
+
+	/* RTL : KV BTN */
+	.rtl .apps_cr .f_header .btn_kv a:first-child {margin-left:1.5277vw; margin-right:0;}
+
+	/* MOTION : more_ways_to_connect */
+	@keyframes bounce {
+		0% {transform:translateY(0);}
+		50% {transform:translateY(-1.3888vw);}
+		100% {transform:translateY(0);}
+	}
+
+	/* SUPPORT */
+	.apps_cr .m_content-support .support_list {padding:2.7777vw 0 1.3888vw}
+    .apps_cr .m_content-support .btn_default {padding:0 1.3888vw; font-size:1.1111vw;}
+    .apps_cr .m_content-support .inner {padding:3.4722vw 0;}
+    .apps_cr .m_content-support .tit,
+	.apps_cr .m_content-support .f_header .tit {margin-bottom:0.625vw; font-size:2.3611vw;}
+    .apps_cr .m_content-support .desc {font-size:1.3888vw;}
+    .apps_cr .m_content-support .btn_box {margin-top:3.0555vw;}
+
+	/* SMART SWITCH */
+	.apps_cr .m_content-support .btn_default a {width:15.1388vw; padding:1.5972vw 0.6944vw 1.3194vw;}
+	.apps_cr .m_content-disclaimer {padding:2.9861vw 3% 3.0555vw;}
+
+	/* NATION : TH */
+	html[lang^="th"] .apps_cr [class*="m_content-"] .disclaimer {font-size:1.5vw;}
+	html[lang^="th"] .apps_cr .m_content-support .btn_default {font-size:1.5vw;}
+	html[lang^="th"] .apps_cr .m_content-support .tit,
+	html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:3.1875vw;}
+	html[lang^="th"] .apps_cr .m_content-support .desc {font-size:1.875vw;}
+
+	/* NATION : CN */
+	html[lang^="zh-CN"] .apps_cr .f_header .btn_kv .btn_default {font-size:1.1111vw;}
+	html[lang^="zh-CN"] .apps_cr .f_header .btn_kv .btn_default a {padding:1.5972vw 0.6944vw 1.3194vw;}
+
+}
+
+@media screen and (max-width:1024px){
+
+	/* BUTTON */
+	.apps_cr [class*="btn-window"]:after {width:0.9765vw; height:0.9765vw;}
+	.samsung-device .apps_cr .mobile_samsung {display:inline-block !important;}
+
+
+	/* SUPPORT */
+    .apps_cr .m_content-support .btn_default {font-size:11px;}
+    .apps_cr .m_content-support .desc {font-size:14px;}
+	.apps_cr .m_content-support .support_list {word-wrap:normal; word-break:normal;}
+
+}
+
+@media screen and (max-width:768px) {
+
+	/* LAYOUT */
+	.apps_cr [class*="m_content-"] .disclaimer {width:100%; font-size:3.125vw; line-height:4.4444vw;}
+
+	/* BUTTON */
+	.apps_cr [class*="btn-window"]:after {width:3.05556vw; height:3.05556vw; margin-left:1.3888vw; margin-bottom:-0.4166vw;}
+
+	/* RTL : BUTTON */
+	.rtl .apps_cr [class*="btn-window"]:after {margin-right:1.3888vw;}
+
+	/* KV BTN */
+	.apps_cr .f_header .btn_kv {margin-top:11.1111vw;}
+    .apps_cr .f_header .btn_kv a {width:37.5vw; height:11.1111vw;}
+    .apps_cr .f_header .btn_kv a:first-child {margin-right:4.4444vw;}
+
+	/* RTN : KV BTN */
+	.rtl .apps_cr .f_header .btn_kv a:first-child {margin-left:4.4444vw; margin-right:0;}
+
+	/* COMMON - DEVICE CHECKE BUTTON */
+	.desktop .apps_cr .use_desktop {display:block !important;}
+	.mobile .apps_cr .use_desktop  {display:none !important;}
+
+	/* MOTION : more_ways_to_connect */
+	#more_ways_to_connect .cm-columns__item .ma-g-c-items-feature__figure.motion {animation: none;}
+
+	/* SUPPORT */
+    .apps_cr .m_content-support .inner {display:block; padding:0;}
+	.apps_cr .m_content-support .list_inner {padding:0;}
+    .apps_cr .m_content-support .support_list {display:block; width:100%; padding:12.2222vw 2.7777vw 11.8055vw;}
+    .apps_cr .m_content-support .support_list + .support_list {border:none; border-top:1px solid #363636;}
+    .apps_cr .m_content-support .tit,
+	.apps_cr .m_content-support .f_header .tit {margin-bottom:0; font-size:5.555vw; line-height:1.32;}
+    .apps_cr .m_content-support .desc {margin-top:2.7777vw; line-height:1.4; font-size:3.8888vw; letter-spacing:0;}
+	.apps_cr .m_content-support .btn_box {margin-top:5.9722vw;}
+
+	/* SMART SWITCH */
+	.apps_cr .m_content-support .btn_box .btn_default {display:block; margin-top:2.7777vw; font-size:3.0555vw;}
+	.apps_cr .m_content-support .btn_box .btn_default a {width:39.1666vw; padding:3.888vw 1vw 3.2222vw;}
+	.apps_cr .m_content-disclaimer {padding:5.9722vw 4% 6.1111vw;}
+
+	/* NATION : TH */
+	html[lang^="th"] .apps_cr [class*="m_content-"] .disclaimer {font-size:4.2187vw;}
+	html[lang^="th"] .apps_cr .m_content-support .btn_default {font-size:3.75vw;}
+	html[lang^="th"] .apps_cr .m_content-support .tit,
+	html[lang^="th"] .apps_cr .m_content-support .f_header .tit {font-size:7.5vw;}
+	html[lang^="th"] .apps_cr .m_content-support .desc {font-size:5.25vw;}
+
+	/* NATION : MM */
+	html[lang^="my-MM"] .apps_cr .m_content-support .btn_box .btn_default a {width:50vw; letter-spacing:0;}
+
+	/* NATION : CN */
+	html[lang^="zh-CN"] .apps_cr .f_header .btn_kv .btn_default {font-size:3.0555vw;}
+	html[lang^="zh-CN"] .apps_cr .f_header .btn_kv .btn_default a {padding:3.888vw 1vw 3.2222vw;}
+}

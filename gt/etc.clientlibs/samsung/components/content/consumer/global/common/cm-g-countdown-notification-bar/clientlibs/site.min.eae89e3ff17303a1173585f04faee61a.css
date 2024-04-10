@@ -1,0 +1,65 @@
+.countdown-notification-bar{width:100%}
+.countdown-notification-bar__inner{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:1440px;min-height:64px;padding:16px 24px;margin:0 auto}
+.countdown-notification-bar__text-wrap{-webkit-box-flex:0;-ms-flex:0 1 380px;flex:0 1 380px}
+.countdown-notification-bar__countdown-wrap{-webkit-box-flex:0;-ms-flex:0 1 632px;flex:0 1 632px;padding:0 50px;text-align:center}
+.countdown-notification-bar__countdown-wrap:first-child{margin-left:20%}
+.countdown-notification-bar__link-wrap{-webkit-box-flex:0;-ms-flex:0 1 380px;flex:0 1 380px;text-align:right;padding-right:122px}
+.countdown-notification-bar__link-wrap .cta--theme{color:currentColor !important}
+.countdown-notification-bar__headline{font-family:'SamsungSharpSans',arial,sans-serif;font-size:16px;line-height:1.33}
+.countdown-notification-bar__description{margin-top:4px;font-size:14px;line-height:1.33}
+.countdown-notification-bar__description:only-child{margin-top:0}
+.countdown-notification-bar__period{font-size:18px;line-height:1.33;font-weight:bold}
+.countdown-notification-bar__period--hide{display:none}
+.countdown-notification-bar__timer{font-size:0;position:relative}
+.countdown-notification-bar__timer-wrap{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:66px}
+.countdown-notification-bar__timer-num{font-family:'SamsungSharpSans',arial,sans-serif;font-size:32px;line-height:1.2;font-weight:bold;text-align:center}
+.countdown-notification-bar__timer-text{margin-top:4px;font-size:10px;line-height:1.33;text-align:center}
+.countdown-notification-bar__timer-colon{display:inline-block;width:16px;font-family:'SamsungSharpSans',arial,sans-serif;font-size:32px;line-height:1.2;font-weight:bold;text-align:center}
+.countdown-notification-bar__timer--hide{display:none}
+.countdown-notification-bar__timer-btn-area{opacity:0;position:absolute;width:408px;top:0;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);margin:0;z-index:1}
+.countdown-notification-bar__timer-btn-area button{display:block;position:absolute;width:36px;height:36px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);border-radius:50%;background-color:rgba(255,255,255,0.95)}
+.countdown-notification-bar__timer-btn-area button .icon{display:none;width:100%;height:100%;fill:#757575;-webkit-filter:none !important;filter:none !important}
+.countdown-notification-bar__timer-btn-area button.is-play .control--pause{display:block}
+.countdown-notification-bar__timer-btn-area button.is-pause .control--play{display:block}
+.countdown-notification-bar__timer-btn-area.is-show{opacity:1}
+.countdown-notification-bar--theme-dark-gray .countdown-notification-bar__timer-btn-area,.countdown-notification-bar--theme-black .countdown-notification-bar__timer-btn-area{background-color:rgba(255,255,255,0.6)}
+.countdown-notification-bar--theme-white .countdown-notification-bar__timer-btn-area,.countdown-notification-bar--theme-light-gray .countdown-notification-bar__timer-btn-area,.countdown-notification-bar--theme-skyblue .countdown-notification-bar__timer-btn-area,.countdown-notification-bar--theme-skyblue-dark .countdown-notification-bar__timer-btn-area{background-color:rgba(0,0,0,0.6)}
+.countdown-notification-bar__close{position:absolute;top:16px;right:16px;width:32px;height:32px;padding:4px}
+.countdown-notification-bar__close svg{width:100%;height:100%;fill:currentColor;pointer-events:none}
+.countdown-notification-bar--theme-skyblue-dark{color:#fff;background-color:#006bea}
+.countdown-notification-bar--theme-white{color:#000;background-color:#fff}
+.countdown-notification-bar--theme-light-gray{color:#000;background-color:#f7f7f7}
+.countdown-notification-bar--theme-skyblue{color:#fff;background-color:#2189ff;text-shadow:0 0 3px rgba(0,0,0,0.72)}
+.countdown-notification-bar--theme-skyblue svg.icon{-webkit-filter:drop-shadow(0 0 3px rgba(0,0,0,0.72));filter:drop-shadow(0 0 3px rgba(0,0,0,0.72))}
+.countdown-notification-bar--theme-dark-gray{color:#fff;background-color:#313131}
+.countdown-notification-bar--theme-black{color:#fff;background-color:#000}
+@media only screen and (min-width:768px) and (max-width:1440px){.countdown-notification-bar__inner{min-height:4.44444444vw;padding:1.11111111vw 1.66666667vw}
+.countdown-notification-bar__countdown-wrap{padding:0vw 3.47222222vw}
+.countdown-notification-bar__link-wrap{padding-right:8.47222222vw}
+.countdown-notification-bar__headline{font-size:1.11111111vw}
+.countdown-notification-bar__description{margin-top:.27777778vw;font-size:.97222222vw}
+.countdown-notification-bar__period{font-size:1.25vw}
+.countdown-notification-bar__timer-wrap{width:4.58333333vw}
+.countdown-notification-bar__timer-num{font-size:2.22222222vw}
+.countdown-notification-bar__timer-text{margin-top:.27777778vw;font-size:.69444444vw}
+.countdown-notification-bar__timer-colon{width:1.11111111vw;font-size:2.22222222vw}
+.countdown-notification-bar__timer-btn-area{width:28.33333333vw}
+.countdown-notification-bar__timer-btn-area button{width:2.5vw;height:2.5vw}
+.countdown-notification-bar__close{top:1.11111111vw;right:1.11111111vw;width:2.22222222vw;height:2.22222222vw;padding:.27777778vw}
+}
+@media only screen and (max-width:767px){.countdown-notification-bar__inner{display:block;min-height:none;padding:4.44444444vw 18.33333333vw;text-align:center}
+.countdown-notification-bar__text-wrap{font-size:4.44444444vw}
+.countdown-notification-bar__countdown-wrap{margin-top:2.22222222vw;padding:0;position:relative}
+.countdown-notification-bar__countdown-wrap:first-child{margin-left:0}
+.countdown-notification-bar__link-wrap{margin-top:2.22222222vw;text-align:center;padding-right:0}
+.countdown-notification-bar__headline{font-size:4.44444444vw}
+.countdown-notification-bar__description{margin-top:1.11111111vw;font-size:2.77777778vw}
+.countdown-notification-bar__period{margin-top:1.11111111vw;font-size:3.33333333vw}
+.countdown-notification-bar__timer-wrap{width:13.88888889vw}
+.countdown-notification-bar__timer-num{font-size:7.22222222vw;line-height:1.33}
+.countdown-notification-bar__timer-text{margin-top:1.11111111vw;font-size:2.77777778vw}
+.countdown-notification-bar__timer-colon{width:2.22222222vw;font-size:7.22222222vw;line-height:1.33}
+.countdown-notification-bar__timer-btn-area{width:auto;margin:0vw -18.33333333vw;-webkit-transform:none;transform:none;left:0;right:0}
+.countdown-notification-bar__timer-btn-area button{width:6.66666667vw;height:6.66666667vw}
+.countdown-notification-bar__close{top:4.44444444vw;right:5vw;width:6.66666667vw;height:6.66666667vw}
+}

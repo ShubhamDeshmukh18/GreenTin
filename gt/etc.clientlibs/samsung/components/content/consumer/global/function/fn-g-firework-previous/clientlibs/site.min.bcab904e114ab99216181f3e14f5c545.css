@@ -1,0 +1,53 @@
+.fn19-firework-previous{max-width:1440px;margin:0 auto;padding:48px 0 60px;background-color:#fff}
+.fn19-firework-previous__headline{overflow:hidden;height:46px;padding:0 24px;font-family:'SamsungSharpSans',arial,sans-serif;font-size:38px;line-height:1.2;word-wrap:break-word}
+.fn19-firework-previous__list{overflow:hidden;padding-right:24px}
+.fn19-firework-previous__item{width:25%;padding-top:24px;float:left;padding-left:24px}
+.fn19-firework-previous__image{overflow:hidden;position:relative;width:330px;height:587px;border-radius:20px}
+.fn19-firework-previous__date{overflow:hidden;position:absolute;top:24px;height:32px;padding:6px 12px 4px;font-size:16px;line-height:1.33;color:#fff;font-weight:700;text-align:center;background-color:#000;border-radius:8px;left:24px}
+.fn19-firework-previous__content{overflow:hidden;padding:24px 24px 0}
+.fn19-firework-previous__product-name{overflow:hidden;margin-bottom:16px;font-size:24px;line-height:1.33;word-wrap:break-word}
+.fn19-firework-previous__numbers{margin-bottom:36px;font-size:0}
+.fn19-firework-previous__numbers-likes,.fn19-firework-previous__numbers-views{display:inline-block;font-size:14px;line-height:1.33}
+.fn19-firework-previous__numbers-likes .icon,.fn19-firework-previous__numbers-views .icon{width:24px;height:24px;vertical-align:middle;margin-right:8px}
+.fn19-firework-previous__numbers-likes{margin-right:24px}
+.fn19-firework-previous__numbers-likes .sdf-comp-like-count{vertical-align:middle}
+.fn19-firework-previous__numbers-views .sdf-comp-view-count{vertical-align:middle}
+.fn19-firework-previous__cta fw-storylink:before,.fn19-firework-previous__cta fw-storylink:after{display:none !important}
+.fn19-firework-previous__cta-view-more{margin:60px 0 -12px;text-align:center}
+.fn19-firework-previous.bg-dark-gray .fn19-firework-previous__cta .cta--contained,.fn19-firework-previous.bg-black .fn19-firework-previous__cta .cta--contained{color:#000 !important;background:#fff !important}
+.fn19-firework-previous.bg-dark-gray .fn19-firework-previous__cta .cta--contained:hover,.fn19-firework-previous.bg-black .fn19-firework-previous__cta .cta--contained:hover,.fn19-firework-previous.bg-dark-gray .fn19-firework-previous__cta .cta--contained:focus,.fn19-firework-previous.bg-black .fn19-firework-previous__cta .cta--contained:focus{color:#313131 !important;background-color:#ddd !important}
+.fn19-firework-previous.bg-dark-gray .fn19-firework-previous__numbers .icon,.fn19-firework-previous.bg-black .fn19-firework-previous__numbers .icon{fill:#fff}
+.fn19-firework-previous.bg-dark-gray .fn19-firework-previous__cta-view-more .cta--outlined,.fn19-firework-previous.bg-black .fn19-firework-previous__cta-view-more .cta--outlined{color:#fff !important;background-color:transparent !important;border-color:#fff !important}
+.fn19-firework-previous.bg-dark-gray .fn19-firework-previous__cta-view-more .cta--outlined:hover,.fn19-firework-previous.bg-black .fn19-firework-previous__cta-view-more .cta--outlined:hover,.fn19-firework-previous.bg-dark-gray .fn19-firework-previous__cta-view-more .cta--outlined:focus,.fn19-firework-previous.bg-black .fn19-firework-previous__cta-view-more .cta--outlined:focus{color:#ddd !important;background-color:rgba(255,255,255,0.15) !important;border-color:#ddd !important}
+.fn19-firework-previous.bg-light-gray{background:#f7f7f7}
+.fn19-firework-previous.bg-dark-gray{background:#313131}
+.fn19-firework-previous.bg-black{background:#000}
+.fn19-firework-previous.bg-transparent{background:transparent}
+@media only screen and (min-width:768px) and (max-width:1440px){.fn19-firework-previous{max-width:100vw;padding:3.33333333vw 0vw 4.16666667vw 0vw}
+.fn19-firework-previous__headline{height:3.19444444vw;padding:0vw 1.66666667vw;font-size:2.63888889vw}
+.fn19-firework-previous__list{padding-right:1.66666667vw}
+.fn19-firework-previous__item{padding-top:1.66666667vw;padding-left:1.66666667vw}
+.fn19-firework-previous__image{width:22.91666667vw;height:40.76388889vw;border-radius:1.38888889vw}
+.fn19-firework-previous__date{top:1.66666667vw;height:2.22222222vw;padding:.41666667vw .83333333vw .27777778vw .83333333vw;font-size:1.11111111vw;border-radius:.55555556vw;left:1.66666667vw}
+.fn19-firework-previous__content{padding:1.66666667vw 1.66666667vw 0vw 1.66666667vw}
+.fn19-firework-previous__product-name{margin-bottom:1.11111111vw;font-size:1.66666667vw}
+.fn19-firework-previous__numbers{margin-bottom:2.5vw}
+.fn19-firework-previous__numbers-likes,.fn19-firework-previous__numbers-views{font-size:.97222222vw}
+.fn19-firework-previous__numbers-likes .icon,.fn19-firework-previous__numbers-views .icon{width:1.66666667vw;height:1.66666667vw;margin-right:.55555556vw}
+.fn19-firework-previous__numbers-likes{margin-right:1.66666667vw}
+.fn19-firework-previous__cta-view-more{margin:4.16666667vw 0vw -0.83333333vw 0vw}
+}
+@media only screen and (max-width:767px){.fn19-firework-previous{overflow:hidden;max-width:none;padding:13.33333333vw 0vw 8.88888889vw 0vw}
+.fn19-firework-previous__headline{height:auto;max-height:19.44444444vw;padding:0vw 6.66666667vw;font-size:7.22222222vw;line-height:1.33}
+.fn19-firework-previous__list{padding:0}
+.fn19-firework-previous__item{float:none;width:auto;padding:8.88888889vw 6.66666667vw 4.44444444vw 6.66666667vw}
+.fn19-firework-previous__image{float:none;width:100%;height:auto;border-radius:5.55555556vw}
+.fn19-firework-previous__content{padding:6.66666667vw 4.44444444vw 0vw 4.44444444vw;text-align:center}
+.fn19-firework-previous__date{top:6.66666667vw;height:8.88888889vw;padding:1.66666667vw 3.33333333vw 1.11111111vw 3.33333333vw;font-size:4.44444444vw;border-radius:2.22222222vw;left:6.66666667vw}
+.fn19-firework-previous__product-name{margin-bottom:4.44444444vw;font-size:5.55555556vw}
+.fn19-firework-previous__numbers{margin-bottom:6.66666667vw}
+.fn19-firework-previous__numbers-likes,.fn19-firework-previous__numbers-views{font-size:3.33333333vw}
+.fn19-firework-previous__numbers-likes .icon,.fn19-firework-previous__numbers-views .icon{width:6.66666667vw;height:6.66666667vw;margin-right:2.22222222vw}
+.fn19-firework-previous__numbers-likes{margin-right:6.66666667vw}
+.fn19-firework-previous__cta-view-more{margin:8.88888889vw 0vw 4.44444444vw 0vw}
+}
