@@ -32,7 +32,7 @@
 	
     
 	
-	<title>Connect your home with Samsung SmartThings | Samsung India</title>
+	<title>GreenTin | Software | IT Product | IT Services</title>
 	<meta name="title" content="Connect your home with Samsung SmartThings | Samsung India"/>
 	
 
@@ -121,11 +121,356 @@
 	
 
 	
-	
+	<style>
+	  
+	  /* ================ The Timeline ================ */
+	  
+	  .timeline {
+		position: relative;
+		width: 660px;
+		margin: 0 auto;
+		margin-top: 20px;
+		padding: 1em 0;
+		list-style-type: none;
+	  }
+	  
+	  .timeline:before {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		content: ' ';
+		display: block;
+		width: 6px;
+		height: 100%;
+		margin-left: -3px;
+		background: rgb(80,80,80);
+		background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+		background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+		background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+		background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+		background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+		
+		z-index: 5;
+	  }
+	  
+	  .timeline li {
+		padding: 1em 0;
+	  }
+	  
+	  .timeline li:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	  }
+	  
+	  .direction-l {
+		position: relative;
+		width: 300px;
+		float: left;
+		text-align: right;
+	  }
+	  
+	  .direction-r {
+		position: relative;
+		width: 300px;
+		float: right;
+	  }
+	  
+	  .flag-wrapper {
+		position: relative;
+		display: inline-block;
+		
+		text-align: center;
+	  }
+	  
+	  .flag {
+		position: relative;
+		display: inline;
+		background: rgb(248,248,248);
+		padding: 6px 10px;
+		border-radius: 5px;
+		
+		font-weight: 600;
+		text-align: left;
+	  }
+	  
+	  .direction-l .flag {
+		-webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+		-moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+		box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+	  }
+	  
+	  .direction-r .flag {
+		-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+		-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+		box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+	  }
+	  
+	  .direction-l .flag:before,
+	  .direction-r .flag:before {
+		position: absolute;
+		top: 50%;
+		right: -40px;
+		content: ' ';
+		display: block;
+		width: 12px;
+		height: 12px;
+		margin-top: -10px;
+		background: #fff;
+		border-radius: 10px;
+		border: 4px solid rgb(255,80,80);
+		z-index: 10;
+	  }
+	  
+	  .direction-r .flag:before {
+		left: -40px;
+	  }
+	  
+	  .direction-l .flag:after {
+		content: "";
+		position: absolute;
+		left: 100%;
+		top: 50%;
+		height: 0;
+		width: 0;
+		margin-top: -8px;
+		border: solid transparent;
+		border-left-color: rgb(248,248,248);
+		border-width: 8px;
+		pointer-events: none;
+	  }
+	  
+	  .direction-r .flag:after {
+		content: "";
+		position: absolute;
+		right: 100%;
+		top: 50%;
+		height: 0;
+		width: 0;
+		margin-top: -8px;
+		border: solid transparent;
+		border-right-color: rgb(248,248,248);
+		border-width: 8px;
+		pointer-events: none;
+	  }
+	  
+	  .time-wrapper {
+		display: inline;
+		
+		line-height: 1em;
+		font-size: 0.66666em;
+		color: rgb(250,80,80);
+		vertical-align: middle;
+	  }
+	  
+	  .direction-l .time-wrapper {
+		float: left;
+	  }
+	  
+	  .direction-r .time-wrapper {
+		float: right;
+	  }
+	  
+	  .time {
+		display: inline-block;
+		padding: 4px 6px;
+		background: rgb(248,248,248);
+	  }
+	  
+	  .desc {
+		margin: 1em 0.75em 0 0;
+		
+		font-size: 0.77777em;
+		font-style: italic;
+		line-height: 1.5em;
+	  }
+	  
+	  .direction-r .desc {
+		margin: 1em 0 0 0.75em;
+	  }
+	  
+	  /* ================ Timeline Media Queries ================ */
+	  
+	  @media screen and (max-width: 660px) {
+	  
+	  .timeline {
+		   width: 100%;
+		  padding: 4em 0 1em 0;
+	  }
+	  
+	  .timeline li {
+		  padding: 2em 0;
+	  }
+	  
+	  .direction-l,
+	  .direction-r {
+		  float: none;
+		  width: 100%;
+	  
+		  text-align: center;
+	  }
+	  
+	  .flag-wrapper {
+		  text-align: center;
+	  }
+	  
+	  .flag {
+		  background: rgb(255,255,255);
+		  z-index: 15;
+	  }
+	  
+	  .direction-l .flag:before,
+	  .direction-r .flag:before {
+		position: absolute;
+		top: -30px;
+		  left: 50%;
+		  content: ' ';
+		  display: block;
+		  width: 12px;
+		  height: 12px;
+		  margin-left: -9px;
+		  background: #fff;
+		  border-radius: 10px;
+		  border: 4px solid rgb(255,80,80);
+		  z-index: 10;
+	  }
+	  
+	  .direction-l .flag:after,
+	  .direction-r .flag:after {
+		  content: "";
+		  position: absolute;
+		  left: 50%;
+		  top: -8px;
+		  height: 0;
+		  width: 0;
+		  margin-left: -8px;
+		  border: solid transparent;
+		  border-bottom-color: rgb(255,255,255);
+		  border-width: 8px;
+		  pointer-events: none;
+	  }
+	  
+	  .time-wrapper {
+		  display: block;
+		  position: relative;
+		  margin: 4px 0 0 0;
+		  z-index: 14;
+	  }
+	  
+	  .direction-l .time-wrapper {
+		  float: none;
+	  }
+	  
+	  .direction-r .time-wrapper {
+		  float: none;
+	  }
+	  
+	  .desc {
+		  position: relative;
+		  margin: 1em 0 0 0;
+		  padding: 1em;
+		  background: rgb(245,245,245);
+		  -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+		  -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+		  box-shadow: 0 0 1px rgba(0,0,0,0.20);
+		  
+		z-index: 15;
+	  }
+	  
+	  .direction-l .desc,
+	  .direction-r .desc {
+		  position: relative;
+		  margin: 1em 1em 0 1em;
+		  padding: 1em;
+		  
+		z-index: 15;
+	  }
+	  
+	  }
+	  
+	  @media screen and (min-width: 400px ?? max-width: 660px) {
+	  
+	  .direction-l .desc,
+	  .direction-r .desc {
+		  margin: 1em 4em 0 4em;
+	  }
+	  
+	  }</style>
 
     
     
-    
+    <style>* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	  }
+	  
+	  body {
+		height: 100vh;
+		height: 100svh;
+		display: grid;
+		place-items: center;
+	  }
+	  
+	  .gallery {
+		position: relative;
+		width: 760px;
+		height: 305px;
+	  
+		&:hover :not(div[data-pos='0'],img) { cursor: pointer; }
+	  
+		& .item {
+		  position: absolute;
+		  width: 175px;
+		  height: 150px;
+		  overflow: hidden;
+		  transition: transform 0.9s, width 0.9s, height 0.9s;
+	  
+		  & img {
+			width: 100%;
+			height: 100%;
+		  }
+		}
+	  
+		& div[data-pos='0'] { 
+		  width: 400px;
+		  height: inherit;
+		  z-index: 10;
+		}
+	  }
+	  
+	  div[data-pos='0'] { transform: translate(0,0); }
+	  div[data-pos='1'] { transform: translate(405px,0); }
+	  div[data-pos='2'] { transform: translate(585px,0); }
+	  div[data-pos='3'] { transform: translate(405px,155px); }
+	  div[data-pos='4'] { transform: translate(585px,155px); }
+	  
+	  @media (width < 800px) {
+		.gallery {
+		  width: 405px;
+		  height: 660px;
+	  
+		  & .item {
+			width: 200px;
+			height: 150px;
+		  }
+	  
+		  & div[data-pos='0'] {
+			width: inherit;
+			height: 350px;
+			z-index: 10;
+		  }
+		}
+	  
+		div[data-pos='0'] { transform: translate(0,0); }
+		div[data-pos='1'] { transform: translate(0,355px); }
+		div[data-pos='2'] { transform: translate(0,510px); }
+		div[data-pos='3'] { transform: translate(205px,355px); }
+		div[data-pos='4'] { transform: translate(205px,510px); }
+	  }</style>
 
 
 
@@ -1182,7 +1527,7 @@ digitalData.page.pathIndicator.depth_5 = "";
 				<h1>
 					<a class="nv07-explore-floating-navigation__headline" href="#" aria-label="SmartThings. Connect your home with Samsung SmartThings page" an-tr="nv07_explore floating navigation-product category detail-logo-navigation" an-ca="navigation" an-ac="secondary navi" an-la="secondary navi:smartthings">
 						
-						About Us
+						HR BUDDY
 						
 						
 					</a>
@@ -1383,6 +1728,257 @@ digitalData.page.pathIndicator.depth_5 = "";
 
 
 </div>
+
+
+<div class="of-g-feature-benefit-card aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+	<div class="feature-benefit-card bg-light-gray feature-benefit-card--desktop-layout-3 desktop-text-align--center mobile-text-align--center feature-benefit-card--use-mouseover-interaction feature-benefit-card--mobile-swiper">
+		<h3 class="feature-benefit-card__head-title">Product Details</h3>
+
+
+
+
+
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  
+		<!-- The Timeline -->
+		
+		<ul class="timeline">
+		
+			<!-- Item 1 -->
+			<li>
+				<div class="direction-r">
+					<div class="flag-wrapper">
+						<span class="flag">Freelancer</span>
+						<span class="time-wrapper"><span class="time">2013 - present</span></span>
+					</div>
+					<div class="desc">My current employment. Way better than the position before!</div>
+				</div>
+			</li>
+		  
+			<!-- Item 2 -->
+			<li>
+				<div class="direction-l">
+					<div class="flag-wrapper">
+						<span class="flag">Apple Inc.</span>
+						<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+					</div>
+					<div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+				</div>
+			</li>
+		
+			<!-- Item 3 -->
+			<li>
+				<div class="direction-r">
+					<div class="flag-wrapper">
+						<span class="flag">Harvard University</span>
+						<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+					</div>
+					<div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+				</div>
+			</li>
+		  
+		</ul>
+		
+
+
+
+	</div>
+			
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="of-g-feature-benefit-card aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+
+
+
+
+	<div class="feature-benefit-card bg-light-gray feature-benefit-card--desktop-layout-3 desktop-text-align--center mobile-text-align--center feature-benefit-card--use-mouseover-interaction feature-benefit-card--mobile-swiper">
+		<h3 class="feature-benefit-card__head-title">Product features</h3>
+		
+		<div class="feature-benefit-card__swiper swiper-container basic-swiper" data-swiper-option='{
+			"componentEl":".feature-benefit-card__swiper",
+			"keepWrapper": true,
+			"breakpoints": {
+				"1": {
+				"slidesPerView":1
+				},
+				"768": {
+				"slidesPerView":3
+				}
+			},
+			"autoHeight":false,
+			"pagination":true,
+			"offTxtAccesibility":true}'>
+			<div class="feature-benefit-card__card-wrap swiper-wrapper">
+				
+					
+					
+					
+					
+						<div class="feature-benefit-card__card swiper-slide" data-tagging='{	
+							"an-tr":"ft16_feature benefit card-product category detail-index-indication",
+							"an-ca":"indication",
+							"an-ac":"carousel",
+							"an-la":"carousel:index:1"
+							}' data-type-headline="step 1">
+							<div class="feature-benefit-card__card-inner feature-benefit-card__card--contents-type-image">
+								<div class="feature-benefit-card__card-inner-bg" style="background:#FFFFFF"></div>
+								<div class="feature-benefit-card__text-wrap">
+									<div class="feature-benefit-card__text-wrap-inner">
+										<div class="feature-benefit-card__text-wrap-area">
+											<div class="feature-benefit-card__eyebrow-text"> </div>
+											<h4 class="feature-benefit-card__title">Step 1 : Add your <br />devices to the app</h4>
+											
+											<div class="feature-benefit-card__cta">
+												<a href="app/index.html#download" an-tr="ft16_feature benefit card-product category detail-text-link" an-ca="content click" an-ac="feature" an-la="master the app in 3 steps:step 1 add your devices to the app:learn more" class="cta cta--underline cta--black" aria-label="Learn more Step 1 : Add your devices to the app. Learn more. Control your home with SmartThings! App page. Let&#39;s start step by step">
+													Learn more
+													
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feature-benefit-card__figure">
+									<div class="image">
+										<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_03_Learning-the-App_01_PC_0119.jpg?$LazyLoad_Home_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_03_Learning-the-App_01_MO_0119.jpg?$LazyLoad_Home_PNG$" alt="A person is holding a Galaxy smartphone with the SmartThings app icon on the screen. Smart home devices in the background are being connected to the smartphone using Wi-Fi." role="img" class="image__preview lazy-load responsive-img"/>
+										<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_03_Learning-the-App_01_PC_0119.jpg?$448_440_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_03_Learning-the-App_01_MO_0119.jpg?$312_446_PNG$" alt="A person is holding a Galaxy smartphone with the SmartThings app icon on the screen. Smart home devices in the background are being connected to the smartphone using Wi-Fi." role="img" class="image__main lazy-load responsive-img"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+				
+					
+					
+					
+					
+						<div class="feature-benefit-card__card swiper-slide" data-tagging='{	
+							"an-tr":"ft16_feature benefit card-product category detail-index-indication",
+							"an-ca":"indication",
+							"an-ac":"carousel",
+							"an-la":"carousel:index:2"
+							}' data-type-headline="step 2">
+							<div class="feature-benefit-card__card-inner feature-benefit-card__card--contents-type-image">
+								<div class="feature-benefit-card__card-inner-bg" style="background:#FFFFFF"></div>
+								<div class="feature-benefit-card__text-wrap">
+									<div class="feature-benefit-card__text-wrap-inner">
+										<div class="feature-benefit-card__text-wrap-area">
+											<div class="feature-benefit-card__eyebrow-text"> </div>
+											<h4 class="feature-benefit-card__title">Step 2 : Manage your devices to make life smarter</h4>
+											
+											<div class="feature-benefit-card__cta">
+												<a href="app/index.html#services" an-tr="ft16_feature benefit card-product category detail-text-link" an-ca="content click" an-ac="feature" an-la="master the app in 3 steps:step 2 manage your devices to make life smarter:learn more" class="cta cta--underline cta--black" aria-label="Learn more Step 2 : Manage your devices to make life smarter. Learn more. Control your home with SmartThings! App page. Make your home life smarter">
+													Learn more
+													
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feature-benefit-card__figure">
+									<div class="image">
+										<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_02_PC.jpg?$LazyLoad_Home_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_02_MO.jpg?$LazyLoad_Home_PNG$" alt="Eight smart home devices are seen in a blue house setting. From left to right: A white wall-mount air conditioner, a white Bespoke AI washer and dryer set below the air conditioner, a white Jet Bot AI+ robot vacuum in front of the washer and dryer set, a black Philips Hue Signe gradient floor lamp, a multi-colored Bespoke Fridge Freezer, a SmartThings Cam on the wall above the fridge freezer and a Smart Plug on the wall." role="img" class="image__preview lazy-load responsive-img"/>
+										<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_02_PC.jpg?$448_440_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_02_MO.jpg?$312_446_PNG$" alt="Eight smart home devices are seen in a blue house setting. From left to right: A white wall-mount air conditioner, a white Bespoke AI washer and dryer set below the air conditioner, a white Jet Bot AI+ robot vacuum in front of the washer and dryer set, a black Philips Hue Signe gradient floor lamp, a multi-colored Bespoke Fridge Freezer, a SmartThings Cam on the wall above the fridge freezer and a Smart Plug on the wall." role="img" class="image__main lazy-load responsive-img"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+				
+					
+					
+					
+					
+						<div class="feature-benefit-card__card swiper-slide" data-tagging='{	
+							"an-tr":"ft16_feature benefit card-product category detail-index-indication",
+							"an-ca":"indication",
+							"an-ac":"carousel",
+							"an-la":"carousel:index:3"
+							}' data-type-headline="step 3">
+							<div class="feature-benefit-card__card-inner feature-benefit-card__card--contents-type-image">
+								<div class="feature-benefit-card__card-inner-bg" style="background:#FFFFFF"></div>
+								<div class="feature-benefit-card__text-wrap">
+									<div class="feature-benefit-card__text-wrap-inner">
+										<div class="feature-benefit-card__text-wrap-area">
+											<div class="feature-benefit-card__eyebrow-text"> </div>
+											<h4 class="feature-benefit-card__title">Step 3 : Automate your everyday moments</h4>
+											
+											<div class="feature-benefit-card__cta">
+												<a href="app/index.html#routines" an-tr="ft16_feature benefit card-product category detail-text-link" an-ca="content click" an-ac="feature" an-la="master the app in 3 steps:step 3 automate your everyday moments:learn more" class="cta cta--underline cta--black" aria-label="Learn more Step 3 : Automate your everyday moments. Learn more. Control your home with SmartThings! App page. Uplift your everyday with new routines">
+													Learn more
+													
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="feature-benefit-card__figure">
+									<div class="image">
+										<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_03_PC.jpg?$LazyLoad_Home_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_03_MO.jpg?$LazyLoad_Home_PNG$" alt="A collage of two photos is displayed. The first one features a woman joyfully starting her day in the morning with icons representing a morning routine. The second one shows a woman sleeping peacefully at night, along with icons representing a nighttime routine." role="img" class="image__preview lazy-load responsive-img"/>
+										<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_03_PC.jpg?$448_440_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_03_MO.jpg?$312_446_PNG$" alt="A collage of two photos is displayed. The first one features a woman joyfully starting her day in the morning with icons representing a morning routine. The second one shows a woman sleeping peacefully at night, along with icons representing a nighttime routine." role="img" class="image__main lazy-load responsive-img"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+				
+			</div>
+			
+				<div class="indicator dot-indicator" data-indicator-data='{
+					&quot;type&quot;: &quot;dot-indicator&quot;,
+					&quot;autoRolling&quot;: false,
+					&quot;infiniteRolling&quot;: false
+					}'>
+					<div class="indicator-wrap">
+						<div class="indicator__list-wrap">
+						<div class="indicator__list" role="tablist">
+							<button class="indicator__item" role="tab" data-indicator-delay="">
+							<span class="indicator__dot-wrap">
+								<span class="indicator__dot">
+								<span class="indicator__dot-inner"></span>
+								</span>
+								<span class="hidden">Indicator 1</span>
+							</span>
+							</button>
+						</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+	</div>
 <div class="cm-g-text-block aem-GridColumn aem-GridColumn--default--12">
 	<div class="textblock margin-top--32 margin-bottom--16  bg-white  text-center  text-mo-center container-width-medium">
 		
@@ -1393,7 +1989,7 @@ digitalData.page.pathIndicator.depth_5 = "";
     	<div class="textblock__body padding-top--48 padding-bottom--0">
 				
 				
-			<h3 class="textblock__title" data-font-size-pc="38" data-font-size-mo="26">How it's done with SmartThings</h3>
+			<h3 class="textblock__title" data-font-size-pc="38" data-font-size-mo="26"> Options &amp; Working</h3>
 			
 			
 			
@@ -2238,6 +2834,10 @@ digitalData.page.pathIndicator.depth_5 = "";
 	</div>
 	
 </div>
+
+
+
+
 <div class="pd-g-feature-benefit-full-bleed aem-GridColumn aem-GridColumn--default--12">
 
 
@@ -2246,76 +2846,80 @@ digitalData.page.pathIndicator.depth_5 = "";
 
 
 
-<section class="st-feature-benefit-full-bleed  st-feature-benefit-full-bleed--middle st-feature-benefit-full-bleed--center st-feature-benefit-full-bleed--m-middle st-feature-benefit-full-bleed--m-center st-feature-benefit-full-bleed--center-img-over desktop-bg-light-gray mobile-bg-light-gray  desktop-text-color-black mobile-text-color-black     " data-clickable-state="false">
-    
-    
-    
-    
-    <div class="st-feature-benefit-full-bleed__wrap">
-        <div class="st-feature-benefit-full-bleed__content-wrap">
-            <div class="st-feature-benefit-full-bleed__content-inner">
-                <div class="st-feature-benefit-full-bleed__content-area">
-                    
-                        
-                    
-                    
-                    
-                    
-                        <h3 class="st-feature-benefit-full-bleed__title" data-font-size-pc="38" data-font-size-mo="26">Download<br />the SmartThings app</h3>
-                        
-                    
-                    
-                    <p class="st-feature-benefit-full-bleed__text" data-font-size-pc="14" data-font-size-mo="12">Add your devices to the SmartThings app for a whole new world of connected living.</p>
-                    <div class="st-feature-benefit-full-bleed__cta">
-                        
-                            
-                                <a class="cta cta--contained cta--icon cta--black cta--mobile-black" href="http://play.google.com/store/apps/details?id=com.samsung.android.oneconnect" target="_blank" aria-label="Google Play Store Google Play Store: Open in a new window : open in a new window" an-tr="ft03_feature full bleed-product category detail-cta-button" an-ca="content click" an-ac="feature" an-la="download the smartthings app:google play store">Google Play Store
-                                    <svg class="icon" focusable="false" aria-hidden="true">
-                                        <use xlink:href="#outlink-bold" href="#outlink-bold"></use>
-                                    </svg>
-                                </a>
-                                
-                                
-                                
-                                
-                            
-                        
-                            
-                                <a class="cta cta--contained cta--icon cta--black cta--mobile-black" href="http://apps.apple.com/app/samsung-connect/id1222822904" target="_blank" aria-label="Apple App Store Apple App Store: Open in a new window : open in a new window" an-tr="ft03_feature full bleed-product category detail-cta-button" an-ca="content click" an-ac="feature" an-la="download the smartthings app:apple app store">Apple App Store
-                                    <svg class="icon" focusable="false" aria-hidden="true">
-                                        <use xlink:href="#outlink-bold" href="#outlink-bold"></use>
-                                    </svg>
-                                </a>
-                                
-                                
-                                
-                                
-                            
-                        
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <figure class="st-feature-benefit-full-bleed__figure ">
-            
-            
-            
-            
-            
-        </figure>
-    </div>
-    
-    
-        
-    
-        
-    
-    
-</section>
+	<section class="st-feature-benefit-full-bleed  st-feature-benefit-full-bleed--middle st-feature-benefit-full-bleed--center st-feature-benefit-full-bleed--m-middle st-feature-benefit-full-bleed--m-center st-feature-benefit-full-bleed--center-img-over desktop-bg-light-gray mobile-bg-light-gray  desktop-text-color-black mobile-text-color-black     " data-clickable-state="false">
+		
+		
+		
+		
+		<div class="st-feature-benefit-full-bleed__wrap">
+			<div class="st-feature-benefit-full-bleed__content-wrap">
+				<div class="st-feature-benefit-full-bleed__content-inner">
+					<div class="st-feature-benefit-full-bleed__content-area">
+						
+							
+						
+						
+						
+						
+							<h3 class="st-feature-benefit-full-bleed__title" data-font-size-pc="38" data-font-size-mo="26">Connect<br />Grow with us</h3>
+							
+						
+						
+						<p class="st-feature-benefit-full-bleed__text" data-font-size-pc="14" data-font-size-mo="12">Start your Journey for a whole new world of connected living.</p>
+						<div class="st-feature-benefit-full-bleed__cta">
+							
+								
+									<a class="cta cta--contained cta--icon cta--black cta--mobile-black" href="http://play.google.com/store/apps/details?id=com.samsung.android.oneconnect" target="_blank" aria-label="Google Play Store Google Play Store: Open in a new window : open in a new window" an-tr="ft03_feature full bleed-product category detail-cta-button" an-ca="content click" an-ac="feature" an-la="download the smartthings app:google play store">Learn More
+										<svg class="icon" focusable="false" aria-hidden="true">
+											<use xlink:href="#outlink-bold" href="#outlink-bold"></use>
+										</svg>
+									</a>
+									
+									
+									
+									
+								
+							
+								
+									<a class="cta cta--contained cta--icon cta--black cta--mobile-black" href="http://apps.apple.com/app/samsung-connect/id1222822904" target="_blank" aria-label="Apple App Store Apple App Store: Open in a new window : open in a new window" an-tr="ft03_feature full bleed-product category detail-cta-button" an-ca="content click" an-ac="feature" an-la="download the smartthings app:apple app store">Scedule Demo
+										<svg class="icon" focusable="false" aria-hidden="true">
+											<use xlink:href="#outlink-bold" href="#outlink-bold"></use>
+										</svg>
+									</a>
+									
+									
+									
+									
+								
+							
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<figure class="st-feature-benefit-full-bleed__figure ">
+				
+				
+				
+				
+				
+			</figure>
+		</div>
+		
+		
+			
+		
+			
+		
+		
+	</section>
+	
+	</div>
 
-</div>
+
+
+
 <div class="cm-g-blank-space aem-GridColumn aem-GridColumn--default--12">
 
 
@@ -2325,266 +2929,41 @@ digitalData.page.pathIndicator.depth_5 = "";
 	</div>
 	
 </div>
-<div class="of-g-feature-benefit-card aem-GridColumn aem-GridColumn--default--12">
 
 
 
 
 
-
-
-
-
-
-
-<div class="feature-benefit-card bg-light-gray feature-benefit-card--desktop-layout-3 desktop-text-align--center mobile-text-align--center feature-benefit-card--use-mouseover-interaction feature-benefit-card--mobile-swiper">
-	<h3 class="feature-benefit-card__head-title">Master the app in 3 steps</h3>
-	
-	<div class="feature-benefit-card__swiper swiper-container basic-swiper" data-swiper-option='{
-		"componentEl":".feature-benefit-card__swiper",
-		"keepWrapper": true,
-		"breakpoints": {
-			"1": {
-			"slidesPerView":1
-			},
-			"768": {
-			"slidesPerView":3
-			}
-		},
-		"autoHeight":false,
-		"pagination":true,
-		"offTxtAccesibility":true}'>
-		<div class="feature-benefit-card__card-wrap swiper-wrapper">
-			
-				
-				
-				
-				
-					<div class="feature-benefit-card__card swiper-slide" data-tagging='{	
-						"an-tr":"ft16_feature benefit card-product category detail-index-indication",
-						"an-ca":"indication",
-						"an-ac":"carousel",
-						"an-la":"carousel:index:1"
-						}' data-type-headline="step 1">
-						<div class="feature-benefit-card__card-inner feature-benefit-card__card--contents-type-image">
-							<div class="feature-benefit-card__card-inner-bg" style="background:#FFFFFF"></div>
-							<div class="feature-benefit-card__text-wrap">
-								<div class="feature-benefit-card__text-wrap-inner">
-									<div class="feature-benefit-card__text-wrap-area">
-										<div class="feature-benefit-card__eyebrow-text"> </div>
-										<h4 class="feature-benefit-card__title">Step 1 : Add your <br />devices to the app</h4>
-										
-										<div class="feature-benefit-card__cta">
-											<a href="app/index.html#download" an-tr="ft16_feature benefit card-product category detail-text-link" an-ca="content click" an-ac="feature" an-la="master the app in 3 steps:step 1 add your devices to the app:learn more" class="cta cta--underline cta--black" aria-label="Learn more Step 1 : Add your devices to the app. Learn more. Control your home with SmartThings! App page. Let&#39;s start step by step">
-												Learn more
-												
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="feature-benefit-card__figure">
-								<div class="image">
-									<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_03_Learning-the-App_01_PC_0119.jpg?$LazyLoad_Home_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_03_Learning-the-App_01_MO_0119.jpg?$LazyLoad_Home_PNG$" alt="A person is holding a Galaxy smartphone with the SmartThings app icon on the screen. Smart home devices in the background are being connected to the smartphone using Wi-Fi." role="img" class="image__preview lazy-load responsive-img"/>
-									<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_03_Learning-the-App_01_PC_0119.jpg?$448_440_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_03_Learning-the-App_01_MO_0119.jpg?$312_446_PNG$" alt="A person is holding a Galaxy smartphone with the SmartThings app icon on the screen. Smart home devices in the background are being connected to the smartphone using Wi-Fi." role="img" class="image__main lazy-load responsive-img"/>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-				
-			
-				
-				
-				
-				
-					<div class="feature-benefit-card__card swiper-slide" data-tagging='{	
-						"an-tr":"ft16_feature benefit card-product category detail-index-indication",
-						"an-ca":"indication",
-						"an-ac":"carousel",
-						"an-la":"carousel:index:2"
-						}' data-type-headline="step 2">
-						<div class="feature-benefit-card__card-inner feature-benefit-card__card--contents-type-image">
-							<div class="feature-benefit-card__card-inner-bg" style="background:#FFFFFF"></div>
-							<div class="feature-benefit-card__text-wrap">
-								<div class="feature-benefit-card__text-wrap-inner">
-									<div class="feature-benefit-card__text-wrap-area">
-										<div class="feature-benefit-card__eyebrow-text"> </div>
-										<h4 class="feature-benefit-card__title">Step 2 : Manage your devices to make life smarter</h4>
-										
-										<div class="feature-benefit-card__cta">
-											<a href="app/index.html#services" an-tr="ft16_feature benefit card-product category detail-text-link" an-ca="content click" an-ac="feature" an-la="master the app in 3 steps:step 2 manage your devices to make life smarter:learn more" class="cta cta--underline cta--black" aria-label="Learn more Step 2 : Manage your devices to make life smarter. Learn more. Control your home with SmartThings! App page. Make your home life smarter">
-												Learn more
-												
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="feature-benefit-card__figure">
-								<div class="image">
-									<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_02_PC.jpg?$LazyLoad_Home_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_02_MO.jpg?$LazyLoad_Home_PNG$" alt="Eight smart home devices are seen in a blue house setting. From left to right: A white wall-mount air conditioner, a white Bespoke AI washer and dryer set below the air conditioner, a white Jet Bot AI+ robot vacuum in front of the washer and dryer set, a black Philips Hue Signe gradient floor lamp, a multi-colored Bespoke Fridge Freezer, a SmartThings Cam on the wall above the fridge freezer and a Smart Plug on the wall." role="img" class="image__preview lazy-load responsive-img"/>
-									<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_02_PC.jpg?$448_440_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_02_MO.jpg?$312_446_PNG$" alt="Eight smart home devices are seen in a blue house setting. From left to right: A white wall-mount air conditioner, a white Bespoke AI washer and dryer set below the air conditioner, a white Jet Bot AI+ robot vacuum in front of the washer and dryer set, a black Philips Hue Signe gradient floor lamp, a multi-colored Bespoke Fridge Freezer, a SmartThings Cam on the wall above the fridge freezer and a Smart Plug on the wall." role="img" class="image__main lazy-load responsive-img"/>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-				
-			
-				
-				
-				
-				
-					<div class="feature-benefit-card__card swiper-slide" data-tagging='{	
-						"an-tr":"ft16_feature benefit card-product category detail-index-indication",
-						"an-ca":"indication",
-						"an-ac":"carousel",
-						"an-la":"carousel:index:3"
-						}' data-type-headline="step 3">
-						<div class="feature-benefit-card__card-inner feature-benefit-card__card--contents-type-image">
-							<div class="feature-benefit-card__card-inner-bg" style="background:#FFFFFF"></div>
-							<div class="feature-benefit-card__text-wrap">
-								<div class="feature-benefit-card__text-wrap-inner">
-									<div class="feature-benefit-card__text-wrap-area">
-										<div class="feature-benefit-card__eyebrow-text"> </div>
-										<h4 class="feature-benefit-card__title">Step 3 : Automate your everyday moments</h4>
-										
-										<div class="feature-benefit-card__cta">
-											<a href="app/index.html#routines" an-tr="ft16_feature benefit card-product category detail-text-link" an-ca="content click" an-ac="feature" an-la="master the app in 3 steps:step 3 automate your everyday moments:learn more" class="cta cta--underline cta--black" aria-label="Learn more Step 3 : Automate your everyday moments. Learn more. Control your home with SmartThings! App page. Uplift your everyday with new routines">
-												Learn more
-												
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="feature-benefit-card__figure">
-								<div class="image">
-									<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_03_PC.jpg?$LazyLoad_Home_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_03_MO.jpg?$LazyLoad_Home_PNG$" alt="A collage of two photos is displayed. The first one features a woman joyfully starting her day in the morning with icons representing a morning routine. The second one shows a woman sleeping peacefully at night, along with icons representing a nighttime routine." role="img" class="image__preview lazy-load responsive-img"/>
-									<img data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_03_PC.jpg?$448_440_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/ST_01_Hub_03_About-ST-App_03_MO.jpg?$312_446_PNG$" alt="A collage of two photos is displayed. The first one features a woman joyfully starting her day in the morning with icons representing a morning routine. The second one shows a woman sleeping peacefully at night, along with icons representing a nighttime routine." role="img" class="image__main lazy-load responsive-img"/>
-								</div>
-							</div>
-						</div>
-					</div>
-				
-				
-			
-		</div>
-		
-			<div class="indicator dot-indicator" data-indicator-data='{
-				&quot;type&quot;: &quot;dot-indicator&quot;,
-				&quot;autoRolling&quot;: false,
-				&quot;infiniteRolling&quot;: false
-				}'>
-				<div class="indicator-wrap">
-					<div class="indicator__list-wrap">
-					<div class="indicator__list" role="tablist">
-						<button class="indicator__item" role="tab" data-indicator-delay="">
-						<span class="indicator__dot-wrap">
-							<span class="indicator__dot">
-							<span class="indicator__dot-inner"></span>
-							</span>
-							<span class="hidden">Indicator 1</span>
-						</span>
-						</button>
-					</div>
-					</div>
-				</div>
-			</div>
-		
-	</div>
-</div>
-</div>
+  
 <div class="cm-g-text-block aem-GridColumn aem-GridColumn--default--12">
-	<div class="textblock margin-top--32   bg-white  text-center  text-mo-center container-width-medium" id="devices">
+	<div class="textblock margin-top--16   bg-gray  text-center  text-mo-center container-width-medium">
 		
 		
+		<h3 class="textblock__title" data-font-size-pc="38" data-font-size-mo="26">Special Moments</h3>
     	
     	
-    	
-    	<div class="textblock__body padding-top--48 padding-bottom--0">
+    	<div class="textblock__body padding-top--48 padding-bottom--48">
 				
-				
-			<h3 class="textblock__title" data-font-size-pc="38" data-font-size-mo="26">Find your device that <br />works with SmartThings</h3>
-			
-			
-			
-			<p class="textblock__desc" data-font-size-pc="14" data-font-size-mo="12">Do more, much smarter with the devices you already have.<br />Just look for the &quot;Works with Samsung SmartThings&quot; or &quot;Matter&quot; badge.</p>
-			
-			
-			
-		</div>
-	</div>
-	
+			<div style="text-align: center;">
+				<main class='gallery' style="margin: 0 auto;">
+				  <div class='item' data-pos='0'><img src='https://source.unsplash.com/qvEI30ydO_w'></div>
+				  <div class='item' data-pos='1'><img src='https://source.unsplash.com/9KDuSi7dJv4'></div>
+				  <div class='item' data-pos='2'><img src='https://source.unsplash.com/d5PYB17O9jE'></div>
+				  <div class='item' data-pos='3'><img src='https://source.unsplash.com/Um9AkOiIDcU'></div>
+				  <div class='item' data-pos='4'><img src='https://source.unsplash.com/YTk8tO3PGdA'></div>
+				</main>
+			  </div>
+
+		
+			  
+
+		
 </div>
-<div class="pd-g-feature-benefit-full-bleed aem-GridColumn aem-GridColumn--default--12">
-
-
-
-
-
-
-
-<section class="st-feature-benefit-full-bleed  st-feature-benefit-full-bleed--top st-feature-benefit-full-bleed--center st-feature-benefit-full-bleed--m-top st-feature-benefit-full-bleed--m-left st-feature-benefit-full-bleed--center-img-over desktop-bg-white mobile-bg-white  desktop-text-color-black mobile-text-color-black     " data-clickable-state="false">
-    
-    
-    
-    
-    <div class="st-feature-benefit-full-bleed__wrap">
-        
-        <figure class="st-feature-benefit-full-bleed__figure ">
-            
-            
-            
-            <div class="image image--dyn-height">
-                <img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_04_Supported-Devices_PC_0119.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_04_Supported-Devices_MO_0119.jpg?$LazyLoad_Home_JPG$" data-desktop-alt="A ‘Works with Samsung SmartThings’ logo, &#39;Matter&#39; logo and various icons such as those for TV, AV, air conditioner, washer/dryer, robot vacuum, refrigerator, Wi-Fi hub, motion sensor, camera, multi-functional sensor, doorbell, light bulb, lock, outlet, switch/dimmer, and thermostat, which are available with the SmartThings app." data-mobile-alt="A ‘Works with Samsung SmartThings’ logo, &#39;Matter&#39; logo and various icons such as those for TV,  washer/dryer, robot vacuum, refrigerator, Wi-Fi hub, motion sensor, light bulb, lock  and thermostat, which are available with the SmartThings app."/>
-                <img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_04_Supported-Devices_PC_0119.jpg?$FB_TYPE_A_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/smartthings/main/ST_01_Main_04_Supported-Devices_MO_0119.jpg?$720_N_JPG$" data-desktop-alt="A ‘Works with Samsung SmartThings’ logo, &#39;Matter&#39; logo and various icons such as those for TV, AV, air conditioner, washer/dryer, robot vacuum, refrigerator, Wi-Fi hub, motion sensor, camera, multi-functional sensor, doorbell, light bulb, lock, outlet, switch/dimmer, and thermostat, which are available with the SmartThings app." data-mobile-alt="A ‘Works with Samsung SmartThings’ logo, &#39;Matter&#39; logo and various icons such as those for TV,  washer/dryer, robot vacuum, refrigerator, Wi-Fi hub, motion sensor, light bulb, lock  and thermostat, which are available with the SmartThings app."/>
-            </div>
-            
-        </figure>
-    </div>
-    
-    
-    
-</section>
+</div>
 
 </div>
-<div class="cm-g-text-block aem-GridColumn aem-GridColumn--default--12">
-	<div class="textblock    bg-white  text-center  text-mo-center container-width-medium" id="btn_supported_device">
-		
-		
-    	
-    	
-    	
-    	<div class="textblock__body padding-top--0 padding-bottom--48">
-				
-				
-			
-			
-			
-			
-			
-			
-			<div class="cta-wrap">
-				
-				 	
-				 		
-				 		
-				 		
-					 		<a href="#search" class="cta cta--contained cta--emphasis" target="_self" title="Supported devices search pop up" an-tr="co01_text block-product category detail-cta-button" an-ca="content click" an-ac="feature" an-la="find your device that works with smartthings:supported devices">Supported Devices</a>
-					 		
-					 		
-				 		
-				 	
-				 	
-			 	
-			</div>
-			
-		</div>
-	</div>
-	
-</div>
+
+
 <div class="cm-g-text-block aem-GridColumn aem-GridColumn--default--12">
 	<div class="textblock margin-top--16   bg-gray  text-center  text-mo-center container-width-medium">
 		
@@ -2595,7 +2974,7 @@ digitalData.page.pathIndicator.depth_5 = "";
     	<div class="textblock__body padding-top--48 padding-bottom--48">
 				
 				
-			<h3 class="textblock__title" data-font-size-pc="38" data-font-size-mo="26">Shop our SmartThings-ready devices</h3>
+			<h3 class="textblock__title" data-font-size-pc="38" data-font-size-mo="26">Customer Reviews and Ratings</h3>
 			
 			
 			
@@ -3142,38 +3521,7 @@ digitalData.page.pathIndicator.depth_5 = "";
 
 
 
-<nav class="breadcrumb breadcrumb--margin-top-None breadcrumb--margin-bottom-None" aria-label="Breadcrumb">
-	<div class="breadcrumb__inner">
-		<ul class="breadcrumb__path">
-			
-			
-			
-				<li>
-					
-						<a aria-label="Home" an-tr="nv03_breadcrumb-product category detail-text-breadcrumb" an-ca="navigation" an-ac="breadcrumb" an-la="breadcrumb:home" href="../index.html">
-							<span class="breadcrumb__text-desktop">Home</span>
-							<span class="breadcrumb__text-mobile">Home</span>
-						</a>
-					
-					
-					<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#next-bold" href="#next-bold"></use></svg>
-				</li>
-			
-		
-			
-			
-				<li>
-					<strong class="breadcrumb__text-desktop" aria-current="page">SmartThings</strong>
-					<strong class="breadcrumb__text-mobile" aria-current="page">SmartThings</strong>
-				</li>
-			
-			
-		</ul>
-	</div>
-	
-  <script type="application/ld+json" data-type="seo" data-object-type="BreadcrumbList" data-id="cf00b462-14a0-4b7b-8028-068440ec7028">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","name":"Home","item":"https://www.samsung.com/in/","position":1},{"@type":"ListItem","name":"SmartThings","item":"","position":2}]}</script>
-
-</nav></div>
+</div>
 
     
 </div>
@@ -3390,9 +3738,7 @@ digitalData.page.pathIndicator.depth_5 = "";
 								
 								
 								
-								<p style="margin-top: 10px; padding-left: 10PX;">Pune - Greentin Solutions Pvt Ltd,
-
-									WeWork Futura, Hadapsar, Pune 411 013</p>
+								<p style="margin-top: 10px; padding-left: 10PX;">Pune - WeWork Futura, Hadapsar, Pune 411 013</p>
 								
 							</li>
 						
@@ -3401,7 +3747,7 @@ digitalData.page.pathIndicator.depth_5 = "";
 							<li class="footer-category__item" role="listitem">
 								
 								
-								<p style="margin-top: 10px; padding-left: 10PX;">Pandharpur - B1 Builing, Kandre's Residency, Isbavi, Pandharpur, Maharashtra 413304</p>
+								<p style="margin-top: 10px; padding-left: 10PX;">Pandharpur - Kandre's Residency, Pandharpur, Maharashtra 413304</p>
 							
 								
 							</li>
@@ -4011,7 +4357,14 @@ digitalData.page.pathIndicator.depth_5 = "";
 	
 	
 
-	
+	<script>function init(e) {
+		if (!e.target.closest('.item')) return;
+		let hero = document.querySelector('div[data-pos="0"]');
+		let target = e.target.parentElement;
+		[target.dataset.pos,hero.dataset.pos] = [hero.dataset.pos,target.dataset.pos];
+	  }
+	  
+	  window.addEventListener('click',init,false);</script>
 
    
     

@@ -90,7 +90,7 @@
 	<link rel="apple-touch-icon" href="../etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/app_ico.png" sizes="144x144"/>
 	
 	
-	
+
 	
 
     
@@ -117,15 +117,248 @@
 <link rel="stylesheet" href="../etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-new-gnb.min.12e6dd99e3461a3b18cde162edbaee38.css" type="text/css">
 
 
+<style>
 
+h1, h2, h3, h4 ,h5 ,h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.testimonials{
+    padding-bottom: 2.2em; 
+    text-align: center;
+   
+}
+.testimonials h1{
+   
+    font-size: 1.3em;
+}
+.testimonials .test-body{padding: 1em;}
+.testimonials .item{ 
+    text-align: center;
+    padding: 1em 0;
+}
+.testimonials img{
+    width: 4.8em;
+    height: 4.8em;
+    border-radius: 50%;
+}
+.testimonials .name{color: blue;}
+.testimonials .desig{
+    font-size: 0.7em;
+    padding: 0.5em 0;
+    color: #777;
+}
+.testimonials .share{
+    margin: 0 auto;
+    width: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.testimonials i{
+    color: #bfbfbf;
+    padding: 0.5em 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.testimonials i:hover{color: blue;}
+.testimonials p{
+    max-width: 27em;
+    margin: 0 auto;
+    font-size: 0.8em;
+}
+.testimonials button{
+    font-size: 1em;
+    background-color: blue;
+    color: white;
+    padding: 0.8em 2em;
+    border-radius: 2em;
+    border: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.testimonials button:hover{
+    background-color: #444;
+}
+
+@media (min-width: 38.4rem){
+    .testimonials{
+        font-size: 1.2em;
+    }
+    .testimonials .test-body{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .testimonials p{
+        text-align: left;
+        padding: 1em;
+    }
+}</style>
 		
 	
+<style>
+  
+  .section-hero {
+	
+	padding: 8.4rem 0 9.6rem 0;
+  }
+  
+  .hero {
+	/* We'll not use px to define the length and will use rem. */
+	/* max-width: 1300px; */
+	max-width: 130rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 0 3.2rem;
+	margin: 0 auto;
+	align-items: center;
+	gap: 0 9.6rem;
+  }
+  
+  .heading-primary {
+	font-size: 2.3rem;
+	
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	line-height: 1.05;
+	margin-bottom: 3.6rem;
+  }
+  
+  .hero-description {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	margin-bottom: 4.8rem;
+  }
+  
+  .hero-img-box {
+	grid-column: 2/3;
+	grid-row: 1 / 3;
+  }
+  
+  .hero-img {
+	width: 100%;
+  }
+  
+  .btn:link,
+  .btn:visited {
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: 600;
 
+	border: none;
+	cursor: pointer;
+	border-radius: 9px;
+	/* margin-top: 4.8rem; */
+	padding: 1.6rem 3.2rem;
+	text-decoration: none;
+  
+	transition: background-color 500ms;
+  }
+  
+  .btn--fill:link,
+  .btn--fill:visited {
+	background-color: #e67e22;
+	color: #fff;
+  }
+  
+  .btn--outline:link,
+  .btn--outline:visited {
+	color: #555;
+	background-color: #fff;
+  }
+  
+  .btn--fill:hover,
+  .btn--fill:active {
+	background-color: #cf711f;
+	text-decoration: underline;
+  }
+  
+  .btn--outline:hover,
+  .btn--outline:active {
+	background-color: #fdf2e9;
+	/* Now we'll not use border as in border the outlines are on the outside. Instead we'll use the outline or box-shadow property */
+	box-shadow: inset 0px 0px 0px 3px #fff;
+	text-decoration: underline;
+	/* outline: #fff solid 3px; */
+  }
+  
+  /* We'll create a utility class that can be used for any element by simply adding a class. */
+  .margin-right-btn {
+	margin-right: 2.4rem;
+  }
+  
+  .delivered-meals {
+	display: flex;
+	align-items: center;
+	gap: 3.2rem;
+  }
+  
+  .delivered-imgs img {
+	width: 4.8rem;
+	height: 4.8rem;
+	border-radius: 50%;
+	margin-right: -1.6rem;
+	outline: #fdf2e9 solid 3px;
+  }
+  
+  .delivered-text {
+	font-size: 1.8rem;
+	font-weight: 600;
+  }
+  
+  .delivered-text span {
+	color: #cf711f;
+  }</style>
 	
 	
 
     
-    
+    <style>.logo-slider {
+		overflow: hidden;
+		padding: 30px 0 0 0;
+		white-space: nowrap;
+		position: relative;
+	}
+	
+	.logo-slider:hover .logos-slide {
+		animation-play-state: paused;
+	}
+	
+	.logos-slide {
+		display: inline-block;
+		animation: 45s slide infinite linear;
+	}
+	
+	.logos-slide img {
+		width: 183px;
+		height: 83px;
+		margin: 0 40px;
+	}
+	
+	
+	@keyframes slide {
+		from {
+			transform: translateX(0);
+		}
+	
+		to {
+			transform: translateX(-100%);
+		}
+	}</style>
     
 
 
@@ -1058,11 +1291,83 @@ var digitalData = {
 		</button>
 		<div class="home-kv-carousel__wrapper">
 			
-			
-			<div class="home-kv-carousel__slide bg-white" id="home-kv-carousel-slide-1" role="tabpanel" an-tr="hd01_home kv carousel-home-image-swipe1" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:kv1">
+			<div class="home-kv-carousel__slide bg-white" id="home-kv-carousel-slide-2" role="tabpanel" an-tr="hd01_home kv carousel-home-image-swipe2" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:kv2">
 				
 				<div class="home-kv-carousel__slide-inner">
 					<div class="home-kv-carousel__text-wrap text-color--black home-kv-carousel__text-wrap--desktop-middle-left home-kv-carousel__text-wrap--mobile-top-center  ">
+						
+						
+						
+						
+						
+						
+						
+						
+
+						
+						<h2 class="home-kv-carousel__headline" data-desktop-headline-text="" data-mobile-headline-text=""></h2>
+						<p class="home-kv-carousel__desc" data-desktop-description="" data-mobile-description="Starting ₹117999*&lt;br>Shop Galaxy Watch6 with Galaxy S24 series and&lt;br>get up to ₹ 12000* benefits"></p>
+						
+						
+						<div class="home-kv-carousel__cta-wrap">
+							
+								
+								
+								
+								
+									
+									
+									
+								
+									<!-- <iframe width="99%" height="750px" src="https://www.youtube.com/embed/g7xkVEWrX8E?si=fYh3DB0bl1D0DMAX&amp;start=21&mute=1&autoplay=1&loop=1" frameborder="0" allow="autoplay; " " allowfullscreen></iframe> -->
+
+
+							
+						</div>
+						
+					</div>
+					<div class="home-kv-carousel__background-media-wrap">
+						
+							
+						<style>
+							.video-container {
+								position: relative;
+								width: 100%;
+								height: 750px;
+								overflow: hidden;
+								border-radius: 20px;
+							}
+						
+							.video-container video {
+								position: absolute;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								min-width: 100%;
+								min-height: 100%;
+								width: auto;
+								height: auto;
+							}
+						</style>
+						
+						<div class="video-container">
+							<video autoplay loop controls muted>
+								<source type="video/mp4" src="https://github.com/ShubhamDeshmukh18/GreenTin/raw/main/promo/promo.mp4">
+							</video>
+						</div>
+						
+
+						
+						
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="home-kv-carousel__slide bg-white" id="home-kv-carousel-slide-1" role="tabpanel" an-tr="hd01_home kv carousel-home-image-swipe1" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:kv1">
+				
+				<div class="home-kv-carousel__slide-inner" >
+					<div class="home-kv-carousel__text-wrap text-color--black home-kv-carousel__text-wrap--desktop-middle-left home-kv-carousel__text-wrap--mobile-top-center  " >
 						
 						
 						
@@ -1104,7 +1409,7 @@ var digitalData = {
 						</div>
 						
 					</div>
-					<div class="home-kv-carousel__background-media-wrap">
+					<div class="home-kv-carousel__background-media-wrap" style="border-radius: 20px;" >
 						
 							
 								<figure class="first-image">
@@ -1124,74 +1429,6 @@ var digitalData = {
 							
 						
 						
-						
-					</div>
-					
-				</div>
-			</div>
-			
-			
-			<div class="home-kv-carousel__slide bg-white" id="home-kv-carousel-slide-2" role="tabpanel" an-tr="hd01_home kv carousel-home-image-swipe2" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:kv2">
-				
-				<div class="home-kv-carousel__slide-inner">
-					<div class="home-kv-carousel__text-wrap text-color--black home-kv-carousel__text-wrap--desktop-middle-left home-kv-carousel__text-wrap--mobile-top-center  ">
-						
-						
-						
-						
-						
-						
-						
-						
-
-						
-						<h2 class="home-kv-carousel__headline" data-desktop-headline-text="myeNovation" data-mobile-headline-text="myeNovation"></h2>
-						<p class="home-kv-carousel__desc" data-desktop-description="Starting ₹117999*&lt;br>Shop Galaxy Watch6 with Galaxy S24 series and&lt;br>get up to ₹ 12000* benefits" data-mobile-description="Starting ₹117999*&lt;br>Shop Galaxy Watch6 with Galaxy S24 series and&lt;br>get up to ₹ 12000* benefits"></p>
-						
-						
-						<div class="home-kv-carousel__cta-wrap">
-							
-								
-								
-								
-								
-									<a class="cta cta--contained cta--black" href="smartphones/galaxy-s24-ultra/buy/index.html" an-tr="hd01_home kv carousel-home-cta-kv" an-ca="home content click" an-ac="kv" an-la="kv2:galaxy s24 ultra:button1:buy now:20240402">
-										Buy now
-									</a>
-									
-									
-								
-								
-								
-							
-						</div>
-						
-					</div>
-					<div class="home-kv-carousel__background-media-wrap">
-						
-						
-							
-						
-						
-							
-							<div class="video lazy-load-man" data-image-default="true" data-video-embed="true" data-video-type="mp4" data-video-data='{ 
-								"desktopSrc": "//images.samsung.com/is/content/samsung/assets/in/home/HOME_S24_Series_Main-KV_1440x640_pc.mp4",
-								"mobileSrc": "//images.samsung.com/is/content/samsung/assets/in/home/HOME_S24_Series_Main-KV_720x1080_mo.mp4",
-								"title": "S Pen taps the display of Galaxy S24 Ultra, seen facing up. Stars animate on the screen. Another Galaxy S24 Ultra seen from the rear and S Pen emerge and hover above the first device. Galaxy AI is here.",
-								"caption": "S Pen taps the display of Galaxy S24 Ultra, seen facing up. Stars animate on the screen. Another Galaxy S24 Ultra seen from the rear and S Pen emerge and hover above the first device. Galaxy AI is here.",
-								"muted": true,
-								"autoplay": false,
-								"loop": false,
-								"controls": false}'>
-								
-								
-									<div class="image">
-										<img class="image__preview lazy-load-man responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_S24_Series_Main-KV_1440x640_pc.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_S24_Series_Main-KV_720x1080_mo.jpg?$LazyLoad_Home_JPG$" alt="S Pen taps the display of Galaxy S24 Ultra, seen facing up. Stars animate on the screen. Another Galaxy S24 Ultra seen from the rear and S Pen emerge and hover above the first device. Galaxy AI is here." role="img"/>
-										<img class="image__main responsive-img lazy-load-man" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_S24_Series_Main-KV_1440x640_pc.jpg?$ORIGIN_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_S24_Series_Main-KV_720x1080_mo.jpg?$ORIGIN_JPG$" alt="S Pen taps the display of Galaxy S24 Ultra, seen facing up. Stars animate on the screen. Another Galaxy S24 Ultra seen from the rear and S Pen emerge and hover above the first device. Galaxy AI is here." role="img"/>
-									</div>
-								
-								
-							</div>
 						
 					</div>
 					
@@ -1248,14 +1485,14 @@ var digitalData = {
 						</div>
 						
 					</div>
-					<div class="home-kv-carousel__background-media-wrap">
+					<div class="home-kv-carousel__background-media-wrap" style="border-radius: 20px;" >
 						
 							
 							
 								<div class="image-v2 lazy-load-man">
 									
-										<img class="image-v2__preview" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_720x1080.jpg?$LazyLoad_Home_JPG$" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_1440x640.jpg?$LazyLoad_Home_JPG$" data-desktop-alt="Shubham" data-mobile-alt="ShubhamNeo QLED 8K" role="img"/>
-										<img class="image-v2__main" data-desktop-alt="Neo QLED 8K" data-mobile-alt="Neo QLED 8K" data-360w1x-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_720x1080.jpg?imwidth=360" data-360w2x-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_720x1080.jpg?imwidth=720" data-768w1x-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_1440x640.jpg?imwidth=768" data-768w2x-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_1440x640.jpg?imwidth=1536" data-1366w1x-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_1440x640.jpg?imwidth=1366" data-1366w2x-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_1440x640.jpg?imwidth=2560" role="img"/>
+										<img class="image-v2__preview" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_720x1080.jpg?$LazyLoad_Home_JPG$" data-desktop-src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?$LazyLoad_Home_JPG$" data-desktop-alt="Shubham" data-mobile-alt="ShubhamNeo QLED 8K" role="img"/>
+										<img class="image-v2__main" data-desktop-alt="Neo QLED 8K" data-mobile-alt="Neo QLED 8K" data-360w1x-src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-360w2x-src="//images.samsung.com/is/image/samsung/assets/in/home/home_page_720x1080.jpg?imwidth=720" data-768w1x-src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?imwidth=768" data-768w2x-src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?imwidth=1536" data-1366w1x-src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?imwidth=1366" data-1366w2x-src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" role="img"/>
 									
 									
 								</div>
@@ -1269,44 +1506,7 @@ var digitalData = {
 			</div>
 			
 			
-			<div class="home-kv-carousel__slide bg-white" id="home-kv-carousel-slide-4" role="tabpanel" an-tr="hd01_home kv carousel-home-image-swipe4" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:kv4">
-				
-					
-						
-    <div class="home-kv-carousel__slide-inner home-kv-carousel__slide-inner--two-item home-kv-carousel__two-item--position-layout2 home-kv-carousel__mobile-divider--on text-color--black">
-        <div class="home-kv-carousel__two-item-wrap"><div class="home-kv-carousel__two-item home-kv-carousel__two-item--first clickable-state--on" role="button" tabindex="0">
-                <div class="home-kv-carousel__text-wrap">
-                    <h2 class="home-kv-carousel__headline" data-desktop-headline-text="myeNovation" data-mobile-headline-text="myeNovation"></h2>
-                    <div class="home-kv-carousel__cta-wrap"><a class="cta cta-kv-display-on url-to-kv cta--underline cta--black" href="tablets/galaxy-tab-s/galaxy-tab-s9-5g-graphite-256gb-sm-x716bzaeinu/index.html" aria-label="Learn more" an-tr="hd01_home kv carousel-home-cta-kv" an-ca="home content click" an-ac="kv" an-la="kv4:null:galaxy tab s9 series:button1:learn more:20240326">Learn more
-                                
-                            </a><a class="cta cta-kv-display-on cta--contained cta--black" href="tablets/galaxy-tab-s9/buy/index.html" aria-label="Buy now" an-tr="hd01_home kv carousel-home-cta-kv" an-ca="home content click" an-ac="kv" an-la="kv4:null:galaxy tab s9 series:button2:buy now:20240326">Demo
-                                
-                            </a></div>
-                    
-                </div>
-            </div><div class="home-kv-carousel__two-item home-kv-carousel__two-item--second clickable-state--on" role="button" tabindex="0">
-                <div class="home-kv-carousel__text-wrap"><h2 class="home-kv-carousel__headline" data-desktop-headline-text="HR Buddy" data-mobile-headline-text="Galaxy Watch6 Series"></h2><div class="home-kv-carousel__cta-wrap"><a class="cta cta-kv-display-on url-to-kv cta--underline cta--black" href="watches/galaxy-watch/galaxy-watch6-40mm-gold-bluetooth-sm-r930nzeains/index.html" aria-label="Learn more" an-tr="hd01_home kv carousel-home-cta-kv" an-ca="home content click" an-ac="kv" an-la="kv4:null:galaxy watch6 series:button1:learn more:20240326">Learn more
-                                
-                            </a>
-                        
-                        <a class="cta cta-kv-display-on cta--contained cta--black" href="watches/galaxy-watch/galaxy-watch6-40mm-gold-bluetooth-sm-r930nzeains/buy/index.html" aria-label="Buy now" an-tr="hd01_home kv carousel-home-cta-kv" an-ca="home content click" an-ac="kv" an-la="kv4:null:galaxy watch6 series:button2:buy now:20240326">Demo
-                                
-                            </a>
-                        
-                        </div>
-                    
-                </div>
-            </div>
-        </div><div class="home-kv-carousel__background-media-wrap"><div class="image-v2 lazy-load-man">
-                            <img class="image-v2__preview" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/new-HD01_MO_Layout_2-case_Countdown_Design.jpg?$LazyLoad_Home_JPG$" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/HD01_PC_Layout-2-case_Design_filsize_optimized.jpg?$LazyLoad_Home_JPG$" data-desktop-alt="Galaxy Tab S9, S9+ and S9 Ultra are lined up in Portrait mode, overlapping next to each other with a colorful wave wallpaper on all screens. Splashes of water are surrounding the three devices and an S Pen is pointing at the screen of Galaxy Tab S9. Five Galaxy Watch6 Series devices are in a single, diagonal line. Each has a different watch band and is displaying a different screen." data-mobile-alt="Galaxy Tab S9, S9+ and S9 Ultra are lined up in Portrait mode, overlapping next to each other with a colorful wave wallpaper on all screens. Splashes of water are surrounding the three devices and an S Pen is pointing at the screen of Galaxy Tab S9. Five Galaxy Watch6 Series devices are in a single, diagonal line. Each has a different watch band and is displaying a different screen." role="img"/>
-                            <img class="image-v2__main" data-desktop-alt="Galaxy Tab S9, S9+ and S9 Ultra are lined up in Portrait mode, overlapping next to each other with a colorful wave wallpaper on all screens. Splashes of water are surrounding the three devices and an S Pen is pointing at the screen of Galaxy Tab S9. Five Galaxy Watch6 Series devices are in a single, diagonal line. Each has a different watch band and is displaying a different screen." data-mobile-alt="Galaxy Tab S9, S9+ and S9 Ultra are lined up in Portrait mode, overlapping next to each other with a colorful wave wallpaper on all screens. Splashes of water are surrounding the three devices and an S Pen is pointing at the screen of Galaxy Tab S9. Five Galaxy Watch6 Series devices are in a single, diagonal line. Each has a different watch band and is displaying a different screen." data-360w1x-src="//images.samsung.com/is/image/samsung/assets/in/home/new-HD01_MO_Layout_2-case_Countdown_Design.jpg?imwidth=360" data-360w2x-src="//images.samsung.com/is/image/samsung/assets/in/home/new-HD01_MO_Layout_2-case_Countdown_Design.jpg?imwidth=720" data-768w1x-src="//images.samsung.com/is/image/samsung/assets/in/home/HD01_PC_Layout-2-case_Design_filsize_optimized.jpg?imwidth=768" data-768w2x-src="//images.samsung.com/is/image/samsung/assets/in/home/HD01_PC_Layout-2-case_Design_filsize_optimized.jpg?imwidth=1536" data-1366w1x-src="//images.samsung.com/is/image/samsung/assets/in/home/HD01_PC_Layout-2-case_Design_filsize_optimized.jpg?imwidth=1366" data-1366w2x-src="//images.samsung.com/is/image/samsung/assets/in/home/HD01_PC_Layout-2-case_Design_filsize_optimized.jpg?imwidth=2560" role="img"/></div>
-        </div>
-    </div>
-
-					
-				
-				
-			</div>
+			
 			
 		</div>
 		
@@ -1587,6 +1787,40 @@ var digitalData = {
 
 
 </div>
+
+
+<div class="cm-g-text-block-container aem-GridColumn aem-GridColumn--default--12">
+	<section class="section-hero" style="font-size: 62%;">
+		<!-- 1.  Now we need to make our hero section display grid and need to center the content in the page.
+	  
+			 2. To acheive that we need to create a div container inside of our section that contains all the text and img -->
+  
+		<div class="hero">
+		  <div class="hero-text-box">
+			<h1 class="heading-primary">
+				Coming together for better IT Solutions
+			</h1>
+			<p class="hero-description">
+				ISO Certified  IT Services and Solutions company, providing digital enablement and product development offerings. In an age when technology plays a critical role in business strategy, we are pioneering industry-specific solutions and new age digital practices that enable rapid growth, rich value, and specific business outcomes.
+			</p>
+			<a href="#" class="btn btn--fill margin-right-btn" style="border-radius: 45px;"
+			  >Grow Your Business
+			</a>
+		
+		  </div>
+		  <div class="hero-img-box">
+			<img
+			  src="https://cdn.pixabay.com/photo/2024/02/20/09/56/network-connections-8585083_1280.jpg"
+			  alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+			  class="hero-img" style="border-radius: 35px;"
+			/>
+		  </div>
+		
+		</div>
+	  </section>
+	
+</div>
+
 <div class="cm-g-text-block-container aem-GridColumn aem-GridColumn--default--12">
 
 	<section class="text-block-container text-color--black " style="background: #FFFFFF">
@@ -1600,10 +1834,6 @@ var digitalData = {
       
     </section>
     
-
-
-
-
 
 <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
     
@@ -1632,35 +1862,23 @@ var digitalData = {
 			
 				<li class="tab__item" role="presentation">
 					<button role="tab" class="tab__item-title" an-tr="co05_showcase card tab-home-text-tab" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:mobile:tab" aria-controls="panel-co051">
-						Service Spectrum<span class="tab__item-line"></span>
-					</button>
-				</li>
-			
-				<li class="tab__item" role="presentation">
-					<button role="tab" class="tab__item-title" an-tr="co05_showcase card tab-home-text-tab" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:tv:tab" aria-controls="panel-co052">
-						Technology Stack<span class="tab__item-line"></span>
-					</button>
-				</li>
-			
-				<li class="tab__item" role="presentation">
-					<button role="tab" class="tab__item-title" an-tr="co05_showcase card tab-home-text-tab" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:appliances:tab" aria-controls="panel-co053">
-						Engagement Models<span class="tab__item-line"></span>
-					</button>
-				</li>
-			
-				<li class="tab__item" role="presentation">
-					<button role="tab" class="tab__item-title" an-tr="co05_showcase card tab-home-text-tab" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:galaxy ecosystem:tab" aria-controls="panel-co054">
-						GreenTin Ecosystem<span class="tab__item-line"></span>
+						Supporting Business Lines <span class="tab__item-line"></span>
 					</button>
 				</li>
 			
 				
 			
+				
+			
 				<li class="tab__item" role="presentation">
-					<button role="tab" class="tab__item-title" an-tr="co05_showcase card tab-home-text-tab" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:samsung live :tab" aria-controls="panel-co056">
-						Supporting Business Lines <span class="tab__item-line"></span>
+					<button role="tab" class="tab__item-title" an-tr="co05_showcase card tab-home-text-tab" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:galaxy ecosystem:tab" aria-controls="panel-co054">
+						GreenTin's Initiative<span class="tab__item-line"></span>
 					</button>
 				</li>
+			
+				
+			
+				
 			</ul>
 		</div>
 		<div class="showcase-card-tab__card-wrap swiper-container">
@@ -1683,15 +1901,15 @@ var digitalData = {
 											
 											<div class="showcase-card-tab-card__product-name-text-wrap">
 												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">A New Shubham Website <br /> Neo QLED 8K</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">A New Shubham Website <br /> Neo QLED 8K
+													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">A New AI Integration <br /> For Better Future</span>
+													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">A New AI Integration <br /> For Better Future
 														
 													</span>
 												</div>
 											</div>
 											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Early order now and get extra benefits up to ₹ 15000*</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Early order now and get extra benefits up to ₹ 15000*</span>
+												<span class="showcase-card-tab-card__product-description--desktop">The tools and technologies for precision </span>
+												<span class="showcase-card-tab-card__product-description--mobile">The tools and technologies for precision</span>
 											</div>
 										</div>
 										
@@ -1699,8 +1917,8 @@ var digitalData = {
 										<div class="showcase-card-tab-card__img-wrap">
 											
 												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/BigTile_684x6847.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/BigTile_624x3527.jpg?$LazyLoad_Home_JPG$" alt="Neo QLED 8K"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/BigTile_684x6847.jpg?$684_684_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/BigTile_624x3527.jpg?$624_352_JPG$" alt="Neo QLED 8K"/>
+													<img class="image__preview lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1684&h=6847&dpr=1" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/BigTile_624x3527.jpg?$LazyLoad_Home_JPG$" alt="Neo QLED 8K"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-mobile-src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=625&h=3527&dpr=1" alt="Neo QLED 8K"/>
 												</div>
 												
 											
@@ -1729,19 +1947,8 @@ var digitalData = {
 										
 											
 											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Galaxy A55 | A35 5G<br />Starting ₹ 27450*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Galaxy A55 | A35 5G<br />Starting ₹ 27450*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Up to ₹ 3000 instant bank discount</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Up to ₹ 3000 instant bank discount</span>
-											</div>
+										
+										
 										
 										
 										
@@ -1749,7 +1956,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile330x330_01.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile_296x352_011.jpg?$LazyLoad_Home_JPG$" alt="Galaxy A35 | A55"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile330x330_01.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile_296x352_011.jpg?$296_352_JPG$" alt="Galaxy A35 | A55"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2024/03/22/12/49/ai-generated-8649646_1280.jpg" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile_296x352_011.jpg?$296_352_JPG$" alt="Galaxy A35 | A55"/>
 												</div>
 												
 											
@@ -1757,7 +1964,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+													Server Administration &amp; N/W 
 													
 													
 												</span>
@@ -1779,18 +1986,7 @@ var digitalData = {
 											
 											
 											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">256L Convertible Freezer <br /> Starting ₹ 24990*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">256L Convertible Freezer <br /> Starting ₹ 24990*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 5000* off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 5000* off with instant bank discount &amp; app voucher</span>
-											</div>
+										
 										
 										
 										
@@ -1798,7 +1994,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/0814/Small-Tile_330x330-Double-door.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/0920/296x352_Double-door.jpg?$LazyLoad_Home_JPG$" alt="256L Convertible Freezer"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/0814/Small-Tile_330x330-Double-door.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/0920/296x352_Double-door.jpg?$296_352_JPG$" alt="256L Convertible Freezer"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/834895/pexels-photo-834895.jpeg?auto=compress&cs=tinysrgb&w=600" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/0920/296x352_Double-door.jpg?$296_352_JPG$" alt="256L Convertible Freezer"/>
 												</div>
 												
 											
@@ -1806,7 +2002,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+													Mobile Solutions
 													
 													
 												</span>
@@ -1828,18 +2024,7 @@ var digitalData = {
 											
 											
 											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Samsung Corporate+ Program</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Samsung Corporate+ Program
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Up to 10% additional corporate discount</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Up to 10% additional corporate discount</span>
-											</div>
+											
 										
 										
 										
@@ -1847,7 +2032,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Holi_330x330-2.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Holi_296x352-2.jpg?$LazyLoad_Home_JPG$" alt="Up to 10% additional corporate discount"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Holi_330x330-2.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Holi_296x352-2.jpg?$296_352_JPG$" alt="Up to 10% additional corporate discount"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2018/04/21/02/11/iot-3337536_640.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Holi_296x352-2.jpg?$296_352_JPG$" alt="Up to 10% additional corporate discount"/>
 												</div>
 												
 											
@@ -1855,7 +2040,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+												IOT
 													
 													
 												</span>
@@ -1877,18 +2062,7 @@ var digitalData = {
 											
 											
 											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">1.08 m CUE70 <br /> Starting ₹ 31490*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">1.08 m CUE70 <br /> Starting ₹ 31490*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 1500* off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 1500* off with instant bank discount &amp; app voucher</span>
-											</div>
+									
 										
 										
 										
@@ -1896,7 +2070,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_330x330_UHD_4K_CUE.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352_UHD_4K_CUE.jpg?$LazyLoad_Home_JPG$" alt="The Freestyle"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_330x330_UHD_4K_CUE.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352_UHD_4K_CUE.jpg?$296_352_JPG$" alt="The Freestyle"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2017/11/06/08/42/turn-on-2923046_1280.jpg" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352_UHD_4K_CUE.jpg?$296_352_JPG$" alt="The Freestyle"/>
 												</div>
 												
 											
@@ -1904,7 +2078,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+													 Automation
 													
 													
 												</span>
@@ -1951,7 +2125,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/684x684_S24_Vijay-1-Copy.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/624x352_S24_Vijay-1.jpg?$LazyLoad_Home_JPG$" alt="galaxy S24 S24 ultra"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/684x684_S24_Vijay-1-Copy.jpg?$684_684_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/624x352_S24_Vijay-1.jpg?$624_352_JPG$" alt="galaxy S24 S24 ultra"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2023/10/19/22/21/metal-8327760_640.jpg" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/624x352_S24_Vijay-1.jpg?$624_352_JPG$" alt="galaxy S24 S24 ultra"/>
 												</div>
 												
 											
@@ -1959,7 +2133,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+												Manufacturing Sector
 													
 													
 												</span>
@@ -1980,19 +2154,7 @@ var digitalData = {
 										
 											
 											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Smartphone Accessories<br />Starting ₹ 599*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Smartphone Accessories<br />Starting ₹ 599*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Up to 25% off on selected models</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Up to 25% off on selected models</span>
-											</div>
+										
 										
 										
 										
@@ -2000,7 +2162,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_330x3307.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352_LC.jpg?$LazyLoad_Home_JPG$" alt="Smartphone Accessories"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_330x3307.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352_LC.jpg?$296_352_JPG$" alt="Smartphone Accessories"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/7688374/pexels-photo-7688374.jpeg" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352_LC.jpg?$296_352_JPG$" alt="Smartphone Accessories"/>
 												</div>
 												
 											
@@ -2008,7 +2170,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+													Insurance
 													
 													
 												</span>
@@ -2026,25 +2188,7 @@ var digitalData = {
 									<a class="showcase-card-tab-card__full-bleed-wrap" href="smartphones/galaxy-s23-ultra/buy/index.html" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:mobile:im:galaxy s23:buy now" role="button" aria-label="Buy now">
 									
 										
-										
-											<div class="showcase-card-tab-card__badge-wrap">
-												
-												<span class="badge-icon badge-icon--label badge-icon--bg-color-red">Sale</span>
-											</div>
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Galaxy S23 Ultra<br />Starting ₹ 99999*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Galaxy S23 Ultra<br />Starting ₹ 99999*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												
-												
-											</div>
+									
 										
 										
 										
@@ -2052,7 +2196,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/S23-Ultra-330x330_Small-Tiles-2.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/S23-Ultra-296x352_Small-Tiles-2-1.jpg?$LazyLoad_Home_JPG$" alt="Galaxy S23"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/S23-Ultra-330x330_Small-Tiles-2.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/S23-Ultra-296x352_Small-Tiles-2-1.jpg?$296_352_JPG$" alt="Galaxy S23"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/3714195/pexels-photo-3714195.jpeg?auto=compress&cs=tinysrgb&w=600" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/S23-Ultra-296x352_Small-Tiles-2-1.jpg?$296_352_JPG$" alt="Galaxy S23"/>
 												</div>
 												
 											
@@ -2060,7 +2204,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--white">
-													Buy now
+											Telecommunication
 													
 													
 												</span>
@@ -2082,18 +2226,7 @@ var digitalData = {
 											
 											
 											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Galaxy A55 | A35 5G<br />Starting ₹ 27450*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Galaxy A55 | A35 5G<br />Starting ₹ 27450*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Up to ₹ 3000 instant bank discount</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Up to ₹ 3000 instant bank discount</span>
-											</div>
+										
 										
 										
 										
@@ -2101,7 +2234,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile330x330_01.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile_296x352_011.jpg?$LazyLoad_Home_JPG$" alt="Galaxy A35 | A55"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile330x330_01.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile_296x352_011.jpg?$296_352_JPG$" alt="Galaxy A35 | A55"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/2383010/pexels-photo-2383010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/19492_A-series_LC_Small-tile_296x352_011.jpg?$296_352_JPG$" alt="Galaxy A35 | A55"/>
 												</div>
 												
 											
@@ -2109,7 +2242,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+													HealthCare
 													
 													
 												</span>
@@ -2130,19 +2263,7 @@ var digitalData = {
 										
 											
 											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Galaxy S23 Series<br />Starting ₹ 54999*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Galaxy S23 Series<br />Starting ₹ 54999*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												
-												
-											</div>
+										
 										
 										
 										
@@ -2150,7 +2271,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/S23_330x330_SmallTiles.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/S23_296x352_SmallTiles.jpg?$LazyLoad_Home_JPG$" alt="Galaxy S23"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/S23_330x330_SmallTiles.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/S23_296x352_SmallTiles.jpg?$296_352_JPG$" alt="Galaxy S23"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/S23_296x352_SmallTiles.jpg?$296_352_JPG$" alt="Galaxy S23"/>
 												</div>
 												
 											
@@ -2158,7 +2279,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+											This Can Be You
 													
 													
 												</span>
@@ -2172,256 +2293,7 @@ var digitalData = {
 						</div>
 					</div>
 					
-					<div class="showcase-card-tab__card-items swiper-slide" an-tr="co05_showcase card tab-home-image-swipe3" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:merchandising:3" id="panel-co052">
-						<div class="showcase-card-tab-inner-container" role="list">
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--large showcase-card-tab-card__text-color--black " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="tvs/qled-tv/qe1c-55-inch-qled-4k-smart-tv-qa55qe1caklxl/index.html" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:tv:vd:qe1c:buy now" role="button" aria-label="Buy now">
-									
-										
-										<div class="showcase-card-tab-card__contents-wrap">
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">1.38 m QE1C <br /> Starting ₹ 61741*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">1.38 m QE1C <br /> Starting ₹ 61741*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Pay ₹ 3000* p.m more &amp; enjoy the QLED experience</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Pay ₹ 3000* p.m more &amp; enjoy the QLED experience</span>
-											</div>
-										</div>
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Big-Tile_684x684-QLED.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Big-Tile_624x352-QLED.jpg?$LazyLoad_Home_JPG$" alt="QE1C"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Big-Tile_684x684-QLED.jpg?$684_684_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Big-Tile_624x352-QLED.jpg?$624_352_JPG$" alt="QE1C"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													Buy now
-													
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="tvs/uhd-4k-tv/cue60--43-inch-ua43cue60aklxl/index.html" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:tv:vd:cue60:buy now" role="button" aria-label="Buy now">
-									
-										
-										
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">1.08 m CUE60  <br /> Starting ₹ 29490*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">1.08 m CUE60  <br /> Starting ₹ 29490*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 1500* off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 1500* off with instant bank discount &amp; app voucher</span>
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small-Tile_330x33-UHD-4K-CUE.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352-UHD-4K-CUE2.jpg?$LazyLoad_Home_JPG$" alt="CUE60"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small-Tile_330x33-UHD-4K-CUE.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352-UHD-4K-CUE2.jpg?$296_352_JPG$" alt="CUE60"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													Buy now
-													
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="tvs/oled-tv/s95c-55-inch-oled-4k-smart-tv-qa55s95caklxl/index.html" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:tv:vd:oled:buy now" role="button" aria-label="Buy now">
-									
-										
-										
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">1.38 m OLED  <br /> Starting ₹ 7272*/ month</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">1.38 m OLED  <br /> Starting ₹ 7272*/ month
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 10500* off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 10500* off with instant bank discount &amp; app voucher</span>
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/QA77S90CAKLXL_330x330.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/QA77S90CAKLXL_296x352_1.jpg?$LazyLoad_Home_JPG$" alt="OLED"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/QA77S90CAKLXL_330x330.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/QA77S90CAKLXL_296x352_1.jpg?$296_352_JPG$" alt="OLED"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													Buy now
-													
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="projectors/the-freestyle/lff3c-the-freestyle-2nd-gen-sp-lff3claxxxl/index.html" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:tv:vd:the freestyle:buy now" role="button" aria-label="Buy now">
-									
-										
-										
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">The Freestyle 2ⁿᵈ Gen<br />Starting ₹ 57990*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">The Freestyle 2ⁿᵈ Gen<br />Starting ₹ 57990*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 2000* off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 2000* off with instant bank discount &amp; app voucher</span>
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Small-Tile_330x330-Freestyle.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Small_Tile_296x352-Freestyle.jpg?$LazyLoad_Home_JPG$" alt="The Freestyle"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Small-Tile_330x330-Freestyle.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Small_Tile_296x352-Freestyle.jpg?$296_352_JPG$" alt="The Freestyle"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													Buy now
-													
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="audio-devices/soundbar/b67c-black-hw-b670-xl/index.html" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:tv:vd:soundbars:buy now" role="button" aria-label="Buy now">
-									
-										
-										
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">560W 5.1ch B670<br /> Starting at ₹ 26591*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">560W 5.1ch B670<br /> Starting at ₹ 26591*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. of ₹ 2400 off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. of ₹ 2400 off with instant bank discount &amp; app voucher</span>
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small-Tile_330x330-Soundbar2.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352-Soundbar2.jpg?$LazyLoad_Home_JPG$" alt="Soundbars"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small-Tile_330x330-Soundbar2.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352-Soundbar2.jpg?$296_352_JPG$" alt="Soundbars"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													Buy now
-													
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-						</div>
-					</div>
+					
 					
 					<div class="showcase-card-tab__card-items swiper-slide" an-tr="co05_showcase card tab-home-image-swipe4" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:merchandising:4" id="panel-co053">
 						<div class="showcase-card-tab-inner-container" role="list">
@@ -2432,31 +2304,14 @@ var digitalData = {
 									
 									<a class="showcase-card-tab-card__full-bleed-wrap" href="refrigerators/side-by-side/rs8000cch-side-by-side-smart-conversion-653l-black-rs76cg8003b1hl/index.html" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:appliances:da:653l bespoke side by side:buy now" role="button" aria-label="Buy now">
 									
-										
-										<div class="showcase-card-tab-card__contents-wrap">
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">653L Side By Side<br />Starting at ₹ 73990*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">653L Side By Side<br />Starting at ₹ 73990*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 1250* off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 1250* off with instant bank discount &amp; app voucher</span>
-											</div>
-										</div>
+									
 										
 										
 										<div class="showcase-card-tab-card__img-wrap">
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Big-Tile_684x684-Bespoke-SBS-ref.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Big-Tile_624x352-Bespoke-SBS-ref.jpg?$LazyLoad_Home_JPG$" alt="653L BESPOKE Side by Side"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Big-Tile_684x684-Bespoke-SBS-ref.jpg?$684_684_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Big-Tile_624x352-Bespoke-SBS-ref.jpg?$624_352_JPG$" alt="653L BESPOKE Side by Side"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/7655923/pexels-photo-7655923.jpeg?auto=compress&cs=tinysrgb&w=600" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Big-Tile_624x352-Bespoke-SBS-ref.jpg?$624_352_JPG$" alt="653L BESPOKE Side by Side"/>
 												</div>
 												
 											
@@ -2464,7 +2319,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+													Go Green
 													
 													
 												</span>
@@ -2486,18 +2341,7 @@ var digitalData = {
 											
 											
 											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">7.0Kg Center Jet <br /> Starting ₹ 14940*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">7.0Kg Center Jet <br /> Starting ₹ 14940*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 4500* off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 4500* off with instant bank discount &amp; app voucher</span>
-											</div>
+										
 										
 										
 										
@@ -2505,7 +2349,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_WA70A4002GS_TL1.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_WA70A4002GS_TL1.jpg?$LazyLoad_Home_JPG$" alt="7.0Kg Center Jet"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_WA70A4002GS_TL1.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_WA70A4002GS_TL1.jpg?$296_352_JPG$" alt="7.0Kg Center Jet"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_WA70A4002GS_TL1.jpg?$296_352_JPG$" alt="7.0Kg Center Jet"/>
 												</div>
 												
 											
@@ -2513,7 +2357,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+													Tree Conservation
 													
 													
 												</span>
@@ -2535,26 +2379,14 @@ var digitalData = {
 											
 											
 											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">WindFree AC <br /> Benefits up to ₹ 12214*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">WindFree AC <br /> Benefits up to ₹ 12214*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Offer valid till Apr 7</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Offer valid till Apr 7</span>
-											</div>
-										
+									
 										
 										
 										<div class="showcase-card-tab-card__img-wrap">
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small-Tile_330x3304.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x3529.jpg?$LazyLoad_Home_JPG$" alt="WindFree AC "/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small-Tile_330x3304.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x3529.jpg?$296_352_JPG$" alt="WindFree AC "/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/18373865/pexels-photo-18373865/free-photo-of-people-walking-on-footpath-among-trees.jpeg?auto=compress&cs=tinysrgb&w=600" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x3529.jpg?$296_352_JPG$" alt="WindFree AC "/>
 												</div>
 												
 											
@@ -2562,7 +2394,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--white">
-													Buy now
+													Better World
 													
 													
 												</span>
@@ -2583,19 +2415,7 @@ var digitalData = {
 										
 											
 											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">236L Digital Inverter <br /> Starting ₹ 18690*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">236L Digital Inverter <br /> Starting ₹ 18690*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 4500* off with instant bank discount &amp; app voucher</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 4500* off with instant bank discount &amp; app voucher</span>
-											</div>
+										
 										
 										
 										
@@ -2603,7 +2423,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Digital-invert.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Digital-inv.jpg?$LazyLoad_Home_JPG$" alt="236L Digital Inverter "/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Digital-invert.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Digital-inv.jpg?$296_352_JPG$" alt="236L Digital Inverter "/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/3850542/pexels-photo-3850542.jpeg?auto=compress&cs=tinysrgb&w=400" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/1128/Digital-inv.jpg?$296_352_JPG$" alt="236L Digital Inverter "/>
 												</div>
 												
 											
@@ -2611,7 +2431,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+												Green Deal
 													
 													
 												</span>
@@ -2636,18 +2456,7 @@ var digitalData = {
 											</div>
 											
 											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">WindFree AC <br /> Starting ₹ 41490*</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">WindFree AC <br /> Starting ₹ 41490*
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Incl. ₹ 4500* off with instant bank discount</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Incl. ₹ 4500* off with instant bank discount</span>
-											</div>
+										
 										
 										
 										
@@ -2655,7 +2464,7 @@ var digitalData = {
 											
 												<div class="image">
 													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_Convertible-5in1-AC.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352-Convertible-5in1-AC.jpg?$LazyLoad_Home_JPG$" alt="WindFree AC"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_Convertible-5in1-AC.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352-Convertible-5in1-AC.jpg?$296_352_JPG$" alt="WindFree AC"/>
+													<img class="image__main lazy-load responsive-img" data-desktop-src="https://images.pexels.com/photos/5225314/pexels-photo-5225314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_296x352-Convertible-5in1-AC.jpg?$296_352_JPG$" alt="WindFree AC"/>
 												</div>
 												
 											
@@ -2663,7 +2472,7 @@ var digitalData = {
 										<div class="showcase-card-tab-card__product-cta">
 											
 												<span class="cta cta--contained cta--black">
-													Buy now
+													GoGreenRyde
 													
 													
 												</span>
@@ -2933,466 +2742,14 @@ var digitalData = {
 					
 					
 					
-					<div class="showcase-card-tab__card-items swiper-slide" an-tr="co05_showcase card tab-home-image-swipe7" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:merchandising:7" id="panel-co056">
-						<div class="showcase-card-tab-inner-container" role="list">
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--long showcase-card-tab-card__text-color--black mobile-text-only " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="samsung-live/index.html" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:samsung live :others: : " role="button">
-									
-										
-										<div class="showcase-card-tab-card__contents-wrap">
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop"></span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												
-												
-											</div>
-										</div>
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/448x684_0119.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/624x352_0120.jpg?$LazyLoad_Home_JPG$" alt="Calendar"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/448x684_0119.jpg?$330_684_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/624x352_0120.jpg?$624_352_JPG$" alt="Calendar"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													
-													Learn more
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="samsung-live/index6626.html?fw_video=o3DMqa&amp;fw_channel=samsung_tv&amp;fw_playlist=5zVp75&amp;fw_loop=1&amp;fwparam_max_videos=1" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:samsung live :da:windfree ac:watch replay" role="button" aria-label="Watch replay">
-									
-										
-										
-											<div class="showcase-card-tab-card__badge-wrap">
-												
-												<span class="badge-icon badge-icon--label badge-icon--bg-color-red">Live</span>
-											</div>
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">WindFree™ AC</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">WindFree™ AC
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												<span class="showcase-card-tab-card__product-description--desktop">Benefits up to ₹ 12214*<br />Offer valid till Apr 7</span>
-												<span class="showcase-card-tab-card__product-description--mobile">Benefits up to ₹ 12214*<br />Offer valid till Apr 7</span>
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_01_ac.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_01_ac.jpg?$LazyLoad_Home_JPG$" alt="WindFree AC"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_01_ac.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_01_ac.jpg?$296_352_JPG$" alt="WindFree AC"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													Watch replay
-													
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black mobile-text-only " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="http://www.samsungindiamarketing.com/SES/em?ID=c-2F-ZPoPSz50hZ7Xq2DXFDzA==" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:samsung live :others:photography masterclass:register now" role="button" aria-label="Register now:Open in a New Window" target="_blank">
-									
-										
-										
-											<div class="showcase-card-tab-card__badge-wrap">
-												
-												<span class="badge-icon badge-icon--label badge-icon--bg-color-teal">5ᵗʰ Apr</span>
-											</div>
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Photography Masterclass</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Photography Masterclass
-														<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#outlink-bold" href="#outlink-bold"></use></svg>
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												
-												
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_06-copy-22.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_06-copy-22.jpg?$LazyLoad_Home_JPG$" alt="Photography Masterclass"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_06-copy-22.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_06-copy-22.jpg?$296_352_JPG$" alt="Photography Masterclass"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black cta--icon">
-													Register now
-													
-													<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#outlink-bold" href="#outlink-bold"></use></svg>
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black mobile-text-only " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="samsung-live/index51f8.html?fw_video=oNW8DW&amp;fw_channel=samsung_tv&amp;fw_playlist=5zVp75&amp;fw_loop=1&amp;fwparam_max_videos=1" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:samsung live :im:sound devices:watch replay" role="button" aria-label="Watch replay">
-									
-										
-										
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Sound Devices</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Sound Devices
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												
-												
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_036.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_036.jpg?$LazyLoad_Home_JPG$" alt="Sound Devices"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_036.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_036.jpg?$296_352_JPG$" alt="Sound Devices"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													Watch replay
-													
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black mobile-text-only " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="http://www.samsungindiamarketing.com/SES/em?ID=-2F-mJ7hiqLGpiCJ6fYEESsMA==" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:samsung live :others:productivity masterclass:register now" role="button" aria-label="Register now:Open in a New Window" target="_blank">
-									
-										
-										
-											<div class="showcase-card-tab-card__badge-wrap">
-												
-												<span class="badge-icon badge-icon--label badge-icon--bg-color-teal">12ᵗʰ Apr</span>
-											</div>
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Productivity Masterclass</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Productivity Masterclass
-														<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#outlink-bold" href="#outlink-bold"></use></svg>
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												
-												
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_063.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_063.jpg?$LazyLoad_Home_JPG$" alt="Productivity Masterclass"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_063.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_063.jpg?$296_352_JPG$" alt="Productivity Masterclass"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black cta--icon">
-													Register now
-													
-													<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#outlink-bold" href="#outlink-bold"></use></svg>
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black mobile-text-only " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="samsung-live/index30e3.html?fw_video=o9P668&amp;fw_channel=samsung_tv&amp;fw_playlist=5zVp75&amp;fw_loop=1&amp;fwparam_max_videos=1" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:samsung live :others:galaxy tab s9 fe series:watch replay" role="button" aria-label="Watch replay">
-									
-										
-										
-											
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Galaxy Tab S9 FE Series</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Galaxy Tab S9 FE Series
-														
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												
-												
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_1.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/holi/19597_TAB_FE_LCSmalltile_296x352_01.jpg?$LazyLoad_Home_JPG$" alt="Galaxy Tab S9 FE Series"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_1.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/holi/19597_TAB_FE_LCSmalltile_296x352_01.jpg?$296_352_JPG$" alt="Galaxy Tab S9 FE Series"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black">
-													Watch replay
-													
-													
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-								<div class="showcase-card-tab-card showcase-card-tab-card--small showcase-card-tab-card__text-color--black mobile-text-only " role="listitem">
-									
-									
-									
-									<a class="showcase-card-tab-card__full-bleed-wrap" href="http://www.samsungindiamarketing.com/SES/em?ID=-2F-mJ7hiqLGpiCJ6fYEESsMA==" an-tr="co05_showcase card tab-home-cta-banner" an-ca="home content click" an-ac="merchandising" an-la="merchandising:this weeks highlights:samsung live :vd:productivity masterclass:register now" role="button" aria-label="Register now:Open in a New Window" target="_blank">
-									
-										
-										
-											<div class="showcase-card-tab-card__badge-wrap">
-												
-												<span class="badge-icon badge-icon--label badge-icon--bg-color-teal">19ᵗʰ Apr</span>
-											</div>
-											
-											
-											<div class="showcase-card-tab-card__product-name-text-wrap">
-												<div class="showcase-card-tab-card__product-name-text-inner">
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--desktop">Productivity Masterclass</span>
-													<span class="showcase-card-tab-card__product-name showcase-card-tab-card__product-name--mobile">Productivity Masterclass
-														<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#outlink-bold" href="#outlink-bold"></use></svg>
-													</span>
-												</div>
-											</div>
-											<div class="showcase-card-tab-card__product-description-wrap">
-												
-												
-											</div>
-										
-										
-										
-										<div class="showcase-card-tab-card__img-wrap">
-											
-												<div class="image">
-													<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_063.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_063.jpg?$LazyLoad_Home_JPG$" alt="Productivity Masterclass"/>
-													<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/330x330_063.jpg?$330_330_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/296x352_063.jpg?$296_352_JPG$" alt="Productivity Masterclass"/>
-												</div>
-												
-											
-										</div>
-										<div class="showcase-card-tab-card__product-cta">
-											
-												<span class="cta cta--contained cta--black cta--icon">
-													Register now
-													
-													<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#outlink-bold" href="#outlink-bold"></use></svg>
-												</span>
-											
-											
-											
-										</div>
-									</a>
-								</div>
-							
-						</div>
-					</div>
+				
 					
 				
 			</div>
 		</div>
 	</div>
 	
-	<div class="popup-video" role="dialog">
-		<div class="popup-video__dimmed"></div>
-		<div class="popup-video__looping--start" tabindex="0"></div>
-		<div class="popup-video__video-wrap">
-			
-			<p class="popup-video__current-video-title hidden" tabindex="0"></p>
-			
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-				
-					
-				
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-						
-					
-				
-			
-		</div>
-		<button class="popup-video__btn-video-close">
-			<span class="hidden">Close</span>
-			<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#cancel-close-regular" href="#cancel-close-regular"></use></svg>
-		</button>
-		<div class="popup-video__looping--end" tabindex="0"></div>
-	</div>
+
 </div>
 </div>
 
@@ -3400,12 +2757,10 @@ var digitalData = {
 </div>
 
 </div>
+
+
+
 <div class="ho-g-key-feature-tab aem-GridColumn aem-GridColumn--default--12">
-
-
-
-
-
 
 
 <section class="key-feature-tab">
@@ -3430,13 +2785,7 @@ var digitalData = {
 						</button>
 					</li>
 				
-					<li class="tab__item" role="presentation">
-						
-						
-						
-						<button class="tab__item-title" role="tab" data-tab-title="galaxy z fold5 z flip5" an-tr="co07_key feature tab-home-text-mobile_galaxy z fold5 z flip5" an-ca="home content click" an-ac="product marketing" an-la="product marketing:im:kv3:mobile:galaxy z fold5 z flip5:tab">Galaxy Z Fold5 | Z Flip5<span class="tab__item-line"></span>
-						</button>
-					</li>
+				
 				
 				
 				</ul>
@@ -3450,7 +2799,7 @@ var digitalData = {
 						<div class="key-feature-tab__inner-wrap text-color--black">
 							<div class="key-feature-tab__text-wrap">
 								<h2 class="key-feature-tab__headline" data-headline-text="galaxy s24 ultra">myeNovation</h2>
-								<p class="key-feature-tab__desc">Starting ₹117999*<br />Shop Galaxy Watch6 with Galaxy S24 series and get up to ₹ 12000* benefits</p>
+								<p class="key-feature-tab__desc">Employee Engagment Platform To Boost Business</p>
 								
 							</div>
 							
@@ -3476,7 +2825,7 @@ var digitalData = {
 										
 											
 											
-												<a class="cta cta--contained cta--black" href="smartphones/galaxy-s24-ultra/buy/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-mobile1_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:im:kv1:mobile:galaxy s24 ultra:galaxy s24 ultra:buy now">Buy now</a>
+												<a class="cta cta--contained cta--black" href="smartphones/galaxy-s24-ultra/buy/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-mobile1_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:im:kv1:mobile:galaxy s24 ultra:galaxy s24 ultra:buy now">Request Demo</a>
 											
 										
 										
@@ -3487,13 +2836,14 @@ var digitalData = {
 						</div>
 						<div class="key-feature-tab__background-wrap bg-white">
 							
-								<div class="image">
+							<div class="image">
 									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E3_MX-KV_1440x810_pc.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/new-HOME_E3_MX-KV_720x1280_mo.jpg?$LazyLoad_Home_JPG$" alt="Two Galaxy S24 Ultra phones in Titanium Gray, one seen from the front and one seen from the rear with the built-in S Pen. Galaxy AI is here."/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E3_MX-KV_1440x810_pc.jpg?$1440_810_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/new-HOME_E3_MX-KV_720x1280_mo.jpg?$720_1280_JPG$" alt="Two Galaxy S24 Ultra phones in Titanium Gray, one seen from the front and one seen from the rear with the built-in S Pen. Galaxy AI is here."/>
-									
-									
-								</div>
+								<img class="image__preview lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2020/08/05/13/27/eco-5465461_1280.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E1E2_MX-KV_720x1280_mo.jpg?$LazyLoad_Home_JPG$" alt="Galaxy S24 plus in Cobalt Violet is seen from the front and Galaxy S24 in Amber Yellow is seen from the rear. Galaxy AI is here."/>
+								<img class="image__main lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2020/08/05/13/27/eco-5465461_1280.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E1E2_MX-KV_720x1280_mo.jpg?$720_1280_JPG$" alt="Galaxy S24 plus in Cobalt Violet is seen from the front and Galaxy S24 in Amber Yellow is seen from the rear. Galaxy AI is here."/>
+							
+							
+						</div>
+							
 							
 							
 						</div>
@@ -3504,8 +2854,8 @@ var digitalData = {
 					<div class="key-feature-tab__slide-inner">
 						<div class="key-feature-tab__inner-wrap text-color--black">
 							<div class="key-feature-tab__text-wrap">
-								<h2 class="key-feature-tab__headline" data-headline-text="galaxy s24 and 24 plus">Galaxy S24 | S24+</h2>
-								<p class="key-feature-tab__desc">Starting ₹ 69999*</p>
+								<h2 class="key-feature-tab__headline" data-headline-text="galaxy s24 and 24 plus">HR BUDDY</h2>
+								<p class="key-feature-tab__desc">New Hire Engagment Platform </p>
 								
 							</div>
 							
@@ -3531,7 +2881,7 @@ var digitalData = {
 										
 											
 											
-												<a class="cta cta--contained cta--black" href="smartphones/galaxy-s24/buy/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-mobile2_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:im:kv2:mobile:galaxy s24 and 24 plus:galaxy s24 and 24 plus:buy now">Buy now</a>
+												<a class="cta cta--contained cta--black" href="smartphones/galaxy-s24/buy/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-mobile2_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:im:kv2:mobile:galaxy s24 and 24 plus:galaxy s24 and 24 plus:buy now">Request Demo</a>
 											
 										
 										
@@ -3544,8 +2894,8 @@ var digitalData = {
 							
 								<div class="image">
 									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E1E2_MX-KV_1440x810_pc.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E1E2_MX-KV_720x1280_mo.jpg?$LazyLoad_Home_JPG$" alt="Galaxy S24 plus in Cobalt Violet is seen from the front and Galaxy S24 in Amber Yellow is seen from the rear. Galaxy AI is here."/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E1E2_MX-KV_1440x810_pc.jpg?$1440_810_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E1E2_MX-KV_720x1280_mo.jpg?$720_1280_JPG$" alt="Galaxy S24 plus in Cobalt Violet is seen from the front and Galaxy S24 in Amber Yellow is seen from the rear. Galaxy AI is here."/>
+										<img class="image__preview lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2020/08/05/13/27/eco-5465461_1280.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E1E2_MX-KV_720x1280_mo.jpg?$LazyLoad_Home_JPG$" alt="Galaxy S24 plus in Cobalt Violet is seen from the front and Galaxy S24 in Amber Yellow is seen from the rear. Galaxy AI is here."/>
+										<img class="image__main lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2020/08/05/13/27/eco-5465461_1280.png" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/HOME_E1E2_MX-KV_720x1280_mo.jpg?$720_1280_JPG$" alt="Galaxy S24 plus in Cobalt Violet is seen from the front and Galaxy S24 in Amber Yellow is seen from the rear. Galaxy AI is here."/>
 									
 									
 								</div>
@@ -3731,104 +3081,6 @@ var digitalData = {
 			
 			<p class="popup-video__current-video-title hidden" tabindex="0"></p>
 			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
 
 			
 		</div>
@@ -3839,6 +3091,37 @@ var digitalData = {
 		<div class="popup-video__looping--end" tabindex="0"></div>
 	</div>
 </section>
+
+
+</div>
+
+<div class="my-recommended-product padding-top--0 padding-bottom--0 bg-white" id="my-recommended-product">
+			
+	<h2 class="my-recommended-product__headline-text padding-top--48 padding-bottom--16" style="display:none;">Our Clients</h2>
+	<div class="my-recommended-product__card">
+		
+	</div>
+
+
+	<div class="logo-slider" data-v-4ef8651c="">
+		<div class="logos-slide" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/Vv5rkDK/api-partner-verzon.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/J399KDg/api-partner-netflix.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/TKT0F5L/api-partner-yelp.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/HG6KR89/api-partner-adobe.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/hMSJ1sg/api-partner-ring.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/4RWQcMS/api-partner-nespresso.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/Vv5rkDK/api-partner-verzon.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/J399KDg/api-partner-netflix.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/TKT0F5L/api-partner-yelp.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/HG6KR89/api-partner-adobe.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/hMSJ1sg/api-partner-ring.png" data-v-4ef8651c="">
+		  <img src="https://i.ibb.co/4RWQcMS/api-partner-nespresso.png" data-v-4ef8651c="">
+		</div>
+	  </div>
+
+
+	  
 </div>
 <div class="ho-g-key-feature-tab aem-GridColumn aem-GridColumn--default--12">
 
@@ -3848,10 +3131,10 @@ var digitalData = {
 
 
 
-<section class="key-feature-tab">
+<section class="key-feature-tab" style="margin-top: 20px;">
 	<div class="key-feature-tab__contents">
 		<div class="key-feature-tab__header-wrap">
-			<h2 class="key-feature-tab__title" data-contents-title="tv and audio">GT Services</h2>
+			<h2 class="key-feature-tab__title" data-contents-title="tv and audio">GreenTin's Services</h2>
 			<div class="tab">
 				<ul class="tab__list" role="tablist">
 					<li class="tab__item" role="presentation">
@@ -3870,29 +3153,7 @@ var digitalData = {
 						</button>
 					</li>
 				
-					<li class="tab__item" role="presentation">
-						
-						
-						
-						<button class="tab__item-title" role="tab" data-tab-title="samsung oled" an-tr="co07_key feature tab-home-text-tv and audio_samsung oled" an-ca="home content click" an-ac="product marketing" an-la="product marketing:vd:kv3:tv and audio:samsung oled:tab">Samsung OLED<span class="tab__item-line"></span>
-						</button>
-					</li>
 				
-					<li class="tab__item" role="presentation">
-						
-						
-						
-						<button class="tab__item-title" role="tab" data-tab-title="the frame" an-tr="co07_key feature tab-home-text-tv and audio_the frame" an-ca="home content click" an-ac="product marketing" an-la="product marketing:vd:kv4:tv and audio:the frame:tab">The Frame<span class="tab__item-line"></span>
-						</button>
-					</li>
-				
-					<li class="tab__item" role="presentation">
-						
-						
-						
-						<button class="tab__item-title" role="tab" data-tab-title="crystal 4k uhd" an-tr="co07_key feature tab-home-text-tv and audio_crystal 4k uhd" an-ca="home content click" an-ac="product marketing" an-la="product marketing:im:kv5:tv and audio:crystal 4k uhd:tab">Crystal 4K UHD<span class="tab__item-line"></span>
-						</button>
-					</li>
 				</ul>
 			</div>
 		</div>
@@ -3985,134 +3246,7 @@ var digitalData = {
 					</div>
 				</div>
 				
-				<div class="key-feature-tab__slide swiper-slide" data-clickable-state="false" data-tab-index="3" an-tr="co07_key feature tab-home-image-vd_swipe3" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:product marketing:vd3">
-					<div class="key-feature-tab__slide-inner">
-						<div class="key-feature-tab__inner-wrap text-color--white">
-							<div class="key-feature-tab__text-wrap">
-								<h2 class="key-feature-tab__headline" data-headline-text="samsung oled">Samsung OLED</h2>
-								<p class="key-feature-tab__desc">Starting ₹ 7273*/month<br />Incl. ₹ 13000* off with instant bank discount &amp; app voucher</p>
-								
-							</div>
-							
-							<div class="key-feature-tab__cta-wrap">
-								<div class="key-feature-tab__cta-inner">
-									
-										
-										
-										
-										
-										
-											
-											
-												<a class="cta cta--contained cta--white" href="tvs/oled-tv/s90c-55-inch-qa55s90caklxl/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-tv and audio3_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:vd:kv3:tv and audio:samsung oled:samsung oled:buy now">Buy now</a>
-											
-										
-										
-									
-								</div>
-							</div>
-							
-						</div>
-						<div class="key-feature-tab__background-wrap bg-white">
-							
-								<div class="image">
-									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/PM_1440x810-QA55S90CAKLXL.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/PM_720x1080-QA55S90CAKLXL.jpg?$LazyLoad_Home_JPG$" alt="Samsung OLED"/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/PM_1440x810-QA55S90CAKLXL.jpg?$1440_810_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/PM_720x1080-QA55S90CAKLXL.jpg?$720_1280_JPG$" alt="Samsung OLED"/>
-									
-									
-								</div>
-							
-							
-						</div>
-					</div>
-				</div>
 				
-				<div class="key-feature-tab__slide swiper-slide" data-clickable-state="false" data-tab-index="4" an-tr="co07_key feature tab-home-image-vd_swipe4" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:product marketing:vd4">
-					<div class="key-feature-tab__slide-inner">
-						<div class="key-feature-tab__inner-wrap text-color--white">
-							<div class="key-feature-tab__text-wrap">
-								<h2 class="key-feature-tab__headline" data-headline-text="the frame">The Frame</h2>
-								<p class="key-feature-tab__desc">Starting ₹ 53490* <br /> Incl. ₹ 6500* off with instant bank discount &amp; app voucher </p>
-								
-							</div>
-							
-							<div class="key-feature-tab__cta-wrap">
-								<div class="key-feature-tab__cta-inner">
-									
-										
-										
-										
-										
-										
-											
-											
-												<a class="cta cta--contained cta--white" href="lifestyle-tvs/the-frame/ls03b-43-inch-the-frame-qled-4k-smart-tv-black-qa43ls03baklxl/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-tv and audio4_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:vd:kv4:tv and audio:the frame:the frame:buy now">Buy now</a>
-											
-										
-										
-									
-								</div>
-							</div>
-							
-						</div>
-						<div class="key-feature-tab__background-wrap bg-white">
-							
-								<div class="image">
-									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/The-frame-Product-Marketing-Banner_1440x810.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/The-frame-Product-Marketing-Banner_720x1280.jpg?$LazyLoad_Home_JPG$" alt="The Frame"/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/The-frame-Product-Marketing-Banner_1440x810.jpg?$1440_810_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/The-frame-Product-Marketing-Banner_720x1280.jpg?$720_1280_JPG$" alt="The Frame"/>
-									
-									
-								</div>
-							
-							
-						</div>
-					</div>
-				</div>
-				
-				<div class="key-feature-tab__slide swiper-slide" data-clickable-state="false" data-tab-index="5" an-tr="co07_key feature tab-home-image-im_swipe5" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:product marketing:im5">
-					<div class="key-feature-tab__slide-inner">
-						<div class="key-feature-tab__inner-wrap text-color--black">
-							<div class="key-feature-tab__text-wrap">
-								<h2 class="key-feature-tab__headline" data-headline-text="crystal 4k uhd">Crystal 4K UHD</h2>
-								<p class="key-feature-tab__desc">Starting ₹ 45591* <br /> Incl. ₹ 2400* off with instant bank discount &amp; app voucher</p>
-								
-							</div>
-							
-							<div class="key-feature-tab__cta-wrap">
-								<div class="key-feature-tab__cta-inner">
-									
-										
-										
-										
-										
-										
-											
-											
-												<a class="cta cta--contained cta--black" href="tvs/uhd-4k-tv/cue70-55-inch-ua55cue70aklxl/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-tv and audio5_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:vd:kv5:tv and audio:crystal 4k uhd:crystal 4k uhd:buy now">Buy now</a>
-											
-										
-										
-									
-								</div>
-							</div>
-							
-						</div>
-						<div class="key-feature-tab__background-wrap bg-white">
-							
-								<div class="image">
-									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/pm_4K-UHD-AUE-60-11.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/new-pm_4K_UHD_AUE_60_720x1280.jpg?$LazyLoad_Home_JPG$" alt="Crystal 4K UHD"/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/pm_4K-UHD-AUE-60-11.jpg?$1440_810_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/new-pm_4K_UHD_AUE_60_720x1280.jpg?$720_1280_JPG$" alt="Crystal 4K UHD"/>
-									
-									
-								</div>
-							
-							
-						</div>
-					</div>
-				</div>
 				
 			</div>
 		</div>
@@ -4209,6 +3343,285 @@ var digitalData = {
 	</div>
 </section>
 </div>
+
+<div class="cm-g-half-teaser-list aem-GridColumn aem-GridColumn--default--12" style="margin-top: 20px;">
+<div class="testimonials">
+
+	<h2 class="half-teaser-list__head-title text-size-medium">
+					
+		<a class="half-teaser-list__head-link" an-tr="co15_half teaser list-home-text-headline" an-ca="home content click" an-ac="explore" an-la="explore:explore dowhatyoucant" href="explore/index.html" title="Samsung.com Explore">
+			Testimonials
+		</a>
+	
+	
+</h2>
+	<div class="test-body">
+		<div class="item">
+			<img src="https://livedemo00.template-help.com/wt_prod-10943/images/testimonials-1-120x120.jpg">
+			<div class="name">Matthew Perkins</div>
+			<small class="desig">Driver</small>
+			<div class="share"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i></div>
+			<p>Just had my laptop resurrected and the engineer was fantastic. Very patient, very knowledgeable and knew exactly what he was doing. If I ever have another computer problem, I'll definitely give these guys a call. They are professionals and they have great customer service. Great price, great job, thanks a lot!</p>
+		</div>
+		<div class="item">
+			<img src="https://livedemo00.template-help.com/wt_prod-10943/images/testimonials-2-120x120.jpg">
+			<div class="name">Elizabeth Johnson</div>
+			<small class="desig">Real Estate agent</small>
+			<div class="share"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i></div>
+			<p>My friend recommended Repair & Fix to me when I had some issues with my laptop. I contacted them and they were very understanding, helpful and prompt with dealing with my requirements. Your consultants were happy to talk me through everything during the first consultation. Thank you!</p>
+		</div>
+		<div class="item">
+			<img src="https://livedemo00.template-help.com/wt_prod-10943/images/testimonials-3-120x120.jpg">
+			<div class="name">Walter Knight</div>
+			<small class="desig">Photographer</small>
+			<div class="share"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i></div>
+			<p>I have worked with Repair & Fix for several years. They re-built a computer for me and later upgraded it and now it feels just like a new one. The value, quality, and follow-up are outstanding. I highly recommend this company, their professionalism and customer care are unmatched.</p>
+		</div>
+	</div>
+
+</div>
+</div>
+
+
+<div class="cm-g-half-teaser-list aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+	
+
+
+
+	<section class="half-teaser-list padding-top--48 padding-bottom--48 bg-white text-color--black desktop-layout--image-left">
+		<div class="half-teaser-list__inner">
+			<div class="half-teaser-list__head-text">
+				<h2 class="half-teaser-list__head-title text-size-medium">
+					
+						<a class="half-teaser-list__head-link" an-tr="co15_half teaser list-home-text-headline" an-ca="home content click" an-ac="explore" an-la="explore:explore dowhatyoucant" href="explore/index.html" title="Samsung.com Explore">
+							Explore #TogetherBetterFuture
+						</a>
+					
+					
+				</h2>
+				
+					
+				
+			</div>
+			<div class="half-teaser-list__content swiper-container basic-swiper" data-swiper-option='{
+				&quot;viewMode&quot;:&quot;mobile&quot;,
+				&quot;keepWrapper&quot;:true,
+				&quot;slidesPerView&quot;:&quot;1&quot;,
+				&quot;pagination&quot;:true,
+				&quot;componentEl&quot;:&quot;.half-teaser-list&quot;}'>
+				<div class="swiper-wrapper">
+					<div class="half-teaser-list__item swiper-slide half-teaser-list__item--active" style="order:1;" data-type-headline="Tips for Navigating Big Life Changes" an-tr="co15_half teaser list-home-image-indication" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:explore1">
+						<div class="half-teaser-list__text">
+							<div class="half-teaser-list__text-inner">
+								<div class="half-teaser-list__title-wrap">
+									<span class="half-teaser-list__number">01</span>
+									<div class="half-teaser-list__title">
+										<span class="half-teaser-list__title-link">Way To Big Life Changes</span>
+									</div>
+								</div>
+								
+								
+								<div class="half-teaser-list__button">
+									
+									
+									<a class="cta cta--underline cta--black " href="explore/life-hacks/tips-for-navigating-big-life-changes/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-cta-button" an-ca="home content click" an-ac="explore" an-la="explore:tips for navigating big life changes:learn more">
+										Learn more
+										
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="half-teaser-list__image-wrap">
+							
+								
+								
+								<a class="half-teaser-list__image-link" href="explore/life-hacks/tips-for-navigating-big-life-changes/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-image" an-ca="home content click" an-ac="explore" an-la="explore:tips for navigating big life changes:image">
+									<div class="half-teaser-list__image">
+										<div class="image">
+											<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_pc_684x684.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_mo_624x624.jpg?$LazyLoad_Home_JPG$" alt="Four students smiling."/>
+											<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_pc_684x684.jpg?$684_684_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_mo_624x624.jpg?$624_624_PNG$" alt="Four students smiling."/>
+										</div>
+									</div>
+								</a>
+							
+							
+						</div>
+					</div>
+				
+					<div class="half-teaser-list__item swiper-slide" style="order:2;" data-type-headline="Feel Free to Freestyle" an-tr="co15_half teaser list-home-image-indication" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:explore2">
+						<div class="half-teaser-list__text">
+							<div class="half-teaser-list__text-inner">
+								<div class="half-teaser-list__title-wrap">
+									<span class="half-teaser-list__number">02</span>
+									<div class="half-teaser-list__title">
+										<span class="half-teaser-list__title-link">Learn - Breath - Experience</span>
+									</div>
+								</div>
+								
+								
+								<div class="half-teaser-list__button">
+									
+									
+									<a class="cta cta--underline cta--black " href="explore/entertainment/feel-free-to-freestyle/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-cta-button" an-ca="home content click" an-ac="explore" an-la="explore:feel free to freestyle:learn more">
+										Learn more
+										
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="half-teaser-list__image-wrap">
+							
+								
+								
+								<a class="half-teaser-list__image-link" href="explore/entertainment/feel-free-to-freestyle/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-image" an-ca="home content click" an-ac="explore" an-la="explore:feel free to freestyle:image">
+									<div class="half-teaser-list__image">
+										<div class="image">
+											<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/entertainment/vd0040_explore_feel-free-to-freestyle/vd0026_home-explore-banner_pc_684x684.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/entertainment/vd0040_explore_feel-free-to-freestyle/vd0026_home-explore-banner_mo_624x624.jpg?$LazyLoad_Home_JPG$" alt="Happy Kelli dances in front of a swirly blue and white background projected from Samsung&#39;s Freestyle projector."/>
+											<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/entertainment/vd0040_explore_feel-free-to-freestyle/vd0026_home-explore-banner_pc_684x684.jpg?$684_684_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/entertainment/vd0040_explore_feel-free-to-freestyle/vd0026_home-explore-banner_mo_624x624.jpg?$624_624_PNG$" alt="Happy Kelli dances in front of a swirly blue and white background projected from Samsung&#39;s Freestyle projector."/>
+										</div>
+									</div>
+								</a>
+							
+							
+						</div>
+					</div>
+				
+					<div class="half-teaser-list__item swiper-slide" style="order:3;" data-type-headline="3 Hosting Tips to Alleviate Holiday Stress" an-tr="co15_half teaser list-home-image-indication" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:explore3">
+						<div class="half-teaser-list__text">
+							<div class="half-teaser-list__text-inner">
+								<div class="half-teaser-list__title-wrap">
+									<span class="half-teaser-list__number">03</span>
+									<div class="half-teaser-list__title">
+										<span class="half-teaser-list__title-link">Path Of Better Life</span>
+									</div>
+								</div>
+								
+								
+								<div class="half-teaser-list__button">
+									
+									
+									<a class="cta cta--underline cta--black " href="explore/food-home/3-hosting-tips-to-alleviate-holiday-stress/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-cta-button" an-ca="home content click" an-ac="explore" an-la="explore:3 hosting tips to alleviate holiday stress:learn more">
+										Learn more
+										
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="half-teaser-list__image-wrap">
+							
+								
+								
+								<a class="half-teaser-list__image-link" href="explore/food-home/3-hosting-tips-to-alleviate-holiday-stress/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-image" an-ca="home content click" an-ac="explore" an-la="explore:3 hosting tips to alleviate holiday stress:image">
+									<div class="half-teaser-list__image">
+										<div class="image">
+											<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/food-home/da0050-3-hosting-tips-to-alleviate-holiday-stress/da0050_home_explore-banner_pc_684x684.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/food-home/da0050-3-hosting-tips-to-alleviate-holiday-stress/da0050_home_explore-banner_mo_624x624.jpg?$LazyLoad_Home_JPG$" alt="A smiling family sits around a dining room table getting ready to pull Christmas crackers"/>
+											<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/food-home/da0050-3-hosting-tips-to-alleviate-holiday-stress/da0050_home_explore-banner_pc_684x684.jpg?$684_684_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/food-home/da0050-3-hosting-tips-to-alleviate-holiday-stress/da0050_home_explore-banner_mo_624x624.jpg?$624_624_PNG$" alt="A smiling family sits around a dining room table getting ready to pull Christmas crackers"/>
+										</div>
+									</div>
+								</a>
+							
+							
+						</div>
+					</div>
+				
+					<div class="half-teaser-list__item swiper-slide" style="order:4;" data-type-headline="Meet G·NUSMAS, the curious extraterrestrial" an-tr="co15_half teaser list-home-image-indication" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:explore4">
+						<div class="half-teaser-list__text">
+							<div class="half-teaser-list__text-inner">
+								<div class="half-teaser-list__title-wrap">
+									<span class="half-teaser-list__number">04</span>
+									<div class="half-teaser-list__title">
+										<span class="half-teaser-list__title-link">Meet GreenTin To Enhance</span>
+									</div>
+								</div>
+								
+								
+								<div class="half-teaser-list__button">
+									
+									
+									<a class="cta cta--underline cta--black " href="explore/brand/g-nusmas/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-cta-button" an-ca="home content click" an-ac="explore" an-la="explore:meet g nusmas the curious extraterrestrial:learn more">
+										Learn more
+										
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="half-teaser-list__image-wrap">
+							
+								
+								
+								<a class="half-teaser-list__image-link" href="explore/brand/g-nusmas/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-image" an-ca="home content click" an-ac="explore" an-la="explore:meet g nusmas the curious extraterrestrial:image">
+									<div class="half-teaser-list__image">
+										<div class="image">
+											<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/brand/global0028_explore_meet-g-nusmas/global0028_home-explore-banner_pc_684x684.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/brand/global0028_explore_meet-g-nusmas/global0028_home-explore-banner_mo_624x624.jpg?$LazyLoad_Home_JPG$" alt="A whimsical looking blue alien in mid-air inside a modern spaceship. The alien has two antennae, two big eyes, and is wearing a two-piece space uniform that consists of a blue top with pink details, and white pants. The alien looks startled, and has both arms stretched out seemingly bracing itself for a fall. In the background, broken pieces and shards are floating around in disarray, as well as a big bluish green button."/>
+											<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/brand/global0028_explore_meet-g-nusmas/global0028_home-explore-banner_pc_684x684.jpg?$684_684_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/brand/global0028_explore_meet-g-nusmas/global0028_home-explore-banner_mo_624x624.jpg?$624_624_PNG$" alt="A whimsical looking blue alien in mid-air inside a modern spaceship. The alien has two antennae, two big eyes, and is wearing a two-piece space uniform that consists of a blue top with pink details, and white pants. The alien looks startled, and has both arms stretched out seemingly bracing itself for a fall. In the background, broken pieces and shards are floating around in disarray, as well as a big bluish green button."/>
+										</div>
+									</div>
+								</a>
+							
+							
+						</div>
+					</div>
+				
+					
+				</div>
+				<div class="indicator" data-indicator-data='{
+					&quot;type&quot;: &quot;dot-indicator&quot;,
+					&quot;autoRolling&quot;: false,
+					&quot;infiniteRolling&quot;: false}'>
+					<div class="indicator-wrap">
+						<div class="indicator__list-wrap">
+							<div class="indicator__list" role="tablist">
+								
+								<button class="indicator__item" role="tab" data-indicator-delay="" an-tr="co15_half teaser list-home-image-index" an-ca="indication" an-ac="carousel" an-la="carousel:index:explore1">
+									<span class="indicator__dot-wrap">
+										<span class="indicator__dot">
+											<span class="indicator__dot-inner"></span>
+										</span>
+									</span>
+								</button>
+								
+								<button class="indicator__item" role="tab" data-indicator-delay="" an-tr="co15_half teaser list-home-image-index" an-ca="indication" an-ac="carousel" an-la="carousel:index:explore2">
+									<span class="indicator__dot-wrap">
+										<span class="indicator__dot">
+											<span class="indicator__dot-inner"></span>
+										</span>
+									</span>
+								</button>
+								
+								<button class="indicator__item" role="tab" data-indicator-delay="" an-tr="co15_half teaser list-home-image-index" an-ca="indication" an-ac="carousel" an-la="carousel:index:explore3">
+									<span class="indicator__dot-wrap">
+										<span class="indicator__dot">
+											<span class="indicator__dot-inner"></span>
+										</span>
+									</span>
+								</button>
+								
+								<button class="indicator__item" role="tab" data-indicator-delay="" an-tr="co15_half teaser list-home-image-index" an-ca="indication" an-ac="carousel" an-la="carousel:index:explore4">
+									<span class="indicator__dot-wrap">
+										<span class="indicator__dot">
+											<span class="indicator__dot-inner"></span>
+										</span>
+									</span>
+								</button>
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>   </div>
+
+	
 <div class="ho-g-key-feature-tab aem-GridColumn aem-GridColumn--default--12">
 
 
@@ -4217,319 +3630,7 @@ var digitalData = {
 
 
 
-<section class="key-feature-tab">
-	<div class="key-feature-tab__contents">
-		<div class="key-feature-tab__header-wrap">
-			<h2 class="key-feature-tab__title" data-contents-title="home appliances">Artficial Intelligence</h2>
-			<div class="tab">
-				<ul class="tab__list" role="tablist">
-					<li class="tab__item" role="presentation">
-						
-						
-						
-						<button class="tab__item-title" role="tab" data-tab-title="8kg ai ecobubble" an-tr="co07_key feature tab-home-text-home appliances_8kg ai ecobubble" an-ca="home content click" an-ac="product marketing" an-la="product marketing:da:kv1:home appliances:8kg ai ecobubble:tab">Chat Bot<span class="tab__item-line"></span>
-						</button>
-					</li>
-				
-					<li class="tab__item" role="presentation">
-						
-						
-						
-						<button class="tab__item-title" role="tab" data-tab-title="bespoke side by side" an-tr="co07_key feature tab-home-text-home appliances_bespoke side by side" an-ca="home content click" an-ac="product marketing" an-la="product marketing:da:kv2:home appliances:bespoke side by side:tab">Predictive Analytics<span class="tab__item-line"></span>
-						</button>
-					</li>
-				
-					<li class="tab__item" role="presentation">
-						
-						
-						
-						<button class="tab__item-title" role="tab" data-tab-title="convertible ac " an-tr="co07_key feature tab-home-text-home appliances_convertible ac " an-ca="home content click" an-ac="product marketing" an-la="product marketing:da:kv3:home appliances:convertible ac :tab">Personalization <span class="tab__item-line"></span>
-						</button>
-					</li>
-				
-					<li class="tab__item" role="presentation">
-						
-						
-						
-						<button class="tab__item-title" role="tab" data-tab-title="8 kg ecobubble" an-tr="co07_key feature tab-home-text-home appliances_8 kg ecobubble" an-ca="home content click" an-ac="product marketing" an-la="product marketing:da:kv4:home appliances:8 kg ecobubble:tab">Data Analytics and Insights<span class="tab__item-line"></span>
-						</button>
-					</li>
-				
-				
-				</ul>
-			</div>
-		</div>
-		<div class="key-feature-tab__container swiper-container swiper-no-swiping">
-				<div class="key-feature-tab__wrapper swiper-wrapper">
-				
-				<div class="key-feature-tab__slide swiper-slide" data-clickable-state="false" data-tab-index="1" an-tr="co07_key feature tab-home-image-da_swipe1" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:product marketing:da1">
-					<div class="key-feature-tab__slide-inner">
-						<div class="key-feature-tab__inner-wrap text-color--black">
-							<div class="key-feature-tab__text-wrap">
-								<h2 class="key-feature-tab__headline" data-headline-text="8kg ai ecobubble">8.0 kg AI Ecobubble</h2>
-								<p class="key-feature-tab__desc">Starting ₹ 41310* <br /> Incl. ₹ 6590* off with instant bank discount &amp; app voucher</p>
-								
-							</div>
-							
-							<div class="key-feature-tab__cta-wrap">
-								<div class="key-feature-tab__cta-inner">
-									
-										
-										
-										
-										
-										
-											
-											
-												<a class="cta cta--contained cta--black" href="washers-and-dryers/washing-machines/ww6000t-front-loading-eco-bubble-ai-control-super-speed-8kg-platinum-silver-ww80t604dlb-tl/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-home appliances1_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:da:kv1:home appliances:8kg ai ecobubble:8kg ai ecobubble:buy now">Buy now</a>
-											
-										
-										
-									
-								</div>
-							</div>
-							
-						</div>
-						<div class="key-feature-tab__background-wrap bg-white">
-							
-								<div class="image">
-									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2024/03/09/17/27/ai-generated-8623019_1280.jpg" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/12kg-AI-ecobubble-with-AI-2.jpg?$LazyLoad_Home_JPG$" alt="8.0kg AI Ecobubble"/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="https://cdn.pixabay.com/photo/2024/03/09/17/27/ai-generated-8623019_1280.jpg" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/12kg-AI-ecobubble-with-AI-2.jpg?$720_1280_JPG$" alt="8.0kg AI Ecobubble"/>
-									
-									
-								</div>
-							
-							
-						</div>
-					</div>
-				</div>
-				
-				<div class="key-feature-tab__slide swiper-slide" data-clickable-state="false" data-tab-index="2" an-tr="co07_key feature tab-home-image-da_swipe2" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:product marketing:da2">
-					<div class="key-feature-tab__slide-inner">
-						<div class="key-feature-tab__inner-wrap text-color--black">
-							<div class="key-feature-tab__text-wrap">
-								<h2 class="key-feature-tab__headline" data-headline-text="653l bespoke side by side">653L BESPOKE Side by Side</h2>
-								<p class="key-feature-tab__desc">Starting ₹ 102900*<br />Incl. ₹ 16500* off with instant bank discount &amp; app voucher</p>
-								
-							</div>
-							
-							<div class="key-feature-tab__cta-wrap">
-								<div class="key-feature-tab__cta-inner">
-									
-										
-										
-										
-										
-										
-											
-											
-												<a class="cta cta--contained cta--black" href="refrigerators/side-by-side/rs8000cch-653l-clean-pink-rs76cb81a3p0hl/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-home appliances2_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:da:kv2:home appliances:bespoke side by side:653l bespoke side by side:buy now">Buy now</a>
-											
-										
-										
-									
-								</div>
-							</div>
-							
-						</div>
-						<div class="key-feature-tab__background-wrap bg-white">
-							
-								<div class="image">
-									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/SBS_Product_Markting_1440X810.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/SBS_Product_Markting_720x1280.jpg?$LazyLoad_Home_JPG$" alt="BESPOKE Side by Side"/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/SBS_Product_Markting_1440X810.jpg?$1440_810_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/SBS_Product_Markting_720x1280.jpg?$720_1280_JPG$" alt="BESPOKE Side by Side"/>
-									
-									
-								</div>
-							
-							
-						</div>
-					</div>
-				</div>
-				
-				<div class="key-feature-tab__slide swiper-slide" data-clickable-state="false" data-tab-index="3" an-tr="co07_key feature tab-home-image-da_swipe3" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:product marketing:da3">
-					<div class="key-feature-tab__slide-inner">
-						<div class="key-feature-tab__inner-wrap text-color--black">
-							<div class="key-feature-tab__text-wrap">
-								<h2 class="key-feature-tab__headline" data-headline-text="convertible 5in1 ac">Convertible 5in1 AC</h2>
-								<p class="key-feature-tab__desc">Starting ₹ 44490* <br /> Incl. ₹ 4500* off with instant bank discount &amp; app voucher</p>
-								
-							</div>
-							
-							<div class="key-feature-tab__cta-wrap">
-								<div class="key-feature-tab__cta-inner">
-									
-										
-										
-										
-										
-										
-											
-											
-												<a class="cta cta--contained cta--black" href="air-conditioners/split-ac/ar9500t-ar18cy3zapgnna/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-home appliances3_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:da:kv3:home appliances:convertible ac :convertible 5in1 ac:buy now">Buy now</a>
-											
-										
-										
-									
-								</div>
-							</div>
-							
-						</div>
-						<div class="key-feature-tab__background-wrap bg-white">
-							
-								<div class="image">
-									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/PM_1440x810-AR18CX3ZAWKNNA.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/PM_720x1080-AR18CX3ZAWKNNA.jpg?$LazyLoad_Home_JPG$" alt="Convertible 5in1 AC"/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/PM_1440x810-AR18CX3ZAWKNNA.jpg?$1440_810_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/PM_720x1080-AR18CX3ZAWKNNA.jpg?$720_1280_JPG$" alt="Convertible 5in1 AC"/>
-									
-									
-								</div>
-							
-							
-						</div>
-					</div>
-				</div>
-				
-				<div class="key-feature-tab__slide swiper-slide" data-clickable-state="false" data-tab-index="4" an-tr="co07_key feature tab-home-image-da_swipe4" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:product marketing:da4">
-					<div class="key-feature-tab__slide-inner">
-						<div class="key-feature-tab__inner-wrap text-color--black">
-							<div class="key-feature-tab__text-wrap">
-								<h2 class="key-feature-tab__headline" data-headline-text="8 kg ecobubble">8.0 kg Ecobubble</h2>
-								<p class="key-feature-tab__desc">Starting ₹ 18090*<br />Incl. ₹ 4500* off with instant bank discount &amp; app voucher</p>
-								
-							</div>
-							
-							<div class="key-feature-tab__cta-wrap">
-								<div class="key-feature-tab__cta-inner">
-									
-										
-										
-										
-										
-										
-											
-											
-												<a class="cta cta--contained cta--black" href="washers-and-dryers/washing-machines/wa4000b-top-loading-ecobubble-digital-inverter-large-capacity-8kg-white-wa80bg4546bdtl/index.html" aria-label="Buy now" target="_self" an-tr="co07_key feature tab-home-cta-home appliances4_buy now" an-ca="home content click" an-ac="product marketing" an-la="product marketing:da:kv4:home appliances:8 kg ecobubble:8 kg ecobubble:buy now">Buy now</a>
-											
-										
-										
-									
-								</div>
-							</div>
-							
-						</div>
-						<div class="key-feature-tab__background-wrap bg-white">
-							
-								<div class="image">
-									
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/pd-mkt-updates/Ecobubble_Top_Load_1440x810.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/pd-mkt-updates/Ecobubble_Top_Load_720x1280.jpg?$LazyLoad_Home_JPG$" alt="BESPOKE Microwave"/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/home/pd-mkt-updates/Ecobubble_Top_Load_1440x810.jpg?$1440_810_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/home/pd-mkt-updates/Ecobubble_Top_Load_720x1280.jpg?$720_1280_JPG$" alt="BESPOKE Microwave"/>
-									
-									
-								</div>
-							
-							
-						</div>
-					</div>
-				</div>
-				
-			
-				
-			</div>
-		</div>
-	</div>
-	
-	<div class="popup-video" role="dialog">
-		<div class="popup-video__dimmed"></div>
-		<div class="popup-video__looping--start" tabindex="0"></div>
-		<div class="popup-video__video-wrap">
-			
-			<p class="popup-video__current-video-title hidden" tabindex="0"></p>
-			
-			
-			
-			
-  
 
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-			
-			
-			
-  
-
-			
-			
-			
-  
-
-			
-			
-  
-
-			
-		</div>
-		<button class="popup-video__btn-video-close">
-			<span class="hidden">Close</span>
-			<svg class="icon" focusable="false" aria-hidden="true"><use xlink:href="#cancel-close-regular" href="#cancel-close-regular"></use></svg>
-		</button>
-		<div class="popup-video__looping--end" tabindex="0"></div>
-	</div>
-</section>
 </div>
 <div class="my-g-recommended-product aem-GridColumn aem-GridColumn--default--12">
 
@@ -4543,252 +3644,13 @@ var digitalData = {
 	<input type="hidden" name="myd11-recommendedProductYn" id="myd11-recommendedProductYn" value="Y"/>
 
 		
-		<div class="my-recommended-product padding-top--0 padding-bottom--0 bg-white" id="my-recommended-product">
-			
-			<h2 class="my-recommended-product__headline-text padding-top--48 padding-bottom--16" style="display:none;">Recommended Products</h2>
-			<div class="my-recommended-product__card">
-				
-			</div>
-			
-		</div>
+		
+
+
+		
 		
 </div>
-<div class="cm-g-half-teaser-list aem-GridColumn aem-GridColumn--default--12">
 
-
-
-
-
-
-
-
-
-
-<section class="half-teaser-list padding-top--48 padding-bottom--48 bg-white text-color--black desktop-layout--image-left">
-	<div class="half-teaser-list__inner">
-		<div class="half-teaser-list__head-text">
-			<h2 class="half-teaser-list__head-title text-size-medium">
-				
-					<a class="half-teaser-list__head-link" an-tr="co15_half teaser list-home-text-headline" an-ca="home content click" an-ac="explore" an-la="explore:explore dowhatyoucant" href="explore/index.html" title="Samsung.com Explore">
-						Explore #TogetherBetterFuture
-					</a>
-				
-				
-			</h2>
-			
-				
-			
-		</div>
-		<div class="half-teaser-list__content swiper-container basic-swiper" data-swiper-option='{
-			&quot;viewMode&quot;:&quot;mobile&quot;,
-			&quot;keepWrapper&quot;:true,
-			&quot;slidesPerView&quot;:&quot;1&quot;,
-			&quot;pagination&quot;:true,
-			&quot;componentEl&quot;:&quot;.half-teaser-list&quot;}'>
-			<div class="swiper-wrapper">
-				<div class="half-teaser-list__item swiper-slide half-teaser-list__item--active" style="order:1;" data-type-headline="Tips for Navigating Big Life Changes" an-tr="co15_half teaser list-home-image-indication" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:explore1">
-					<div class="half-teaser-list__text">
-						<div class="half-teaser-list__text-inner">
-							<div class="half-teaser-list__title-wrap">
-								<span class="half-teaser-list__number">01</span>
-								<div class="half-teaser-list__title">
-									<span class="half-teaser-list__title-link">Tips for Navigating Big Life Changes</span>
-								</div>
-							</div>
-							
-							
-							<div class="half-teaser-list__button">
-								
-								
-								<a class="cta cta--underline cta--black " href="explore/life-hacks/tips-for-navigating-big-life-changes/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-cta-button" an-ca="home content click" an-ac="explore" an-la="explore:tips for navigating big life changes:learn more">
-									Learn more
-									
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="half-teaser-list__image-wrap">
-						
-							
-							
-							<a class="half-teaser-list__image-link" href="explore/life-hacks/tips-for-navigating-big-life-changes/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-image" an-ca="home content click" an-ac="explore" an-la="explore:tips for navigating big life changes:image">
-								<div class="half-teaser-list__image">
-									<div class="image">
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_pc_684x684.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_mo_624x624.jpg?$LazyLoad_Home_JPG$" alt="Four students smiling."/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_pc_684x684.jpg?$684_684_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_mo_624x624.jpg?$624_624_PNG$" alt="Four students smiling."/>
-									</div>
-								</div>
-							</a>
-						
-						
-					</div>
-				</div>
-			
-				<div class="half-teaser-list__item swiper-slide" style="order:2;" data-type-headline="Feel Free to Freestyle" an-tr="co15_half teaser list-home-image-indication" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:explore2">
-					<div class="half-teaser-list__text">
-						<div class="half-teaser-list__text-inner">
-							<div class="half-teaser-list__title-wrap">
-								<span class="half-teaser-list__number">02</span>
-								<div class="half-teaser-list__title">
-									<span class="half-teaser-list__title-link">Feel Free to Freestyle</span>
-								</div>
-							</div>
-							
-							
-							<div class="half-teaser-list__button">
-								
-								
-								<a class="cta cta--underline cta--black " href="explore/entertainment/feel-free-to-freestyle/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-cta-button" an-ca="home content click" an-ac="explore" an-la="explore:feel free to freestyle:learn more">
-									Learn more
-									
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="half-teaser-list__image-wrap">
-						
-							
-							
-							<a class="half-teaser-list__image-link" href="explore/entertainment/feel-free-to-freestyle/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-image" an-ca="home content click" an-ac="explore" an-la="explore:feel free to freestyle:image">
-								<div class="half-teaser-list__image">
-									<div class="image">
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/entertainment/vd0040_explore_feel-free-to-freestyle/vd0026_home-explore-banner_pc_684x684.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/entertainment/vd0040_explore_feel-free-to-freestyle/vd0026_home-explore-banner_mo_624x624.jpg?$LazyLoad_Home_JPG$" alt="Happy Kelli dances in front of a swirly blue and white background projected from Samsung&#39;s Freestyle projector."/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/entertainment/vd0040_explore_feel-free-to-freestyle/vd0026_home-explore-banner_pc_684x684.jpg?$684_684_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/entertainment/vd0040_explore_feel-free-to-freestyle/vd0026_home-explore-banner_mo_624x624.jpg?$624_624_PNG$" alt="Happy Kelli dances in front of a swirly blue and white background projected from Samsung&#39;s Freestyle projector."/>
-									</div>
-								</div>
-							</a>
-						
-						
-					</div>
-				</div>
-			
-				<div class="half-teaser-list__item swiper-slide" style="order:3;" data-type-headline="3 Hosting Tips to Alleviate Holiday Stress" an-tr="co15_half teaser list-home-image-indication" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:explore3">
-					<div class="half-teaser-list__text">
-						<div class="half-teaser-list__text-inner">
-							<div class="half-teaser-list__title-wrap">
-								<span class="half-teaser-list__number">03</span>
-								<div class="half-teaser-list__title">
-									<span class="half-teaser-list__title-link">3 Hosting Tips to Alleviate Holiday Stress</span>
-								</div>
-							</div>
-							
-							
-							<div class="half-teaser-list__button">
-								
-								
-								<a class="cta cta--underline cta--black " href="explore/food-home/3-hosting-tips-to-alleviate-holiday-stress/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-cta-button" an-ca="home content click" an-ac="explore" an-la="explore:3 hosting tips to alleviate holiday stress:learn more">
-									Learn more
-									
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="half-teaser-list__image-wrap">
-						
-							
-							
-							<a class="half-teaser-list__image-link" href="explore/food-home/3-hosting-tips-to-alleviate-holiday-stress/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-image" an-ca="home content click" an-ac="explore" an-la="explore:3 hosting tips to alleviate holiday stress:image">
-								<div class="half-teaser-list__image">
-									<div class="image">
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/food-home/da0050-3-hosting-tips-to-alleviate-holiday-stress/da0050_home_explore-banner_pc_684x684.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/food-home/da0050-3-hosting-tips-to-alleviate-holiday-stress/da0050_home_explore-banner_mo_624x624.jpg?$LazyLoad_Home_JPG$" alt="A smiling family sits around a dining room table getting ready to pull Christmas crackers"/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/food-home/da0050-3-hosting-tips-to-alleviate-holiday-stress/da0050_home_explore-banner_pc_684x684.jpg?$684_684_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/food-home/da0050-3-hosting-tips-to-alleviate-holiday-stress/da0050_home_explore-banner_mo_624x624.jpg?$624_624_PNG$" alt="A smiling family sits around a dining room table getting ready to pull Christmas crackers"/>
-									</div>
-								</div>
-							</a>
-						
-						
-					</div>
-				</div>
-			
-				<div class="half-teaser-list__item swiper-slide" style="order:4;" data-type-headline="Meet G·NUSMAS, the curious extraterrestrial" an-tr="co15_half teaser list-home-image-indication" an-ca="indication" an-ac="carousel" an-la="carousel:swipe:explore4">
-					<div class="half-teaser-list__text">
-						<div class="half-teaser-list__text-inner">
-							<div class="half-teaser-list__title-wrap">
-								<span class="half-teaser-list__number">04</span>
-								<div class="half-teaser-list__title">
-									<span class="half-teaser-list__title-link">Meet G·NUSMAS, the curious extraterrestrial</span>
-								</div>
-							</div>
-							
-							
-							<div class="half-teaser-list__button">
-								
-								
-								<a class="cta cta--underline cta--black " href="explore/brand/g-nusmas/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-cta-button" an-ca="home content click" an-ac="explore" an-la="explore:meet g nusmas the curious extraterrestrial:learn more">
-									Learn more
-									
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="half-teaser-list__image-wrap">
-						
-							
-							
-							<a class="half-teaser-list__image-link" href="explore/brand/g-nusmas/index.html" aria-label="Learn more" an-tr="co15_half teaser list-home-image" an-ca="home content click" an-ac="explore" an-la="explore:meet g nusmas the curious extraterrestrial:image">
-								<div class="half-teaser-list__image">
-									<div class="image">
-										<img class="image__preview lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/brand/global0028_explore_meet-g-nusmas/global0028_home-explore-banner_pc_684x684.jpg?$LazyLoad_Home_JPG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/brand/global0028_explore_meet-g-nusmas/global0028_home-explore-banner_mo_624x624.jpg?$LazyLoad_Home_JPG$" alt="A whimsical looking blue alien in mid-air inside a modern spaceship. The alien has two antennae, two big eyes, and is wearing a two-piece space uniform that consists of a blue top with pink details, and white pants. The alien looks startled, and has both arms stretched out seemingly bracing itself for a fall. In the background, broken pieces and shards are floating around in disarray, as well as a big bluish green button."/>
-										<img class="image__main lazy-load responsive-img" data-desktop-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/brand/global0028_explore_meet-g-nusmas/global0028_home-explore-banner_pc_684x684.jpg?$684_684_PNG$" data-mobile-src="//images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/brand/global0028_explore_meet-g-nusmas/global0028_home-explore-banner_mo_624x624.jpg?$624_624_PNG$" alt="A whimsical looking blue alien in mid-air inside a modern spaceship. The alien has two antennae, two big eyes, and is wearing a two-piece space uniform that consists of a blue top with pink details, and white pants. The alien looks startled, and has both arms stretched out seemingly bracing itself for a fall. In the background, broken pieces and shards are floating around in disarray, as well as a big bluish green button."/>
-									</div>
-								</div>
-							</a>
-						
-						
-					</div>
-				</div>
-			
-				
-			</div>
-			<div class="indicator" data-indicator-data='{
-				&quot;type&quot;: &quot;dot-indicator&quot;,
-				&quot;autoRolling&quot;: false,
-				&quot;infiniteRolling&quot;: false}'>
-				<div class="indicator-wrap">
-					<div class="indicator__list-wrap">
-						<div class="indicator__list" role="tablist">
-							
-							<button class="indicator__item" role="tab" data-indicator-delay="" an-tr="co15_half teaser list-home-image-index" an-ca="indication" an-ac="carousel" an-la="carousel:index:explore1">
-								<span class="indicator__dot-wrap">
-									<span class="indicator__dot">
-										<span class="indicator__dot-inner"></span>
-									</span>
-								</span>
-							</button>
-							
-							<button class="indicator__item" role="tab" data-indicator-delay="" an-tr="co15_half teaser list-home-image-index" an-ca="indication" an-ac="carousel" an-la="carousel:index:explore2">
-								<span class="indicator__dot-wrap">
-									<span class="indicator__dot">
-										<span class="indicator__dot-inner"></span>
-									</span>
-								</span>
-							</button>
-							
-							<button class="indicator__item" role="tab" data-indicator-delay="" an-tr="co15_half teaser list-home-image-index" an-ca="indication" an-ac="carousel" an-la="carousel:index:explore3">
-								<span class="indicator__dot-wrap">
-									<span class="indicator__dot">
-										<span class="indicator__dot-inner"></span>
-									</span>
-								</span>
-							</button>
-							
-							<button class="indicator__item" role="tab" data-indicator-delay="" an-tr="co15_half teaser list-home-image-index" an-ca="indication" an-ac="carousel" an-la="carousel:index:explore4">
-								<span class="indicator__dot-wrap">
-									<span class="indicator__dot">
-										<span class="indicator__dot-inner"></span>
-									</span>
-								</span>
-							</button>
-							
-							
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section></div>
 
 
 <div class="cm-g-text-editor aem-GridColumn aem-GridColumn--default--12">
@@ -4806,35 +3668,7 @@ var digitalData = {
 <div class="cm-g-seo-schema-markup-content aem-GridColumn aem-GridColumn--default--12">
 
 
-<script type="application/ld+json" data-type="seo">
-{"@context":"http://schema.org","@id":"https://gt/in/",
-"@type":"Corporation",
-"name":"Samsung Electronics (India)",
-"legalname":"Samsung India Electronics Pvt. Ltd. (SIEL)",
-"description":"Samsung India Electronics Pvt. Ltd. (SIEL) is a subsidiary of Samsung Electronics Company Ltd., based in New Delhi, India.",
-"url":"https://gt/in/",
-"foundingdate":"1995",
-"foundinglocation":"New Delhi, India",
-"logo":"https://images.samsung.com/is/image/samsung/assets/Samsung_Orig_Wordmark_BLUE_RGB.jpg",
-"parentOrganization": [ {
-"@type":"Corporation",
-"name":"Samsung Electronics Co., Ltd.",
-"owns":
-{"@type":"OwnershipInfo","name":"Samsung Galaxy Smartphones, Galaxy Smartwatch, Samsung Tablet, Samsung TV, Samsung Bespoke"},
-"brand":{
-"@type":"Brand","name":"Samsung"}
-} ],
-"sameAs": [
-"https://www.facebook.com/SamsungIndia","https://twitter.com/samsungindia","https://www.instagram.com/samsungindia/","https://www.youtube.com/user/Samsungmobileindia","https://www.linkedin.com/company/samsung-india"  ],
-"ContactPoint":{
-      "telephone" : "1800 5 7267864",
-      "contactType" : "Samsung India Support Center",
-      "areaServed" : "India",
-      "availableLanguage" : ["English, Hindi"],
-      "url" : "https://gt/in/support/",
-      "email" : "support.india@samsung.com"}
-     }  }
-</script>
+
 </div>
 <div class="static-content aem-GridColumn aem-GridColumn--default--12">
 	
@@ -5089,7 +3923,7 @@ Calendly.initPopupWidget({url: 'https://calendly.com/the-first-look01/seuk'});re
 								<li class="footer-category__item" role="listitem">
 									
 									
-									<p style="margin-top: 10px; padding-left: 10PX;">Pandharpur - B1 Builing, Kandre's Residency, Isbavi, Pandharpur, Maharashtra 413304</p>
+									<p style="margin-top: 10px; padding-left: 10PX;">Pandharpur - Kandre's Residency, Pandharpur, Maharashtra 413304</p>
 								
 									
 								</li>
@@ -5355,7 +4189,8 @@ Calendly.initPopupWidget({url: 'https://calendly.com/the-first-look01/seuk'});re
 
 
     
-    
+    <script>var copy = document.querySelector(".logos-slide").cloneNode(true);
+		document.querySelector(".logo-slider").appendChild(copy);</script>
 	
     </div>
 </body>
